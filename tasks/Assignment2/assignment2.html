@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset = "UTF-8">
+  <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+  <title>Assignment2</title>
+  <link rel = "stylesheet" href = "assignment2.css"> 
+</head>
+<body>
+  <h2>Assignment 2</h2>
+  
+  <hr>
+  
+  <h3>Objectives</h3>
+  
+  <ul>
+    <li>Learn the meanings of th following term:<br>HTM: table.</li>
+    <li>Learn to create an HTML table using TR, TD, and TH tags.</li>
+    <li>Learn to use ROWSPAN and COLSPAN attributes.</li>
+  </ul>
+  
+  <hr>
+  
+  <h3>Creating HTML tables</h3>
+  
+  <p>
+    This assignment can be completed individally. Your assignment is to create an HTML table.
+  </p>
+  
+  <table 
+    border = "1"
+    border-color = "gray"
+    cellspacing = "0"
+    cellpadding = "5px"
+    align = "center">
+    <thead>
+      <tr>
+        <th class = "table-heading" colspan = "6">
+          Jan's Spring Term 2006 Afternoon Schedule
+        </th>
+      </tr>
+    </thead>
+    
+    <tbody>
+      <tr>
+        <td></td>
+        
+        <th>
+          Monday
+        </th>
+        <th>
+          Tuesday
+        </th>
+        <th>
+          Wednesday
+        </th>
+        <th>
+          Thursday
+        </th>
+        <th>
+          Friday
+        </th>
+      </tr>
+
+      <tr>
+        <th>1:00</th>
+        <th class = "office" rowspan="2">Office</th>
+        <th></th>
+        <th class = "office" rowspan="2">Office</th>
+        <th class = "office"rowspan="8">Office<br>Hours<br>by<br>Appt</th>
+        <th class = "office"rowspan="2">Office</th>
+      </tr>
+      <tr>
+        <th>1:30</th>
+        <th class = "meeting" rowspan="2">Dept Meeting</th>
+      </tr>
+      <tr>
+        <th>2:00</th>
+        <th class = "lecture" rowspan="3">MAT 108</th>
+        <th class = "lecture" rowspan="3">MAT 108</th>
+        <th class = "lecture" rowspan="3">MAT 108</th>
+      </tr>
+      <tr>
+        <th>2:30</th>
+        <td></td>
+      </tr>
+      <tr>
+        <th>3:00</th>
+        <th class = "meeting" rowspan="3">EC Meeting</th>
+      </tr>
+      <tr>
+        <th>3:30</th>
+        <th class = "tutorial" rowspan="3">CSC 205</th>
+        <th class = "tutorial" rowspan="3">CSC 205</th>
+        <th class = "tutorial" rowspan="3">CSC 205</th>
+      </tr>
+      <tr>
+        <th>4:00</th>
+      </tr>
+      <tr>
+        <th>4:30</th>
+        <td></td>
+      </tr>
+
+    </tbody>
+    <tfoot></tfoot>
+  </table>
+</body>
+</html>
