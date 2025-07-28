@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form>
+    <table align="center">
+      <thead>
+        <tr>
+          <th colspan = "2" bgcolor="yellow" >
+            Registration Form
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td bgcolor="lightblue">
+            <label>Enter Name</label>
+          </td>
+          <td bgcolor="lightblue">
+            <input type="text" pattern="[A-Za-z]{3,10}" title="Please enter 3 to 10 letters"  name="userName">
+          </td>
+        </tr>
+        <tr>
+          <td bgcolor="lightblue">
+            <label>Enter Password</label>
+          </td>
+          <td bgcolor="lightblue">
+            <input type="password" name="userPassword">
+          </td>
+        </tr>
+
+        <tr>
+          <td bgcolor="lightblue">
+            <label>Enter Address</label>
+          </td>
+          <td bgcolor="lightblue">
+            <textarea></textarea>
+          </td>
+        </tr>
+
+        <tr>
+          <td bgcolor="lightblue">
+            <label>Select Game</label>
+          </td>
+          <td bgcolor="lightblue">
+            <ul type="none">
+              <li>
+                <input type="checkbox" name="userGame" value="hockey">
+                <label>Hockey</label>
+              </li>
+              <li>
+                <input type="checkbox" name="userGame" value="football">
+                <label>Football</label>
+              </li>
+              <li>
+                <input type="checkbox" name="userGame" value="badminton">
+                <label>Badminton</label>
+              </li>
+              <li>
+                <input type="checkbox" name="userGame" value="cricket">
+                <label>Cricket</label>
+              </li>
+              <li>
+                <input type="checkbox" name="userGame" value="volleyball">
+                <label>Volleyball</label>
+              </li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td bgcolor="lightblue">
+            <label>Gender</label>
+          </td>
+          <td bgcolor="lightblue">
+            <input type="radio" name="userGender" value="male">
+            <label>Male</label>
+            <input type="radio" name="userGender" value="female">
+            <label>Female</label> 
+          </td>
+        </tr>
+        <tr>
+          <td bgcolor="lightblue">
+            <label>Select ur age</label>
+          </td>
+          <td bgcolor="lightblue">
+            <select name="userAge">
+              <option disabled selected>Select</option>
+              <option value="2005">2005</option>
+              <option value="2006">2006</option>
+              <option value="2007">2007</option>
+              <option value="2008">2008</option>
+            </select>
+          </td>
+        </tr>
+        
+        <tr>
+          <td bgcolor="lightblue">
+            <label>Select Photo</label>
+          </td>
+          <td bgcolor="lightblue">
+            <input type="file" name="userphoto" placeholder="Choose File" accept="image/png">
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" bgcolor="lightblue">
+            <button type ="button">Click Me</button>
+            <button type ="reset">reset</button>
+            <button type ="submit">submit</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </form>
+</body>
+</html>
