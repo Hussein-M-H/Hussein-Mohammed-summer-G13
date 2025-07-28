@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form>
+        <!-- label , input , button ==> inline Elements -->
+        <label>Full Name</label>
+        <!-- full-name -->
+        <input type="text" name="fullName" value="nouran">
+        <br>
+        <label>Email </label>
+        <!-- nouran@email.com -->
+        <input type="email" name="userEmail" required placeholder="enter your name">
+
+        <br>
+        <input type="password" name="userPassword" 
+        title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters"
+          pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+          placeholder="enter your password">
+
+          <br>
+          <input type="number" placeholder="enter your age" required name="userAge" step="10">
+
+          <label>Gender</label>
+          <input type="radio" name="userGender" value="male"><label>Male</label>
+          <input type="radio" name="userGender" value="female"><span>Female</span>
+
+          <br>
+
+          <label>Programming language</label>
+          <input type="checkbox" name="prLanguage" value="java"><label>Java</label>
+          <input type="checkbox" name="prLanguage" value="javascript"><label>Javascript</label>
+          <input type="checkbox" name="prLanguage" value="python"><label>Python</label>
+        <br>
+          <label>Courses</label>
+          <select name="userCourse" multiple>
+            <option selected disabled>Choose Course</option>
+            <option value="fr">Frontend</option>
+            <option value="bk" >Backend</option>
+            <option value="nt">Network</option>
+            <option>Bootstrap</option>
+          </select>
+          <br>
+
+          <input type="file" multiple name="userFiles">
+
+
+        <br>
+
+        <input type="submit" value="Register">
+        <input type="reset" value="clear">
+        <button type="submit">Login</button>
+        <button type="reset">Clear Data</button>
+        <!-- <button type="button">read more</button> -->
+    </form>
+
+        <button type="button">Submit</button>
+
+
+
+        name ==> 3 : 10
+        password ==> complex password
+        address ==> textarea
+        photo ==> .png
+
+</body>
+</html>
