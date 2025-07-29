@@ -1,0 +1,15 @@
+css link ==> inline element style
+             internal sheet
+             external sheet
+
+
+css selectors ==> tagName , class , id     
+
+
+border => style , width , color
+
+
+display ==> block , inline , inline-block , flex , none
+
+text-decoration==> underline (default) , overline , line-through , none
+             

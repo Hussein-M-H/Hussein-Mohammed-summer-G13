@@ -1,0 +1,134 @@
+/* universe style */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+h1 {
+    color: blue;
+}
+
+.text-gray {
+    color: gray;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.text-teal {
+    color: teal;
+}
+
+#h1-style {
+    color: goldenrod;
+}
+
+.div-style {
+    background-color: rgb(228 228 230);
+    color: #f75252;
+    padding-left: 2%;
+    padding-top: 2%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+    padding: 2% 3% 4% 5%;
+    padding: 2% 4%;
+    padding: 2% 3% 5%;
+    padding: 2%;
+    padding: 4%;
+    width: 30%;
+    /* margin: 4%; */
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    border-top-width: 9px;
+    border-top-color: blue;
+    border-top-style: solid;
+    border-top: 4px solid blue;
+    border-left: 6px solid;
+    border-bottom: 3px solid green;
+    border: 16px solid blue;
+    border-radius: 5px;
+    display: inline-block;
+  
+}
+
+
+.div-style .h3-style {
+    color: blue;
+    font-size: 19px;
+    text-align: center;
+    background-color: antiquewhite;
+    padding: 3%;
+}
+
+.div-style a {
+    color: white;
+    font-size: 20px;
+    background-color: black;
+    padding: 3%;
+    /* margin: 28%; */
+    display: inline-block;
+    width: 40%;
+}
+
+.div-style input {
+    background-color: antiquewhite;
+    font-size: 18px;
+    display: block;
+    margin-top: 5%;
+    padding: 2%;
+    width: 100%;
+}
+
+/* .div-style h3{
+    color: blue;
+    font-size: 19px;
+    text-align: center;
+    background-color: antiquewhite;
+    padding: 3%;
+} */
+
+/* .h3-style{
+
+} */
+.div-element {
+    width: 40%;
+    background-color: lightblue;
+}
+
+.div-element .h3-style {
+    background-color: teal;
+    color: white;
+    padding: 2%;
+}
+
+#registerForm{
+        background: #d8ac77;
+    padding: 2%;
+    width: 40%;
+    height: 30%;
+    
+}
+
+#registerForm input{
+        border: none;
+    padding: 3%;
+    width: 100%;
+  
+}
+
+
+section{
+    background-color: black;
+    height: 600px;
+    color: #1C73BD;
+}
+
+
+h2 , h3 , h4 , .div-style , #registerForm {
+
+}
