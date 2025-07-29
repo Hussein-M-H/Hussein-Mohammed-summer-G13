@@ -7,16 +7,19 @@
 </head>
 <body>
     
-    <form>
+    <form  autocomplete="off" action="index.html" method="post">
         <!-- label , input , button ==> inline Elements -->
-        <label>Full Name</label>
+        <label for="userName">Full Name</label>
         <!-- full-name -->
-        <input type="text" name="fullName" value="nouran">
+        <input type="text" id="userName" name="userName" value="nouran" minlength="3" maxlength="10">
         <br>
         <label>Email </label>
         <!-- nouran@email.com -->
-        <input type="email" name="userEmail" required placeholder="enter your name">
+        <input type="email" id="userEmail" autocomplete="off" autofocus name="userEmail" required placeholder="enter your name">
 
+        <br>
+        <input type="text" placeholder="enter Full Name" name="userFullName" value="Nouran Ahmed Fayez" disabled  id="">
+        <input type="text"  name="shippingArea" value="Alex" readonly  id="">
         <br>
         <input type="password" name="userPassword" 
         title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters"
@@ -52,11 +55,28 @@
 
         <br>
 
+        <!-- max , min , step ==> search -->
+        <input type="range">
+
+        <br>
+
+        <input type="date">
+        <input type="datetime-local">
+        <input type="month">
+        <br>
+
+        <input type="color">
+
+        <br>
+
         <input type="submit" value="Register">
         <input type="reset" value="clear">
         <button type="submit">Login</button>
         <button type="reset">Clear Data</button>
         <!-- <button type="button">read more</button> -->
+
+
+        datalist ==> search 
     </form>
 
         <button type="button">Submit</button>
