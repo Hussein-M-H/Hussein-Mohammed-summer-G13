@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width:100%;
+  border:none;
+  font-family:Arial;
+}
+
+html {
+  background-color: #AE83EF;
+  padding: 6% 3% 7%;
+}
+
+body {
+  padding:0;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 900;
+    font-size: 26px;
+    margin-bottom: 3%;
+}
+
+p {
+    text-align: center;
+    color: #ceffff;
+    font-weight: 500;
+    font-size: 12px;
+    margin-bottom: 6%;
+    width: 220px;
+    margin-left:auto;
+    margin-right:auto;
+    line-height: 150%;
+}
+
+main {
+  padding:0;
+  border-radius:1%; 
+  box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.5);
+}
+
+.chat {
+    color: white;
+    background-color: #02B3D2;
+    display: inline-block;
+    width: 50%;
+    border-top-left-radius: 1%;
+    border-bottom-left-radius: 1%;
+    vertical-align: top;
+    padding-top: calc(11.5% + 17px);
+    padding-bottom: calc(16% + 40px);
+    padding-right: 3%;
+    padding-left: 3%;
+}
+
+
+.contact-form {
+  width:50%;
+  display:inline-block;
+  background-color: white;
+  border-top-right-radius:1%;
+  border-bottom-right-radius:1%;
+  padding:4% 5% 0;
+}
+
+.contact-form input, .contact-form textarea {
+    display: block;
+    padding: 4% 5%;
+    margin-bottom: 5%;
+    background-color: #EEEEEE;
+    font-size: 11px;
+}
+
+#submit-button {
+    color: #ceffff;
+    background-color: #05B2D2;
+    border-radius: 100px;
+    margin-left: 30%;
+    margin-right: 30%;
+    width: 40%;
+    padding: 3% 3%;
+    display: block;
+    font-size: 11px;
+}
+
+#required-keyword {
+    display: block;
+    margin: 0;
+    margin-bottom: 1%;
+    padding: 0;
+    font-size: 9px;
+}
