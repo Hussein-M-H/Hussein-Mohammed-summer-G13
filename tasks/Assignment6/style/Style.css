@@ -1,0 +1,165 @@
+/* reset style */
+* {
+  margin:0;
+  padding: 0;
+  box-sizing:border-box;
+  font-family:Roboto;
+}
+
+body {
+  background-color:black;
+}
+
+a {
+  color:rgb(207, 207, 207);
+  text-decoration:none;
+  font-weight:350;
+}
+
+hr {
+  border:1.5px solid white;
+}
+
+/* global style */
+
+.container {
+  width:80%;
+  margin: 0 auto;
+}
+
+li {
+    float: left;
+    margin-left: 7%;
+    padding: 3% 1%;
+}
+
+.cleared {
+  clear:both;
+}
+
+.white-text {
+  color:white;
+}
+
+.orange-text {
+  color:orange;
+}
+
+.light-text {
+  font-weight:250;
+}
+
+form input {
+    border: none;
+    display: block;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.08);
+    width: 80%;
+    margin: 0 auto 10%;
+    padding: 3%;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+form input::placeholder {
+  color:#D1D1D1;
+}
+
+/* custom style */
+
+nav {
+  background-color:black;
+  padding:1% 0;
+}
+
+#LOGO-small {
+  font-size:40px;
+  float:left;
+}
+
+ul {
+  float: right;
+  list-style: none;
+  width: 43%;
+}
+
+.banner {
+  background: url("../download.jpeg");
+  background-size:100% 100%;
+  border-bottom:3px solid white;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  height:100%;
+  padding:7% 0;
+}
+
+section {
+  float:left;
+  width:45%;
+  vertical-align:top;
+}
+
+#LOGO-big {
+  font-size:90px;
+  margin-bottom:3%;
+}
+
+#small-line {
+  width:13%;
+}
+
+section h2, section hr, section p {
+  margin-bottom:5%;
+}
+
+section h2 {
+    font-weight: 300;
+    font-size: 40px;
+}
+
+p {
+  width:90%;
+  color:#c7c7c7;
+  font-weight:150;
+}
+
+#download-btn {
+    background-color: transparent;
+    border: 2px solid #e2e2e2;
+    color: inherit;
+    padding: 2% 6%;
+    font-size: 17px;
+}
+
+form {
+  float:right;
+  color:black;
+  background-color:white;
+  width:33%;
+  border-radius:4px;
+  margin-top:40px;
+}
+
+form h2 {
+  width: 100%;
+  background-color: #F5F5F5;
+  margin-bottom: 5%;
+  padding: 4%;
+  text-align: center;
+  font-size: 21px;
+  color: #414141;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+}
+
+#get-started-btn {
+    background-color: #FF9B51;
+    width: 100%;
+    padding: 5%;
+    border: none;
+    margin-top: 3%;
+    font-size: 16px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
