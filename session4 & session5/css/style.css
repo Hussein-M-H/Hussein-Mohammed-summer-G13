@@ -1,0 +1,239 @@
+/* Reset Style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* global style */
+body {
+    /* margin: 0% 5%; */
+}
+
+.bg-light {
+    background-color: #efefef;
+}
+
+.bg-dark {
+    background-color: rgb(19, 19, 19);
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.padding-top-bottom {
+    padding: 5% 0%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-light {
+    color: lightgray;
+}
+
+.text-white {
+    color: white;
+}
+
+.d-inline-block {
+    display: inline-block;
+}
+
+.float-left {
+    float: left;
+    /* display: inline-block; */
+}
+
+.float-right {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
+.position-relative {
+    position: relative;
+}
+
+
+.card {
+    width: 30%;
+    /* border: 1px solid gray; */
+    /* margin: 3%; */
+    /* box-shadow==> offset-x offset-y blur spread color; */
+    box-shadow: 0px 0px 11px 3px #bebcbc;
+    /* display: inline-block; */
+    margin-bottom: 2%;
+}
+
+.card img {
+    width: 100%;
+    display: block;
+}
+
+.card-body {
+    padding: 4%;
+    background-color: white;
+}
+
+.card-body h3 {
+    margin-bottom: 2%;
+}
+
+.btn-transparent {
+    padding: 2%;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: transparent;
+
+    /* border-color: white; */
+    /* border-width: 8px; */
+    border: 2px solid;
+    border-radius: 36px;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.btn-white {
+    background-color: white;
+    color: blue;
+    /* box-shadow: 0px 0px 5px 4px lightgray; */
+    position: absolute;
+    top: 9%;
+    left: 10px;
+    padding: 1% 4%;
+    z-index: 1;
+}
+
+.btn-white:hover {
+    background-color: blue;
+    color: white;
+}
+
+.card:hover h3 {
+    color: blue;
+    /* font-size: 30px; */
+}
+
+.overlay-position-absolute {
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #0000009e;
+    top: 0;
+    padding: 16% 6%;
+    display: none;
+}
+.card:hover .overlay-position-absolute{
+    display: block;
+}
+
+
+/* custom style */
+header {
+    padding: 1%;
+    background-color: blue;
+}
+
+nav {
+    padding: 1% 0%;
+    position: sticky;
+    top: 0;
+    z-index: 99999;
+
+}
+
+nav ul {
+    width: 22%;
+}
+
+nav li {
+    margin-right: 4%;
+}
+
+#banner {
+    background-image: url(../images/natural-img.jpg);
+    /* height: 725px; */
+    background-repeat: no-repeat;
+    background-color: lightcoral;
+    background-position-x: right;
+    background-position-y: center;
+    /* contain , cover */
+    background-size: 100% 100%;
+}
+
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.559);
+    /* background-color: #0000006e; */
+    color: white;
+    height: 100%;
+    padding: 8% 0;
+}
+
+#banner p {
+    margin: 4% 0;
+    font-size: 20px;
+}
+
+.custom-h2 {
+    text-align: center;
+    /* padding-bottom: 6%; */
+    margin-bottom: 6%;
+    background: aquamarine;
+}
+
+.margin-left-right {
+    margin: 0% 5%;
+}
+
+hr {
+    width: 8%;
+    margin: 2% auto;
+    /* border: 0; */
+    border-style: solid;
+    border: solid 3px;
+}
+
+.custom-up-arrow {
+    font-size: 31px;
+    background-color: goldenrod;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding-top: 7px;
+    display: inline-block;
+    text-align: center;
+    position: fixed;
+    bottom: 20px;
+    right: 4%;
+}
+
+
+
+/* position ==> fixed sticky (static + fixed) relative absolute static(default) */
+/* left right top bottom z-index */
+/* display ==> block , inline , inline-block , flex , none */
