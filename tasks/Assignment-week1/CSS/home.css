@@ -1,0 +1,319 @@
+/* reset style */
+
+* {
+  margin:0;
+  padding: 0;
+  box-sizing:border-box;
+  font-family:Roboto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* body {
+} */
+
+a {
+  text-decoration:none;
+  font-weight:350;
+  color:inherit;
+}
+
+/* Global css  */
+
+nav {
+  padding:1% 2%;
+}
+
+.LOGO {
+  float:left;
+  width:24.5%;
+  padding: 5px 0;
+}
+
+.LOGO img {
+  height:27px;
+}
+
+.LOGO-slogan {
+    font-size: 31px;
+    font-weight: 600;
+}
+
+.nav-bar {
+  float:left;
+  list-style:none;
+  width:50%;
+  padding-left: 4%;
+}
+
+.icons-bar {
+  float:left;
+  list-style:none;
+  width:25.5%;
+}
+
+.nav-bar li {
+    float: left;
+    padding:2% 7%;
+}    
+
+.icons-bar li {
+    float: left;
+    padding: 4% 8%;
+}
+
+.cleared {
+  clear:both;
+}
+
+.container {
+  width:80%;
+  margin:0 auto;
+}
+
+/* Custom style */
+
+#banner {
+    background: url(../images/banner-img.jpg);
+    background-size: 100% 100%;
+    padding: 6% 3% 8% 0;
+}
+
+#banner aside {
+  float:right;
+  width:45%;
+  background-color: #FFF3E3;
+  padding:4% 2% 3%;
+  border-radius:3px;
+}
+
+#cap {
+    font-weight: 100;
+    font-size: 14px;
+    margin-bottom: 1%;
+}
+
+#banner h2 {
+    color: #B88E2F;
+    font-size: 64px;
+    width: 74%;
+    margin-bottom: 2%;
+}
+
+#banner p {
+    margin-bottom: 7%;
+    color: #605656;
+    width: 90%;
+    font-size: 18px;
+}
+
+#buy-btn {
+    color: white;
+    background-color: #B88E2F;
+    padding: 4% 11%;
+    border: none;
+    font-weight: 550;
+}
+
+#category {
+  padding-top:2%;
+  text-align: center;
+}
+
+#category h2 {
+    margin: 3% 0 1%;
+    font-size: 30px;
+}
+
+#category p {
+  margin-bottom:3%;
+  color:#666666;
+}
+
+#category .card {
+  width:33%;
+  float:left;
+  margin:0;
+}
+
+#category .img-cap {
+    color: #333333;
+    width: 100%;
+    display: block;
+    margin-top: 4%;
+    font-size: 20px;
+    font-weight: 550;
+}
+
+#products {
+  margin-top:3%;
+}
+
+#products .container {
+  width:85%;
+}
+
+#products h2 {
+    text-align: center;
+    margin-bottom: 3%;
+    font-size: 42px;
+    font-weight: bold;
+}
+
+#products .card {
+  float:left;
+  margin:0 3% 3% 0;
+  width:22.5%;
+  position: relative;
+}
+
+#products .card:hover .overlay {
+  display: block;
+}
+
+#products img {
+  display:block;
+  width:100%;
+}
+
+#products .card-info {
+  padding:4% 3% 5%;
+  background-color: #F4F5F7;
+}
+
+#products h3 {
+  font-size:larger;
+  margin-bottom: 3%;
+} 
+
+#products .img-cap {
+  color:#898989;
+  font-size:small;
+  margin-bottom: 3%;
+}
+
+.price {
+  font-size:large;
+  font-weight: bold;
+}
+
+.prev-price {
+  color:#B0B0B0;
+  margin-left:3%;
+  font-weight: lighter;
+}
+
+.product-status {
+  position:absolute;
+  top:24px;
+  right:24px;
+  width:40px;
+  height:40px;
+  border-radius: 50%;
+  color:white;
+  text-align: center;
+  font-size:14px;
+  font-weight: lighter;
+  padding:12px 0;
+}
+
+.offer {
+  background-color:#e97171;
+}
+
+.new {
+  background-color:#2ec1ac;
+}
+
+#products .overlay {
+  width:100%;
+  height:100%;
+  padding:60% 0 20%;
+  background-color: #3A3A3AB8;
+  top:0px;
+  left:0px;
+  display:none;
+  position:absolute; 
+}
+
+.add-to-cart-btn {
+  border:none;
+  background-color: white;
+  width:80%;
+  margin: 0 10% 2%;
+  color:#B88E2F;
+  padding:5% 3%;
+  font-size:large;
+  font-weight: bold;
+}
+
+#products .icons-bar {
+  width:100%;
+  padding:0 5%; 
+}
+
+#products .icons-bar li {
+    margin: 5% 3.2% 0;
+    padding:0;
+    color: white;
+}
+
+#show-more-btn {
+  width:20%;
+  margin:2% 40% 0;
+  border: 2px solid #B88E2F;
+  color:#B88E2F;
+  padding:1%;
+  background-color: white;
+  font-size:18px;
+  font-weight:bold;
+}
+
+#rooms {
+  background-color: #fcf8f3;
+}
+
+#rooms-info {
+  float:left;
+  width:30%;
+}
+
+#rooms-info h2{
+  font-size: 45px;
+  font-weight: bold;
+  color:#616161;
+}
+
+#explore-btn {
+  background-color: #B88E2F;
+  color:transparent;
+  width:30%;
+  font-weight:bold;
+  font-size:large;
+}
+
+#rooms-info .card {
+  float:left;
+  position:relative;
+}
+
+#rooms .overlay {
+  background-color: rgba(255, 255, 255, 0.594);
+  position:absolute;
+  width:50%;
+  bottom:30px;
+  left:8%;
+}
+
+#small-dash {
+  width:30px;
+  display:inline-block;
+  border:2px solid white;
+}
+
+#small-dash {
+  background-color: #B88E2F;
+  bottom:0;
+}

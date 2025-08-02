@@ -130,7 +130,7 @@ nav {
   background-color:black;
   width:100%;
   padding:1% 0;
-  position:fixed;
+  position:sticky;
   top:0;
   z-index:2;
 }
@@ -158,10 +158,10 @@ ul {
   padding:7% 0;
 }
 
-section {
+#AXIT-info {
   float:left;
   width:45%;
-  vertical-align:top;
+  color:white;
 }
 
 #LOGO-big {
@@ -228,16 +228,14 @@ form h2 {
     border-bottom-left-radius: 4px;
 }
 
-
 #contact {
   width:100%;
+  padding-top:81px;
 }
 
-
-#contact-h2 {
+#contact-heading {
   background-color: gray;
   text-align: center;
-  margin-top:70px;
 }
 
 #arrow-up {
