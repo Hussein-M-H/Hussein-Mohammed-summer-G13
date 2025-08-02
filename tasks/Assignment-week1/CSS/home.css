@@ -24,6 +24,9 @@ a {
 
 nav {
   padding:1% 2%;
+  position:sticky;
+  top:0px;
+  background-color: white;
 }
 
 .LOGO {
@@ -130,6 +133,10 @@ nav {
 #category p {
   margin-bottom:3%;
   color:#666666;
+}
+
+.card img {
+  width:100%;
 }
 
 #category .card {
@@ -273,47 +280,206 @@ nav {
 
 #rooms {
   background-color: #fcf8f3;
+  margin-top:4%;
+  padding:5% 0;
 }
 
 #rooms-info {
   float:left;
-  width:30%;
+  width:40%;
+  padding:10% 3% 5% 8%;
 }
 
 #rooms-info h2{
   font-size: 45px;
   font-weight: bold;
   color:#616161;
+  margin-bottom: 3%;
+}
+
+#rooms-info p{
+  color:#616161;
+  margin-bottom: 3%;
+  width:80%;
+  font-size:large;
 }
 
 #explore-btn {
   background-color: #B88E2F;
-  color:transparent;
-  width:30%;
+  color:rgba(255, 255, 255, 0.928);
+  width:40%;
   font-weight:bold;
   font-size:large;
+  border:none;
+  margin-top:3%;
+  padding:5%;
 }
 
-#rooms-info .card {
-  float:left;
+#rooms .cards-box {
+  float:right;
+  width:60%;
+}
+
+#rooms .card {
+  float:right;
   position:relative;
 }
 
 #rooms .overlay {
-  background-color: rgba(255, 255, 255, 0.594);
   position:absolute;
-  width:50%;
+  width:80%;
   bottom:30px;
-  left:8%;
+  left:30px;
+}
+
+#room-info {
+    background-color: rgba(255, 255, 255, 0.594);
+    display:inline-block;
+    width:75%;
+    padding:10%;
+    padding-right:0;
+    color:#4a4a4a;
+}
+
+#room-def {
+    
+    font-size:large;
+}
+
+#room-info h3 {
+  font-size:35px;
 }
 
 #small-dash {
   width:30px;
   display:inline-block;
-  border:2px solid white;
+  border:0.01px solid;
+  margin-bottom:6px;
+  font-weight: lighter;
+  font-size:xx-small;
 }
 
-#small-dash {
+#arrow {
   background-color: #B88E2F;
-  bottom:0;
+  color:white;
+  display:inline-block;
+  vertical-align: bottom;
+  height:60px;
+  width:60px;
+  padding:22px 20px;
+  font-size:large;
+}
+
+#rooms ul {
+  display:block;
+  padding-left:5%;
+  margin-top:5%;
+}
+
+#rooms ul li {
+  float: left;
+  margin-right:20px;
+}
+
+#second-room {
+  position:relative; 
+  float:right;
+  margin-left:3%;
+}
+
+#arrow-chevron {
+  color:#B88E2F;
+  height:40px;
+  width:40px;
+  background-color: white;
+  border-radius: 50%;
+  position:absolute;
+  top:50%;
+  right:30px;
+  padding:12px 5px;
+}
+
+#share {
+  margin:5% 0;
+}
+
+#share img{
+  width:100%;
+}
+
+footer {
+  border-top:1px solid #D4D4D4;
+}
+
+footer .container {
+  padding-top:5%;
+}
+
+.website-info {
+  float:left;
+  width:30%;
+}
+
+footer h2 {
+  margin-bottom:10%;
+  font-size:larger;
+  font-weight:700;
+}
+
+footer p {
+  color:#9f9f9f;
+}
+
+.links {
+  float:left;
+  width:70%;
+  margin-bottom:6%;
+}
+
+.main-list {
+  list-style: none;
+  color:#9f9f9f;
+  width:100%;
+}
+
+.hor {
+  float:left;
+  /* margin-right:13%; */
+  width:33%;
+}
+
+.nested {
+  color:black;
+  list-style:none;
+}
+
+.hor li , .hor form{
+  margin-top:15%;
+  display:block;
+}
+
+.hor input , #subscribe-btn {
+  border:none;
+  border-bottom:1.5px solid black;
+  display:inline-block;
+  background-color: white;
+  padding-bottom:2%;
+}
+
+.hor input {
+  width:60%;
+  margin-right:2%;
+}
+
+.nested input::placeholder {
+  color:#9f9f9f;
+}
+
+.rights {
+  border-top:1px solid #D4D4D4;
+}
+
+.rights p {
+  margin:4% 0;
+  color:black;
 }

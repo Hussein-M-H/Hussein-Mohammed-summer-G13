@@ -3,14 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home</title>
+  <title>Single product</title>
   <link rel="icon" href="images/Meubel House_Logos-05.png">
   <link rel="stylesheet" href="CSS/all.min.css">
+  <link rel="stylesheet" href="CSS/single product.css">
   <link rel="stylesheet" href="CSS/home.css">
 </head>
 <body>
 
   <header id="home">
+    
     <nav>
       
       <div class="LOGO">
@@ -65,49 +67,175 @@
       <div class="cleared"></div>
     </nav>
 
-    <section id="banner">
-      <aside>
-        <span id="cap">New Arrival</span>
-        <h2>Discover Our New Collection</h2>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores perspiciatis aut suscipit nihil nostrum animi!
-        </p>
-        <button id="buy-btn">BUY NOW</button>
-      </aside>
-      <div class="cleared"></div>
-    </section>
+    <div class="container">
+      <div class="path">
+        <a href="Home.html">Home</a>
+        <i class="fa-solid fa-chevron-right" id="arrow-chevron"></i>
+        <a href="">Shop</a>
+        <i class="fa-solid fa-chevron-right" id="arrow-chevron"></i>
+      </div>
+      <h2>Asgaard sofa</h2>
+    </div>
+
   </header>
 
-  <section id="category">
-    <div class="container">
-      <h2>Browse the Range</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing jax.</p>
-      <div class="cards-box">
-        
-        <div class="card">
-          <img src="images/img1-1.png">
-          <span class="img-cap">Dining</span>
-        </div>
-        
-        <div class="card" style="margin:0 0.5%;">
-          <img src="images/img1-2.png">
-          <span class="img-cap">Living</span>
-        </div>
+  <section id="Asgaard-sofa">
+    <div class="product-display">
+      <div class="img-display-box">
+        <img src="images/img4-1.png">
+      </div>
 
-        <div class="card">
-          <img src="images/img1-3.png">
-          <span class="img-cap">Dining</span>
-        </div>
+      <div class="img-display-box">
+        <img src="images/img4-2.png">
+      </div>
 
-        <div class="cleared"></div>
+      <div class="img-display-box">
+        <img src="images/img4-3.png">
+      </div>
+
+      <div class="img-display-box">
+        <img src="images/img4-4.png">
       </div>
     </div>
+    
+    <div class="product-img">
+      <img src="images/img4-5.png">
+    </div>
+    
+    <div class="product-info">
+      <h2>Asgaard sofa</h2>
+      <p class="product-price">Rs. 250,000.00</p>
+      <div class="product-assessment">
+        <div class="stars">
+          <i class="fa-solid fa-star gold"></i>
+          <i class="fa-solid fa-star gold"></i>
+          <i class="fa-solid fa-star gold"></i>
+          <i class="fa-solid fa-star gold"></i>
+          <i class="fa-solid fa-star gold"></i>
+        </div><!--
+      --><p>5 Customer review</p>
+      </div>
+
+      <p>
+        Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.
+      </p>
+      <form action="" autocomplete="off" id="product-form">
+        
+        <div class="input-box">
+          
+          <label class="label-name">
+            Size
+          </label>
+          
+          <label class="in">
+            <input type="radio" name="productSize" value="L">
+            <span class="size-op">L</span>
+          </label><!--
+          
+        --><label class="in">
+            <input type="radio" name="productSize" value="XL">
+            <span class="size-op">XL</span>
+          </label><!--
+            
+        --><label class="in">
+            <input type="radio" name="productSize" value="XS">
+            <span class="size-op">XS</span>
+          </label>
+        
+        </div>
+      
+        <div class="input-box">
+          
+          <label class="label-name">
+            Color
+          </label>
+          
+          <label class="in">
+            <input type="radio" name="productColor" value="purple">
+            <span class="color-op purple"></span>
+          </label><!--
+          
+        --><label class="in">
+            <input type="radio" name="productColor" value="black">
+            <span class="color-op black"></span>
+          </label><!--
+            
+        --><label class="in">
+            <input type="radio" name="productColor" value="goldenrod">
+            <span class="color-op goldenrod"></span>
+          </label>
+          
+        </div>
+      
+        <div class="product-select"><!--
+        --><input type="number" name="numberOfPieces" value="1"><!--
+        --><button>Add to cart</button><!--
+        --><button type="button">+ Compare</button><!--
+      --></div>
+      
+      </form>
+      
+      <div class="product-links">
+        <dl>
+
+          <div class="term">
+            <dt>SKU</dt>
+            <dd>: SS001</dd>
+            <div class="cleared"></div>
+          </div>
+          
+          <div class="term">
+            <dt>Category</dt>
+            <dd>: Sofas</dd>
+            <div class="cleared"></div>
+          </div>
+          
+          <div class="term">
+            <dt>Tags</dt>
+            <dd>: Sofas, Chair, Home, Shop</dd>
+            <div class="cleared"></div>
+          </div>
+          
+          <div class="term">
+            <dt>Share</dt>
+            <dd>: <img src="images/facebook.png" class="app-logo"><img src="images/linkedin.jpeg" class="app-logo"><img src="images/twitter.jpeg" class="app-logo"></dd>
+            <div class="cleared"></div>
+          </div>
+        </dl>
+      </div>
+    </div>
+
+    <div class="cleared"></div>
+
+  </section>
+
+  <section id="description">
+    <div class="container">
+      <div class="desc-heading">
+        <h2>Description</h2>
+        <p>Additional Information</p>
+        <p id="reviews">Reviews [5]</p>
+      </div>
+      <div class="ps">
+        <p>Embodying the raw, wayward spirit of rock ‘n’ roll, the Kilburn portable active stereo speaker takes the unmistakable look and sound of Marshall, unplugs the chords, and takes the show on the road.</p>
+        <p>Weighing in under 7 pounds, the Kilburn is a lightweight piece of vintage styled engineering. Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound that is both articulate and pronounced. The analogue knobs allow you to fine tune the controls to your personal preferences while the guitar-influenced leather strap enables easy and stylish travel.</p>
+      </div>
+    </div>
+
+    <div class="images"><!--
+      --><div class="img-box"><!--
+      --><img src="images/img5-1.png">
+      </div><!--
+    --><div class="img-box">
+      <img src="images/img5-2.png">
+       </div><!--
+    --></div>
   </section>
 
   <section id="products">
     <div class="container">
 
-      <h2>Our Products</h2>
+      <h2>Related Products</h2>
       <div class="cards-row">
         
         <div class="card" style="margin-left:0.5%">
@@ -267,224 +395,10 @@
         <div class="cleared"></div>
 
       </div>
-      <div class="cards-row">
-
-        <div class="card" style="margin-left:0.5%">
-          <img src="images/img2-5.png">
-          <div class="card-info">
-            <h3>Grifo</h3>
-              <p class="img-cap">Night Lamp</p>
-              <p class="price">Rp 1.500.000</p>
-          </div>
-            
-          <div class="overlay">
-            <button class="add-to-cart-btn"> Add to cart</button>
-            <ul class="icons-bar">
-              
-              <li>
-                <a>
-                  <i class="fa-solid fa-share-nodes"></i>
-                  Share
-                </a>
-              </li>
-              
-              <li>
-                <a>
-                  <i class="fa-solid fa-left-right"></i>
-                  Compare
-                </a>
-              </li>
-              
-              <li>
-                <a>
-                  <i class="fa-solid fa-heart"></i>
-                  Like
-                </a>
-              </li>
-            </ul>
-          </div>
-            
-        </div>
-        
-        <div class="card">
-          <img src="images/img2-6.png">
-          <div class="card-info">
-            <h3>Muggo</h3>
-            <p class="img-cap">Small mug</p>
-            <p class="price">Rp 150.000</p>
-          </div>
-          
-          <span class="product-status new">New</span>
-          
-          <div class="overlay">
-            <button class="add-to-cart-btn"> Add to cart</button>
-            <ul class="icons-bar">
-              
-              <li>
-                <a>
-                  <i class="fa-solid fa-share-nodes"></i>
-                  Share
-                </a>
-              </li>
-              
-              <li>
-                <a>
-                  <i class="fa-solid fa-left-right"></i>
-                  Compare
-                </a>
-              </li>
-              
-              <li>
-                <a>
-                  <i class="fa-solid fa-heart"></i>
-                  Like
-                </a>
-              </li>
-            </ul>
-          </div>
-          
-        </div>
-        
-        <div class="card">
-          <img src="images/img2-7.png">
-          <div class="card-info">
-            <h3>Pingky</h3>
-            <p class="img-cap">Cute bed set</p>
-            <p class="price">Rp 7.000.000 <del class="prev-price">Rp 14.000.000</del></p>
-          </div>
-          
-          <span class="product-status offer">-50%</span>
-          
-          <div class="overlay">
-            <button class="add-to-cart-btn"> Add to cart</button>
-            <ul class="icons-bar">
-              
-              <li>
-                <a>
-                  <i class="fa-solid fa-share-nodes"></i>
-                  Share
-                </a>
-              </li>
-              
-              <li>
-                <a>
-                  <i class="fa-solid fa-left-right"></i>
-                  Compare
-                </a>
-              </li>
-              
-              <li>
-                <a>
-                  <i class="fa-solid fa-heart"></i>
-                  Like
-                </a>
-              </li>
-            </ul>
-          </div>
-          
-        </div>
-        
-        <div class="card" style="margin-right:0.5%">
-          <img src="images/img2-8.png">
-          <div class="card-info">
-            <h3>Potty</h3>
-            <p class="img-cap">Minimalist flower pot</p>
-            <p class="price">Rp 500.000</p>
-          </div>
-          
-          <span class="product-status new">New</span>
-          
-          <div class="overlay">
-            <button class="add-to-cart-btn"> Add to cart</button>
-            <ul class="icons-bar">
-              
-              <li>
-                <a>
-                  <i class="fa-solid fa-share-nodes"></i>
-                  Share
-                </a>
-              </li>
-              
-              <li>
-                <a>
-                  <i class="fa-solid fa-left-right"></i>
-                  Compare
-                </a>
-              </li>
-              
-              <li>
-                <a>
-                  <i class="fa-solid fa-heart"></i>
-                  Like
-                </a>
-              </li>
-            </ul>
-          </div>
-          
-        </div>
-        
-        <div class="cleared"></div>
-        
-      </div>
-
-      <button id="show-more-btn">Show More</button>
-
-    </div>
-  </section>
-
-  <section id="rooms">
-    <div id="rooms-info">
-      <h2>
-        50+ Beautiful rooms inspiration
-      </h2>
-      <p>
-        Our designer already a lot of beautiful prototype of rooms that inspire you
-      </p>
-      <button id="explore-btn">Explore More</button>
-    </div>
-
-    <div class="cards-box">
-      <div id="second-room">
-        <img src="images/img3-2.png">
-        
-        <a href=""><i class="fa-solid fa-chevron-right" id="arrow-chevron"></i></a>
-        
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <div class="cleared"></div>
-        </ul>
-      </div>
       
-      <div class="card">
-        <img src="images/img3-1.png">
-        
-        <div class="overlay">
-          
-          <div id="room-info">
-            <span id="room-def">01 <hr id="small-dash"> Bed room</span>
-            <h3>Inner peace</h3>
-          </div><!-- 
-          
-      --><a href=""><i class="fa-solid fa-arrow-right" id="arrow"></i></a>
-       
-        </div>
-        
-        <div class="cleared"></div>
-      
-      </div>
-      
-      <div class="cleared"></div>
+      <button id="show-more-btn" style=" margin-bottom:7%;">Show More</button>
     
     </div>
-    <div class="cleared"></div>
-  </section>
-
-
-  <section id="share">
-    <img src="images/Share.png">
   </section>
 
   <footer>
@@ -551,6 +465,5 @@
       </div>
     </div>
   </footer>
-
 </body>
 </html>
