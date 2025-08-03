@@ -1,0 +1,100 @@
+/* Reset style */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul{
+    list-style: none;
+}
+
+/* global style */
+.container{
+    width: 80%;
+    margin: auto;
+}
+.w-100{
+    width: 100%;
+}
+
+.bg-light{
+    background-color: rgb(235, 235, 235);
+}
+.bg-dark{
+    background-color: black !important;
+}
+.text-white{
+    color: white;
+}
+.padding-top-bottom{
+    padding: 3% 0%;
+}
+
+.d-flex{
+    display: flex;
+}
+.justify-content-between{
+    justify-content: space-between;
+}
+.align-items-center{
+        align-items: center;
+}
+
+
+
+
+/* custom style */
+nav h1{
+    font-size: 40px;
+}
+nav ul {
+    width: 40%;
+}
+
+/* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+
+.flex-box{
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-start (default) , flex-end , center , space-between , space-around , space-evenly */
+    justify-content: space-between;
+    /* flex-start , flex-end , center , stretch(default) */
+    align-items : center;
+    /* row (default) , row-reverse , column , column-reverse */
+    flex-direction: row;
+    /* flex-start , flex-end , center , space-between , space-around , space-evenly */
+    align-content: space-evenly;
+    background: #c8bdad;
+    row-gap: 28px;
+    /* column-gap:20px; */
+    /* height: 656px;*/
+    /* flex-flow : flex-driection + flex-wrap */
+    flex-flow: row wrap;
+    
+}
+/* for parent ==> display:flex ==> justify-content , align-items , align-content , flex-direction , flex-wrap , row-gap , column-gap  */
+
+/* for children ==> order , align-self */
+.card{
+    width: 28%;
+    padding: 1%;
+    background-color: white;
+    box-shadow: 0px 0px 5px 3px #cccccc;
+}
+.custom-card{
+    background-color: wheat;
+    border-radius: 10px;
+    width: 40%;
+    /* height: 200px; */
+}
+
+
+/* .custom-img{
+    background-image: url(../images/sofa.png);
+    background-size: 100% 100%;
+    height: 100%;
+} */
