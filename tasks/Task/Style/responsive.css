@@ -1,0 +1,131 @@
+@media (max-width: 500px) {
+
+  .w-15 , .w-40{
+    width:50%;
+  }
+  .w-50 {
+    width:96%;
+  }
+
+  nav {
+    justify-content: space-between;
+  }
+
+  #shop .w-40 {
+    width:100%;
+  }
+
+  #shop .border {
+    border:none;
+  }
+
+  .container {
+    padding-left:0;
+    padding-right:0;
+    border:none !important;
+    width:100%;
+  }
+
+  #services {
+    padding-right:10px;
+    padding-left:10px;
+  }
+
+  #services .w-60, #services .w-36 {
+    width:100%;
+  }
+  
+  #services .overlay {
+    font-size:38px !important;
+  }
+
+  #services .h-100 {
+    aspect-ratio: calc(358 / 178) / 1;
+    object-position: 50% 92%;
+  }
+
+  .category-btn {
+    font-size:16px;
+  }
+
+  .margin-bottom-4 {
+    margin-bottom:14%;
+  }
+
+  .very-big-text {
+    font-size:35px;
+  }
+
+  .banner-body {
+    margin-top:20%;
+  }
+
+  #banner {
+    height:609px;
+    background-size: 193% 100%;
+  }
+
+  .d-block-media {
+    display:block;
+  }
+
+  .d-none-media {
+    display:none !important;
+  }
+
+  .flex-col-media {
+    flex-direction: column;
+    row-gap: 10px;
+  }
+
+  #shop .custom-img {
+    width:100%;
+    margin:0 auto 4%;
+  }
+
+  #aboutUs p {
+    color:gray;
+    margin-bottom:5% !important;
+  }
+
+  #aboutUs .w-50{
+    width:100%;
+  }
+
+  #ourTeam .w-24 {
+    width:48%;
+  }
+
+  #getInTouch .flex-col-media {
+    flex-direction: column-reverse;
+  }
+  #getInTouch form, #getInTouch .w-43 {
+    width:100%;
+  }
+
+  .w-100-media {
+    width:100% !important;
+  }
+
+  .main-list .li {
+    width:50;
+  }
+
+  .f-wrap-media {
+    flex-wrap: wrap;
+  }
+  /* .w-48-media .w-48{
+    width:50%;
+    column-gap:0;
+    margin-right:0;
+  } */
+
+  footer form button {
+    padding:5%;
+  } 
+
+  .font-small-media {
+    font-size:14px;
+    margin-bottom:5%;
+  }
+}

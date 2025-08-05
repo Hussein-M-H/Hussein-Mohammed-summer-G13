@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="Style/style.css">
+  <link rel="stylesheet" href="Style/responsive.css">
+</head>
+<body>
+
+  <main id="banner" class="text-white">
+
+    <nav class="d-flex w-100 align-i-c">
+       
+      <div class="w-15 d-flex align-i-c w-responsive">
+        <i class="fa-solid fa-paw"></i>
+        <h1>Paws n’ Play</h1>
+      </div>
+      
+      <ul class="d-flex justify-c-b nav-links d-none-media">
+        <li class="position-relative">
+          <a href="#shop" class="menu-list">
+            Shop
+            <i class="fa-solid fa-chevron-down"></i>
+          </a>
+          <ul class="dropdown">
+            <li>
+              <a href="">Shop 1</a>
+            </li>
+            <li>
+              <a href="">Shop 2</a>
+            </li>
+            <li>
+              <a href="">Shop 3</a>
+            </li>
+          </ul>
+        </li>
+        <li class="position-relative">
+          <a href="#services" class="menu-list">
+            Services
+            <i class="fa-solid fa-chevron-down"></i>
+          </a>
+          <ul class="dropdown">
+            <li>
+              <a href="">Service 1</a>
+            </li>
+            <li>
+              <a href="">Service 2</a>
+            </li>
+            <li>
+              <a href="">Service 3</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#aboutUs">            
+            About Us
+          </a>
+        </li>
+        <li>
+          <a href="">
+            Blog
+          </a>
+        </li>
+        <li>
+          <a href="">
+            Contact
+          </a>
+        </li>
+      </ul>
+      <button id="get-started-btn" class="w-10 d-none-media">Get Started</button>
+      <a href="">
+        <i class="fa-solid fa-bars d-block-media"></i>
+      </a>
+    </nav>
+    <div class="banner-body w-50">
+      <h2 class="very-big-text margin-bottom">
+        Pawsitively Perfect: Where Every Pet's Dream Comes True!
+      </h2>
+      <p class="margin-bottom-4">
+        Welcome to Paws n’ Play, the ultimate destination for pet lovers! Explore a world of tail-wagging joy and furry companionship with our wide range of products and services. From pampering essentials to playful toys, we're here to make every moment with your pet pawsitively perfect!"
+      </p>
+      <button id="shop-now-btn" class="w-40">Shop Now <i class="fa-solid fa-paw"></i></button>
+    </div>
+
+  </main>
+
+  <section id="shop" class="bg-white padding">
+    <div class="d-flex align-i-c justify-c-b border-bottom margin-bottom">
+      <div class="d-flex w-15 align-i-c">
+        <i class="fa-solid fa-paw"></i>
+        <h2>Shop</h2>
+      </div>
+      <i class="fa-solid fa-magnifying-glass d-block-media"></i>
+    </div>
+    <div class="container border padding-custom">
+      <div class="d-flex justify-c-b align-i-c margin-bottom">
+        <h2>Featured Products</h2>
+        <div class="d-flex bg-gray text-grey align-i-c Search d-none-media">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="Search" class="bg-gray no-border">
+        </div>
+      </div>
+      <div class="d-flex justify-c-b w-40 centered margin-bottom">
+        <button class="category-btn bg-white">Random</button>
+        <button class="category-btn bg-white">Cat</button>
+        <button class="category-btn bg-white">Dogs</button>
+        <button class="category-btn bg-white">Fish</button>
+        <button class="category-btn bg-white">Birds</button>
+      </div>
+      <div class="d-flex justify-c-b margin-bottom flex-col-media">
+        <img src="images/img1-1.png" alt="" class="custom-img">
+        <img src="images/img1-2.png" alt="" class="custom-img">
+        <img src="images/img1-3.png" alt="" class="custom-img d-none-media">
+      </div>
+      <a href="" id="viewmore" class="d-none-media">View More 
+        <i class="fa-solid fa-angle-right"></i>
+        <i class="fa-solid fa-angle-right"></i>
+        <i class="fa-solid fa-angle-right"></i>
+      </a>
+    </div>
+  </section>
+
+  <section id="services" class="bg-white padding">
+    <div class="d-flex align-i-c border-bottom margin-bottom">
+      <i class="fa-solid fa-paw"></i>
+      <h2>Services</h2>
+    </div>
+    <div class="d-flex container border padding-custom flex-col-media justify-c-e very-big-text text-white">
+      <div class="d-flex f-wrap justify-c-b w-60 row-gap">
+        <div class="overlay-hover position-relative w-49">
+          <img src="images/img2-1.png" alt="" class="w-100 d-block square-img border-radius">
+          <div class="overlay border-radius d-flex justify-c-c align-i-c">Grooming</div>
+        </div>
+        <div class="overlay-hover position-relative w-49">
+          <img src="images/img2-2.png" alt="" class="w-100 d-block square-img border-radius">
+          <div class="overlay border-radius d-flex justify-c-c align-i-c">Broading</div>
+        </div>
+        <div class="overlay-hover position-relative w-49">
+          <img src="images/img2-3.png" alt="" class="w-100 d-block square-img border-radius">
+          <div class="overlay border-radius d-flex justify-c-c align-i-c">Veterinary</div>
+        </div>
+        <div class="overlay-hover position-relative w-49">
+          <img src="images/img2-4.png" alt="" class="w-100 d-block square-img border-radius">
+          <div class="overlay border-radius d-flex justify-c-c align-i-c">Training</div>
+        </div>
+      </div>
+      <div class="overlay-hover position-relative w-36 d-flex justify-c-f-e">
+        <img src="images/img2-5.png" id="big-img" class="w-100 h-100 d-block border-radius centered" alt="">
+        <div class="overlay border-radius d-flex justify-c-c align-i-c">Adoption</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="aboutUs" class="bg-white padding">
+    <div class="d-flex align-i-c border-bottom margin-bottom">
+      <i class="fa-solid fa-paw"></i>
+      <h2>About Us</h2>
+    </div>
+    <div class="container border padding-custom d-flex text-small">
+      <div class="w-50">
+        <p class="margin-bottom">
+          At Paws n’ Play, our journey began with a simple yet profound love for animals. Inspired by the unwavering companionship and joy they bring to our lives, we embarked on a mission to create a haven where pets and their owners alike could experience unparalleled happiness and care.
+        </p>
+
+        <p class="margin-bottom">
+          Driven by our passion for animal welfare, we hand-select each product and service with meticulous attention to quality and sustainability. From nutritious food and enriching toys to expert grooming and healthcare, every offering is carefully curated to meet the unique needs of our beloved furry friends.
+        </p>
+
+        <p class="margin-bottom">
+          But our commitment doesn't end there. We're dedicated to fostering a community that celebrates the bond between pets and their human companions. Through educational resources, compassionate support, and memorable experiences, we strive to empower pet owners to provide the best possible care for their furry family members.
+        </p>
+
+        <p class="margin-bottom">
+          At Paws n’ Play, customer satisfaction isn't just a goal – it's our guiding principle. We go above and beyond to ensure every interaction leaves tails wagging and hearts smiling. From personalized recommendations to attentive service, we're here to make your journey with your pet as joyful and fulfilling as possible.
+        </p>
+
+        <p class="margin-bottom">
+          Join us in our mission to create a world where every pet is cherished, every need is met, and every tail wags with happiness. Welcome to Paws n’ Play, where pets are family, and love knows no bounds.
+        </p>
+
+      </div>
+      <div class="w-50 h-100 position-relative d-none-media d-flex justify-c-f-e">
+        <img src="images/img3-1.png" alt="" id="big-cat">
+        <img src="images/img3-2.png" alt="" id="small-cat">
+      </div>
+    </div>
+  </section>
+
+ <section id="ourTeam" class="bg-white padding">
+    <div class="d-flex align-i-c border-bottom margin-bottom">
+      <i class="fa-solid fa-paw"></i>
+      <h2>About Us</h2>
+    </div>
+    <div class="container padding-custom d-flex f-wrap justify-c-b text-small">
+      
+      <div class="w-24 small-padding">
+        <img src="images/img4-1.png" alt="" class="w-100 margin-bottom custom-img">
+        <h3 class="margin-bottom">DR. Olivia Rhye</h3>
+        <span class="text-grey d-block margin-bottom">Senior Veterinarian</span>
+        <div class="d-flex text-grey">
+          <a href="">
+            <i class="fa-solid fa-basketball"></i>
+          </a>
+          <a href="">
+            <i class="fa-solid fa-basketball"></i>
+          </a>
+          <a href="">
+            <i class="fa-solid fa-basketball"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="w-24 small-padding">
+        <img src="images/img4-2.png" alt="" class="w-100 margin-bottom custom-img">
+        <h3 class="margin-bottom">Phoenix Baker</h3>
+        <span class="text-grey d-block margin-bottom">Asst. Veterinarian</span>
+        <div class="d-flex text-grey">
+          <a href="">
+            <i class="fa-solid fa-basketball"></i>
+          </a>
+          <a href="">
+            <i class="fa-solid fa-basketball"></i>
+          </a>
+          <a href="">
+            <i class="fa-solid fa-basketball"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="w-24 small-padding">
+        <img src="images/img4-3.png" alt="" class="w-100 margin-bottom custom-img">
+        <h3 class="margin-bottom">Lana Steiner</h3>
+        <span class="text-grey d-block margin-bottom">Resident Veterinarian</span>
+        <div class="d-flex text-grey">
+          <a href="">
+            <i class="fa-solid fa-basketball"></i>
+          </a>
+          <a href="">
+            <i class="fa-solid fa-basketball"></i>
+          </a>
+          <a href="">
+            <i class="fa-solid fa-basketball"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="w-24 small-padding">
+        <img src="images/img4-4.png" alt="" class="w-100 margin-bottom custom-img">
+        <h3 class="margin-bottom">Demi Wilkinson</h3>
+        <span class="text-grey d-block margin-bottom">Intern Veterinarian</span>
+        <div class="d-flex text-grey">
+          <a href="">
+            <i class="fa-solid fa-basketball"></i>
+          </a>
+          <a href="">
+            <i class="fa-solid fa-basketball"></i>
+          </a>
+          <a href="">
+            <i class="fa-solid fa-basketball"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="blog" class="bg-white padding d-none-media">
+    <div class="d-flex align-i-c border-bottom margin-bottom">
+      <i class="fa-solid fa-paw"></i>
+      <h2>Blog</h2>
+    </div>
+
+    <div class="d-flex w-100 justify-c-b">
+
+      <div class="w-48">
+        <h2 class="margin-bottom">Blog</h2>
+        <hr class="margin-bottom w-90 light-hr">
+        <p class="margin-bottom">
+          Eget quis mi enim, leo lacinia pharetra, semper. Eget in <span class="underline">volutpat mollis</span>
+          at volutpat lectus velit, sed auctor. Porttitor fames arcu quis fusce augue enim. Quis at habitant diam
+          at. Suscipit <span class="underline">tristique risus,</span> at donec. In turpis vel et quam imperdiet.
+          Ipsum molestie aliquet sodales id est ac volutpat. Eget quis mi enim, leo lacinia pharetra, semper.
+          Eget in <span class="underline">volutpat mollis</span> at volutpat lectus velit, sed auctor. Porttitor
+          fames arcu quis fusce augue enim. Quis at habitant diam at. Suscipit <span class="underline">tristique risus,</span>
+          at donec. In turpis vel et quam imperdiet. Ipsum molestie aliquet sodales id est ac volutpat. 
+        </p>
+        <h3 class="margin-bottom">Renewed target</h3>
+        <p>
+          Pharetra morbi libero id aliquam elit massa integer tellus. Quis felis aliquam ullamcorper porttitor. Pulvinar ullamcorper sit dictumst ut eget a, elementum eu. Maecenas est morbi mattis id in ac.
+        </p>
+      </div>
+
+      <div class="w-48 position-relative">
+        <img src="images/img5.png" alt="" class="w-100 h-100">
+        <i class="fa-solid fa-play d-flex justify-c-c align-i-c" id="play-icon"></i>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="getInTouch" class="bg-black padding border-bottom">
+    <div class="d-flex align-i-c border-bottom margin-bottom text-white">
+      <i class="fa-solid fa-paw"></i>
+      <h2>Get In Touch</h2>
+    </div>
+    <div class="container d-flex justify-c-b  align-i-c flex-col-media">
+      <form action="" class="w-48 padding bg-white border-radius text-grey" autocomplete="off">
+        
+        <div class="d-flex f-wrap justify-c-b">
+
+          <div class="w-48 margin-bottom">
+            <label for="firstName">First name</label>
+            <input type="text" id="firstName" name="userFirstName" placeholder="First name" class="w-100">
+          </div>
+          <div class="w-48 margin-bottom">
+            <label for="lastName">First name</label>
+            <input type="text" id="lastName" name="userLastName" placeholder="Last name" class="w-100">
+          </div>
+
+          <div class="w-100 margin-bottom">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="userEmail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" value="you@company.com" class="w-100">
+          </div>
+
+          <div class="w-100 margin-bottom">
+            <label for="message">Message</label>
+            <input type="text" id="message" name="Massage"class="big-input">
+          </div>
+
+          <div class="w-100 margin-bottom d-flex align-i-c">
+            <input type="checkbox" name="userAgreement" value="true" class="small-check">
+            <span class="text-small">You agree to our friendly <u>privacy policy.</u></span>
+          </div>
+
+          <button id="send">Send message</button>
+        </div>
+
+      </form>
+
+      <div class="w-48-media d-flex w-43 f-wrap text-white justify-c-b col-gap big-row-gap text-small">
+        <div class="w-48 d-flex f-direction-col row-gap">
+          <i class="fa-solid fa-envelope"></i>
+          <h3>Email</h3>
+          <p class="text-grey">Our friendly team is here to help.</p>
+          <a href="">hello@pawsnplay.com</a>
+        </div>
+
+        <div class="w-48 d-flex f-direction-col row-gap">
+          <i class="fa-solid fa-comment"></i>
+          <h3>Live chat</h3>
+          <p class="text-grey">Our friendly team is here to help.</p>
+          <a href="">Start new chat</a>
+        </div>
+
+        <div class="w-48 d-flex f-direction-col row-gap">
+          <i class="fa-solid fa-location-dot"></i>
+          <h3>Office</h3>
+          <p class="text-grey">Come say hello at our office HQ.</p>
+          <a href="">123, Yaya Abatan st, Ogba Lagos.</a>
+        </div>
+
+        <div class="w-48 d-flex f-direction-col row-gap">
+          <i class="fa-solid fa-phone"></i>
+          <h3>Phone</h3>
+          <p class="text-grey">Mon-Fri from 8am to 5pm.</p>
+          <a href="">+234 901234 384</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <footer class="bg-black text-white">
+    <div class="container d-flex justify-c-b f-wrap">
+      <div class="d-flex w-100 justify-c-b flex-col-media" style="margin-bottom:10%;">
+
+        <div class="d-none-media">
+          <h3>join our newsletter</h3>
+          <p>Be the first to receive latest updates on promo, sales and offers</p>
+        </div>
+
+        <form action="" autocomplete="off" class="d-flex justify-c-e w-100-media flex-col-media">
+          <input type="email" placeholder="Enter your email" class="in-email w-100-media">
+          <button id="subscribe-btn" class="w-100-media">Subscribe</button>
+        </form>
+      </div>
+
+
+      <div class="d-flex border-bottom padding-top-down f-wrap-media w-100 footer-2">
+
+        <div class="w-30 w-100-media margin-bottom">
+          <div class="d-flex align-i-c" style="margin-bottom:6%;">
+            <i class="fa-solid fa-paw"></i>
+            <h2 >Paws n'Play</h2>
+          </div>
+          <p style="font-size:12px;">Where wagging tails and purring hearts reign supreme!</p>
+        </div>
+        
+        <ul class="main-list d-flex justify-c-e w-100-media f-wrap-media">
+          <li>
+            <span class="d-inline-block-margin-bottom">Shop</span>
+            <ul class="nested">
+              <li>
+                Pet Adoption
+              </li>
+
+              <li>
+                Nutrition
+              </li>
+              
+              <li>
+                Pet Care
+              </li>
+
+              <li>
+                Pet Food
+              </li>
+              
+              <li>
+                Pricing
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <span class="d-inline-block-margin-bottom">Company</span>
+            <ul class="nested">
+              <li>
+                <a href="">About Us</a>
+              </li>
+
+              <li>
+                <a href="">Careers</a>
+              </li>
+
+              <li>
+                <a href="">Press</a>
+              </li>
+
+              <li>
+                <a href="">News</a>
+              </li>
+
+              <li>
+                <a href="">Contact</a>
+              </li>
+            </ul>
+          </li>
+          
+          <li>
+            <span class="d-inline-block-margin-bottom">Services</span>
+
+            <ul class="nested">
+              <li>
+                <a href="">Grooming</a>
+              </li>
+
+              <li>
+                <a href="">Boarding</a>
+              </li>
+
+              <li>
+                <a href="">Training</a>
+              </li>
+
+              <li>
+                <a href="">Vetinary</a>
+              </li>
+
+              <li>
+                <a href="">Support</a>
+              </li>
+            </ul>
+          </li>
+          
+          <li>
+            <span class="d-inline-block-margin-bottom">Social</span>
+            <ul class="nested">
+              <li>
+                <a href="">Twitter</a>
+              </li>
+
+              <li>
+                <a href="">LinkedIn</a>
+              </li>
+
+              <li>
+                <a href="">Facebook</a>
+              </li>
+
+              <li>
+                <a href="">AngelList</a>
+              </li>
+
+              <li>
+                <a href="">Dribble</a>
+              </li>
+            </ul>
+          </li>
+          
+          <li>
+            <span class="d-inline-block-margin-bottom">Legal</span>
+            <ul class="nested">
+              <li>
+                <a href="">Terms</a>
+              </li>
+
+              <li>
+                <a href="">Privacy</a>
+              </li>
+
+              <li>
+                <a href="">Cookies</a>
+              </li>
+
+              <li>
+                <a href="">Licenses</a>
+              </li>
+
+              <li>
+                <a href="">Settings</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer d-flex justify-c-b align-i-c f-wrap-media">
+        <span class="d-inline-block w-100-media font-small-media">© 2024 Paws n’ Play. All rights reserved.</span>
+        <ul class="w-30 d-flex justify-c-e w-100-media">
+          <li>
+            <a href="">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i class="fa-regular fa-hand-peace"></i>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i class="fa-solid fa-basketball"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </footer>
+</body>
+</html>

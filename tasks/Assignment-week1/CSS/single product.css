@@ -295,8 +295,9 @@ dd {
   font-size:14px;
 }
 
-dd img {
-  height:10px;
+.app-logo {
+  height:15px;
+  padding-top:3px;
 }
 
 #description {
