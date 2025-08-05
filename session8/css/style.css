@@ -1,0 +1,164 @@
+/* reset style */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* global style */
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+.d-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.justify-content-between{
+    justify-content: space-between;
+}
+.w-45{
+    width: 45%;
+}
+.w-100{
+    width: 100%;
+}
+.position-relative{
+    position: relative;
+}
+
+/* custom style */
+form{
+    margin-top: 4%;
+        border: 6px solid red;
+    outline: 6px solid blue;
+    padding: 3%;
+}
+input{
+       padding: 2% 7%; 
+       border: 0;
+       border-bottom: 1px solid;
+}
+
+.icon-position-absolute{
+    position: absolute;
+    left: 1%;
+    top: 25%;
+    font-size: 19px;
+}
+
+input:focus{
+    outline: 0;
+    border-color: blue;
+}
+
+input:disabled{
+    border: 2px solid red;
+}
+input:checked{
+    width: 20px;
+    height: 20px;
+    /* background-color: red; */
+}
+
+a{
+    font-size: 30px;
+    margin-top: 3%;
+    display: inline-block;
+}
+a:link{
+    color: red;
+}
+a:visited{
+    color: green;
+}
+a:active{
+    color: lightblue;
+}
+
+.custom-div{
+    margin: 2% ;
+}
+
+.custom-div p:first-child{
+    color: red;
+}
+.custom-div p:last-child{
+    color: blue;
+}
+.custom-div p:nth-child(2){
+    color: green;
+    font-size: 20px;
+}
+table{
+    width: 100%;
+    border: 2px solid lightgray;
+    border-collapse: collapse;
+}
+
+td , th{
+     border: 2px solid lightgray;
+     padding: 1%;
+}
+th{
+    background-color: black;
+    color: white;
+}
+/* num , odd , even */
+tr:nth-child(odd) {
+    background-color: rgb(237, 237, 237);
+}
+tr:nth-child(even) {
+    background-color:lightblue;
+}
+
+tr:nth-child(odd):hover{
+    background-color: lightcoral;
+}
+
+
+/* pseudo element */
+h2{
+    line-height: 2;
+    text-shadow: 0px 0px 4px #2890c7;
+}
+h2::first-letter{
+    font-size: 30px;
+    color: blue;
+}
+
+h2::first-line{
+    color: red;
+}
+
+ul{
+    color: red;
+}
+
+::marker{
+    color: blue;
+    font-size: 20px;
+}
+::selection{
+    background-color: goldenrod;
+    color: white;
+}
+
+::placeholder{
+    color: blue;
+}
+
+
+h1::before{
+    content: "Web Design";
+    background: bisque;
+    padding: 2%;
+    display: inline-block;
+    border-right: 2px solid blue;
+}
+
+h1::after{
+    content: "\f015";
+    font-family: 'Font Awesome 7 Free';
+}
