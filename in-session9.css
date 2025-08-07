@@ -1,0 +1,53 @@
+.icon-animation {
+  display:inline-block;
+  color:black;
+  margin:auto;
+  font-size:60px;
+  animation-name: loading;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+}
+
+.centered {
+  margin-top:100px;
+  margin-right:auto;
+  margin-left:auto;
+  width:100px;
+}
+
+.bg-img {
+  background-image: url(download.jpeg);
+  height:100px;
+  background-size: 100% 110%;
+  overflow:hidden;
+}
+
+.bg-img img {
+  animation-duration:3s;
+  height:20%;
+  margin-top:30px;
+  animation-timing-function: linear;
+  animation-name: carMoving;
+  animation-iteration-count: infinite;
+}
+
+/* animation fillmode:forward search */
+
+@keyframes loading {
+
+  100% {
+    transform: rotate(360deg);
+  }
+  
+}
+
+@keyframes carMoving {
+  from { 
+    margin-left:100%;
+  }
+  to {
+    margin-left:0%;
+  }
+
+}

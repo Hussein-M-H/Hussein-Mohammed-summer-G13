@@ -57,8 +57,9 @@ h1 {
   border:1px solid black;
 }
 
-h1::before {
-  content:"\f002";
+h1::after {
+  content:"\f061";
   font-family: 'Font Awesome 7 Free';
+  color: white;
 }
 
