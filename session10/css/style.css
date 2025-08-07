@@ -5,3 +5,12 @@
     width: 10px;
     height: 10px;
 }
+
+.bg-img{
+    background-image: url(../images/LX_COM42_Living_TheReport_01.jpg);
+    background-size: 100% 100%;
+    /* height: 600px; */
+}
+.custom-img-height{
+    height: 500px;
+}
