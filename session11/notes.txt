@@ -1,0 +1,14 @@
+-- data type ==> string , number , boolean (true , false) , undefined , null , NaN
+
+-- prompt()
+
+
+--js ==> camel case , case sensitive
+
+
+-- operations ==> mathematical operations = (+ - / * ** % ++ --)
+                  Assignment operations (+= , -= , /= , *= , %=)
+                  comparison operations (< , <= , > , >= , == , === , != , !==) ==> return boolean
+                  unary operator (typeof)
+                  logical operator (&& || !)
+
