@@ -1,0 +1,1418 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" 
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" 
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Damion&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/Style.css">
+    <link rel="stylesheet" href="../CSS/responsive.css">
+  </head>
+  <body>
+
+    <nav class="container-fluid px-big py-4 tiny border-bottom">
+      <div class="w-100 row gx-0 justify-content-between align-items-center">
+        <a href="" title="Metro" class="col-auto">
+          <img src="../images/logo.png" alt="" class="logo">
+        </a>
+
+        <div class="row gx-0 justify-content-between col-5 align-items-center">
+
+          <a href="" class="d-lg-flex d-sm-none col-auto justify-content-between align-items-center">
+            <i class="fa-solid fa-phone fs-3 pe-3"></i>
+            <div class="d-flex flex-column">
+              <span>Contact us 24/7</span>
+              <span class="fw-bold">(+92) 3942 7879</span>
+            </div>
+          </a>
+
+          <div class="col-7 row gx-0 position-relative small-v-l justify-content-between align-items-center bg-secondary bg-opacity-25 py-1 px-1 rounded-2">
+            <select name="" id="" class="border-0 cursor-pointer outline-0 bg-transparent col-auto p-3 pe-0">
+              <option value="" selected>All categories</option>
+              <option value="">one</option>
+              <option value="">two</option>
+              <option value="">three</option>
+            </select>
+            <input type="text" placeholder="Search for products" name="productSearched" class="border-0 outline-0 p-3 col-4 bg-transparent">
+            <button class="border-0 outline-0 bg-dark p-2-3 rounded-3 text-white col-auto"><i class="fa-solid fa-magnifying-glass fs-5"></i></button>
+          </div>
+
+        </div>
+
+        <div class="d-flex col-3 align-items-center justify-content-between">
+          <div class="row g-0 col-5 justify-content-between">
+            
+            <div class="position-relative col-auto">
+
+              <a href="" class="row g-0 justify-content-between align-items-center dropdown-on-hover dropdown-link">
+                <img src="https://merto-be87.kxcdn.com/merto/wp-content/plugins/themesky-demo/images/flags/english.png" class="flag-img" alt="">
+                <span class="col-auto">English</span>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="" class="align-items-center">
+                    <img src="https://merto-be87.kxcdn.com/merto/wp-content/plugins/themesky-demo/images/flags/espanol.png" class="flag-img" alt="">
+                    <span class="col-auto">Español</span> 
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="align-items-center">
+                    <img src="https://merto-be87.kxcdn.com/merto/wp-content/plugins/themesky-demo/images/flags/francais.png" class="flag-img" alt="">
+                    <span class="col-auto">Fransaic</span> 
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="align-items-center">
+                    <img src="https://merto-be87.kxcdn.com/merto/wp-content/plugins/themesky-demo/images/flags/portugues.png" class="flag-img" alt="">
+                    <span class="col-auto">Portuguese</span> 
+                  </a>
+                </li>
+              </ul>
+
+            </div>
+
+            <div class="position-relative col-auto">
+
+              <a href="" class="d-flex justify-content-between dropdown-on-hover dropdown-link">
+                USD
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="" class="d-flex ms-2 dropdown-on-hover">
+                    EUR
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="d-flex ms-2 dropdown-on-hover">
+                    BRL
+                  </a>
+                </li>
+              </ul>
+
+            </div>
+
+          </div>
+
+          <a class="col-3 d-flex align-items-center cursor-pointer justify-content-between">
+            <i class="fa-regular fa-user fs-5"></i>
+            <span class="fw-bold">Account</span>
+          </a>
+
+          <a href="" class="position-relative">
+            <i class="fa-regular fa-heart fs-5">
+              <span class="position-absolute p-1 top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                0
+              </span>
+            </i>
+          </a>
+
+          <a href="" class=" position-relative">
+            <i class="fa-solid fa-cart-shopping fs-5">
+              <span class="position-absolute p-1 top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                0
+              </span>
+            </i>
+          </a>
+          
+        </div>
+
+      </div>
+    </nav>
+
+    <header class="container-fluid px-big tiny border-bottom">
+      
+      <div class="row g-0 justify-content-between align-items-center">
+        
+        <a class="p-3 ps-0 col-auto border-end">
+          <i class="fa-solid fa-bars"></i>
+          <span class="fw-bold cursor-pointer">SHOP BY CATEGORIES</span>
+        </a>
+
+        <div class="row col-10 g-0 py-3 justify-content-between">
+          
+          <div class="position-relative col-1">
+  
+            <a href="" class="d-flex justify-content-between dropdown-on-hover text-danger dropdown-link py-1">
+              Homepages
+            </a>
+            <ul class="dropdown-menu">
+            </ul>
+  
+          </div>
+  
+          <div class="position-relative col-1">
+  
+            <a href="" class="py-1 d-flex justify-content-between dropdown-on-hover dropdown-link">
+              Categories
+            </a>
+            <ul class="dropdown-menu">
+            </ul>
+  
+          </div>
+  
+          <div class="position-relative col-auto">
+  
+            <a href="" class="d-flex py-1 justify-content-between dropdown-on-hover dropdown-link">
+              Products
+            </a>
+            <ul class="dropdown-menu">
+            </ul>
+  
+          </div>
+  
+          <div class="position-relative col-auto">
+  
+            <a href="" class="py-1 d-flex justify-content-between dropdown-on-hover dropdown-link">
+              Pages
+            </a>
+            <ul class="dropdown-menu">
+            </ul>
+  
+          </div>
+  
+          <a class="col-auto py-1">
+            <span class="cursor-pointer">About Us</span>
+          </a>
+  
+          <a class="col-auto py-1">
+            <span class="cursor-pointer">Blog</span>
+          </a>
+          
+          <a class="col-auto py-1">
+            <i class="fa-solid fa-percent pe-1"></i>
+            <span class="cursor-pointer">Best Discount</span>
+          </a>
+  
+          <div class="position-relative col-3 py-1 justify-content-end">
+  
+            <a href="" class="d-flex justify-content-end dropdown-on-hover dropdown-link">
+              Recently viewed
+            </a>
+            <ul class="dropdown-menu">
+            </ul>
+  
+          </div>
+
+        </div>
+        
+      </div>
+
+    </header>
+
+    <div class="container-fluid px-0">
+      <div class="row g-0">
+
+        <div class="col-8">
+
+          <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active rounded-circle border" style="width:8px; height:8px;" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" class="active rounded-circle border" style="width:8px; height:8px;" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" class="active rounded-circle border" style="width:8px; height:8px;" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/09/slide3-demo1.png" class="slider-img" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>First slide label</h5>
+                  <p>Some representative placeholder content for the first slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/09/slide1-demo1.jpg" class="slider-img" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Second slide label</h5>
+                  <p>Some representative placeholder content for the second slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/09/slide2-demo1.jpg" class="slider-img" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <p>Some representative placeholder content for the third slide.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-4 d-flex flex-column">
+          <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/09/banner1-mobile-demo1.jpg" alt="" class="aside-img">
+          <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/09/banner2-demo1.jpg" alt="" class="aside-img">
+        </div>  
+
+      </div>
+    </div>
+
+    <div class="container-fluid mt-5 px-big">
+      
+      <div class="row g-0 mx-auto justify-content-between">
+
+        <div class="col-auto icon-on-hover d-flex border-end pe-big align-items-center">
+          <i class="fa-solid fa-truck-fast fs-1 me-3"></i>
+          <div class="d-flex flex-column">
+            <span class="fw-medium">Fast, Free Shipping</span>
+            <span class="tiny text-black-50">on order over 50$</span>
+          </div>
+        </div>
+
+        <div class="col-auto icon-on-hover d-flex border-end pe-big align-items-center">
+          <i class="fa-solid fa-clock fs-1 me-3"></i>
+          <div class="d-flex flex-column">
+            <span class="fw-medium">Next Day Delivary</span>
+            <span class="tiny text-black-50">Free- spend over 99$</span>
+          </div>
+        </div>
+
+        <div class="col-auto icon-on-hover d-flex border-end pe-big align-items-center">
+          <i class="fa-solid fa-percent fs-1 me-3"></i>
+          <div class="d-flex flex-column">
+            <span class="fw-medium">Low Price Guarantee</span>
+            <span class="tiny text-black-50">We offer competitive prices</span>
+          </div>
+        </div>
+
+        <div class="col-auto icon-on-hover d-flex align-items-center">
+          <i class="fa-regular fa-thumbs-up fs-1 me-3"></i>
+          <div class="d-flex flex-column">
+            <span class="fw-medium">Quality Guarantee</span>
+            <span class="tiny text-black-50">We Guarantee Our Products</span>
+          </div>
+        </div>
+
+      </div>
+    
+    </div>
+
+    <div class="container-fluid my-big px-big">
+      <div class="row justify-content-between">
+        
+        <a class="card-1 d-flex border-0 col-auto cursor-pointer flex-column">
+          <div class="position-relative">
+            <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/04/cat-1.jpg" alt="">
+            <i class="fa-solid fa-arrow-right position-absolute"></i>
+          </div>
+          <span class="fw-medium text-center mt-2 tiny">Smartphone</span>
+        </a>
+
+        <a class="card-1 d-flex border-0 col-auto cursor-pointer flex-column">
+          <div class="position-relative">
+            <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/04/cat-2.jpg" alt="">
+            <i class="fa-solid fa-arrow-right position-absolute"></i>
+          </div>
+          <span class="fw-medium text-center mt-2 cursor-pointer tiny">Home & Decor</span>
+        </a>
+
+        <a class="card-1 d-flex border-0 col-auto cursor-pointer flex-column">
+          <div class="position-relative">
+            <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/09/cosmetic-cat-7.jpg" alt="">
+            <i class="fa-solid fa-arrow-right position-absolute"></i>
+          </div>
+          <span class="fw-medium text-center mt-2 cursor-pointer tiny">Makeup</span>
+        </a>
+
+        <a class="card-1 d-flex border-0 col-auto cursor-pointer flex-column">
+          <div class="position-relative">
+            <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/04/cat-4.jpg" alt="">
+            <i class="fa-solid fa-arrow-right position-absolute"></i>
+          </div>
+          <span class="fw-medium text-center mt-2 cursor-pointer tiny">Autopart</span>
+        </a>
+
+        <a class="card-1 d-flex border-0 col-auto cursor-pointer flex-column">
+          <div class="position-relative">
+            <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/04/cat-5.jpg" alt="">
+            <i class="fa-solid fa-arrow-right position-absolute"></i>
+          </div>
+          <span class="fw-medium text-center mt-2 cursor-pointer tiny">Laptop & Computer</span>
+        </a>
+
+        <a class="card-1 d-flex border-0 col-auto cursor-pointer flex-column">
+          <div class="position-relative">
+            <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/04/cat-6.jpg" alt="">
+            <i class="fa-solid fa-arrow-right position-absolute"></i>
+          </div>
+          <span class="fw-medium text-center mt-2 cursor-pointer tiny">Fashion</span>
+        </a>
+
+        <a class="card-1 d-flex border-0 col-auto cursor-pointer flex-column">
+          <div class="position-relative">
+            <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/04/cat-7.jpg" alt="">
+            <i class="fa-solid fa-arrow-right position-absolute"></i>
+          </div>
+          <span class="fw-medium text-center mt-2 cursor-pointer tiny">Headphones</span>
+        </a>
+
+        <a class="card-1 d-flex border-0 col-auto cursor-pointer flex-column">
+          <div class="position-relative">
+            <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/04/cat-8.jpg" alt="">
+            <i class="fa-solid fa-arrow-right position-absolute"></i>
+          </div>
+          <span class="fw-medium text-center mt-2 cursor-pointer tiny">HandBags</span>
+        </a>
+
+      </div>
+    </div>
+
+    <div class="container mb-big">
+      <div class="row mx-auto border border-dark rounded-2">
+        <div class="col-12 text-center py-2">
+          Super discount for your <span class="fw-medium">first purchase</span>
+          <a href="" class="text-danger d-inline-block col-auto fw-medium" id="coupon-link">COUPON25</a>
+          <span class="tiny">Use discount code in the checkout!</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid px-big mb-big">
+      
+      <div class="row mb-5">
+        <div class="col-12 justify-content-between d-flex row">
+          
+          <h2 class="col-auto">Flash Deals</h2>
+          <div class="col-auto d-flex align-items-center position-relative after-right-custom small-v-l justify-content-between">
+            <div class="pe-5 me-4">
+              <span class="text-black-50">Ends in</span> 
+              <span class="fs-5 fw-bold text-white bg-black rounded-circle p-1 mx-1">00</span> : 
+              <span class="fs-5 fw-bold text-white bg-black rounded-circle p-1 mx-1">00</span> :
+              <span class="fs-5 fw-bold text-white bg-black rounded-circle p-1 mx-1">00</span>
+            </div>
+
+            <a href="" class="underline-animation tiny">See All Products</a>
+          </div>
+
+        </div>
+      </div>
+
+      <table class="w-100">
+        <tr class="row g-0">
+          <td class="w-20">
+            <div class="card-2 rounded-1 p-3">
+    
+              <div class="position-relative">
+                <img src="https://demothemesky-be87.kxcdn.com/merto/wp-content/uploads/2024/05/electronic-30-6-700x700.jpg"
+                 alt="" class="d-block">
+                <span class="position-absolute top-0 start-0 badge rounded-2 bg-danger">
+                  -35%
+                </span>
+                <ul class="position-absolute">
+                  <li>
+                    <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Whishlist">
+                      <i class="fa-regular fa-heart tiny"></i>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Compare">
+                      <i class="fa-solid fa-arrow-right-arrow-left tiny"></i>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Quick View">
+                      <i class="fa-solid fa-magnifying-glass tiny"></i>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Add to cart">
+                      <i class="fa-solid fa-cart-shopping tiny"></i>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+              
+              <div class="card-2-body d-flex flex-column">
+                <a href="" class="tiny">Laptop Asus Vivobook 15 1355U, 8GB RAM, 512GB SSD</a>
+                <div>
+                  <span class="fs-5">$999</span>
+                  <del class="text-black-50 tiny">$1536</del>
+                </div>
+                <span class="tiny mt-1">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+              </div>
+    
+            </div>
+          </td>
+
+          <td class="w-20 border">
+            <div class="card-2 rounded-1 p-3">
+    
+              <div class="position-relative">
+                <img src="https://demothemesky-be87.kxcdn.com/merto/wp-content/uploads/2024/05/electronic-14-2-700x700.jpg"
+                 alt="" class="d-block">
+                <span class="position-absolute top-0 start-0 badge rounded-2 bg-danger">
+                  -6%
+                </span>
+                <ul class="position-absolute">
+                  <li>
+                    <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Whishlist">
+                      <i class="fa-regular fa-heart tiny"></i>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Compare">
+                      <i class="fa-solid fa-arrow-right-arrow-left tiny"></i>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Quick View">
+                      <i class="fa-solid fa-magnifying-glass tiny"></i>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Add to cart">
+                      <i class="fa-solid fa-cart-shopping tiny"></i>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+              
+              <div class="card-2-body d-flex flex-column">
+                <a href="" class="tiny">Apple Watch Series 9GPS 45mm, Aluminum Case with...</a>
+                <div>
+                  <span class="fs-5">$890</span>
+                  <del class="text-black-50 tiny">$950</del>
+                </div>
+                <span class="tiny mt-1">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+              </div>
+    
+            </div>
+          </td>
+
+          <td class="w-20 border">
+            <div class="card-2 rounded-1 p-3">
+    
+              <div class="position-relative">
+                <img src="https://demothemesky-be87.kxcdn.com/merto/wp-content/uploads/2024/05/automotive-11-500x500.jpg"
+                 alt="" class="d-block">
+                <span class="position-absolute top-0 start-0 badge rounded-2 bg-danger">
+                  -8%
+                </span>
+                <ul class="position-absolute">
+                  <li>
+                    <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Whishlist">
+                      <i class="fa-regular fa-heart tiny"></i>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Compare">
+                      <i class="fa-solid fa-arrow-right-arrow-left tiny"></i>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Quick View">
+                      <i class="fa-solid fa-magnifying-glass tiny"></i>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Add to cart">
+                      <i class="fa-solid fa-cart-shopping tiny"></i>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+              
+              <div class="card-2-body d-flex flex-column">
+                <a href="" class="tiny">Tools 34 Low Profile Hydraulic Trolley</a>
+                <div>
+                  <span class="fs-5">$767</span>
+                  <del class="text-black-50 tiny">$837</del>
+                </div>
+                <span class="tiny mt-1">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+              </div>
+    
+            </div>
+          </td>
+
+          <td class="w-20 border">
+            <div class="card-2 rounded-1 p-3">
+    
+              <div class="position-relative">
+                <img src="https://demothemesky-be87.kxcdn.com/merto/wp-content/uploads/2024/05/furniture-6-700x700.jpg"
+                 alt="" class="d-block">
+                <span class="position-absolute top-0 start-0 badge rounded-2 bg-danger">
+                  -33%
+                </span>
+                <ul class="position-absolute">
+                  <li>
+                    <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Whishlist">
+                      <i class="fa-regular fa-heart tiny"></i>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Compare">
+                      <i class="fa-solid fa-arrow-right-arrow-left tiny"></i>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Quick View">
+                      <i class="fa-solid fa-magnifying-glass tiny"></i>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Add to cart">
+                      <i class="fa-solid fa-cart-shopping tiny"></i>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+              
+              <div class="card-2-body d-flex flex-column">
+                <a href="" class="tiny">14-inch Fashion Simplicity Quality Wall Clock, Home Decor</a>
+                <div>
+                  <span class="fs-5">$50</span>
+                  <del class="text-black-50 tiny">$75</del>
+                </div>
+                <span class="tiny mt-1">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+              </div>
+    
+            </div>
+          </td>
+
+          <td class="w-20 border">
+            <div class="card-2 rounded-1 p-3">
+    
+              <div class="position-relative">
+                <img src="https://demothemesky-be87.kxcdn.com/merto/wp-content/uploads/2024/05/cosmetics-33-700x700.jpg"
+                 alt="" class="d-block">
+                <span class="position-absolute top-0 start-0 badge rounded-2 bg-danger">
+                  -37%
+                </span>
+                <ul class="position-absolute">
+                  <li>
+                    <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Whishlist">
+                      <i class="fa-regular fa-heart tiny"></i>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Compare">
+                      <i class="fa-solid fa-arrow-right-arrow-left tiny"></i>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Quick View">
+                      <i class="fa-solid fa-magnifying-glass tiny"></i>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Add to cart">
+                      <i class="fa-solid fa-cart-shopping tiny"></i>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+              
+              <div class="card-2-body d-flex flex-column">
+                <a href="" class="tiny">Translucent Compact Face Powder - 03 Medium, 0.22 oz</a>
+                <div>
+                  <span class="fs-5">$9</span>
+                  <del class="text-black-50 tiny">$14</del>
+                </div>
+                <span class="tiny mt-1">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+              </div>
+    
+            </div>
+          </td>
+        </tr>
+
+      </table>
+
+    </div>
+
+    <div class="container-fluid px-big mb-big">
+      <div class="row w-100 g-0 justify-content-between">
+        
+        <a href="" class="position-relative not-link text-center cursor-pointer d-flex flex-column overflow-hidden rounded-3" style="background-color: #686F82; width:25%">
+          <div class="custom-img-1 overflow-hidden">
+            <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/09/banner3-demo1.jpg" alt="" class="w-100 d-block img-expand object-position-custom">
+          </div>
+          <div class="position-absolute bottom-0 start-0 end-0 pb-3 d-flex flex-column">
+            <span class="fst-italic fs-4 fw-bold text-white">SALE 10% OFF</span>
+            <span class="fst-italic fs-4 fw-bold text-white">TIRES MICHELIN</span>
+          </div>
+        </a>
+
+        <div class="position-relative not-link col-5 text-center cursor-pointer d-flex flex-column overflow-hidden rounded-3" style="background-color: #F2F1EC; width:47.25%">
+          <div class="custom-img-1 overflow-hidden">
+            <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/09/banner4-mobile-demo1.jpg" alt="" class="w-100 d-block img-expand object-position-custom2">
+          </div>
+          <div class="position-absolute top-0 start-0 end-0 d-flex p-4 pb-0 flex-column">
+            <span class="tiny fw-medium text-danger">NEW COLLECTION</span>
+            <span class="fs-2 fw-medium text-black pb-2">Sofa Crafted in UK</span>
+            <a class="underline-animation mx-auto" style="width:103px;">shop now <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <a href="" class="position-relative not-link col-3 text-center cursor-pointer d-flex flex-column overflow-hidden rounded-3" style="background-color: #F09BA0; width:25%;">
+          <div class="custom-img-1 overflow-hidden">
+            <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/09/banner5-demo1-300x300.jpg" alt="" class="w-100 d-block img-expand object-position-custom3">
+          </div>
+          <div class="position-absolute bottom-0 start-0 end-0 d-flex p-4 flex-column">
+            <span class="above-beauty">Steals under $25</span>
+            <span class="Beauty">Beauty</span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+
+    <div class="container-fluid px-big mb-big">
+
+      <table class="w-100">
+        <tr class="row g-0">
+          <td class="w-third" style="max-height:234.5px">
+            <div class="card-3 d-flex flex-column rounded-1 p-3">
+              
+              <div class="d-flex justify-content-between w-100">
+                <div class="position-relative d-flex card-img">
+                  <img src="https://demothemesky-be87.kxcdn.com/merto/wp-content/uploads/2024/05/fashion-5-700x700.jpg"
+                   alt="" class="d-block">
+                  
+                  <span class="position-absolute top-0 start-0 badge rounded-2 bg-danger">
+                    Hot
+                  </span>
+                </div>
+                
+                <div class="card-body justify-content-center d-flex flex-column">
+                  <a href="" class="tiny mb-1">Nike Air Max Unisex SYSTM Men Sneaker Shoes</a>
+                  <div class="mb-1">
+                    <span class="fs-5">$148</span>
+                  </div>
+                  <span class="tiny">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </span>
+                </div>
+              </div>
+              
+              <ul class="d-none m-0 mt-2 p-0 pb-2">
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-delay="0" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Whishlist">
+                    <i class="fa-regular fa-heart tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Compare">
+                    <i class="fa-solid fa-arrow-right-arrow-left tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-offset="0,10" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Quick View">
+                    <i class="fa-solid fa-magnifying-glass tiny"></i>
+                  </button>
+                </li>
+                <li style="width:73%;">
+                  <button type="button" class="btn big-btn">
+                    + ADD TO CART
+                  </button>
+                </li>
+              </ul>
+    
+            </div>
+          </td>
+
+          <td class="w-third" style="max-height:234.5px">
+            <div class="card-3 d-flex flex-column rounded-1 p-3">
+              
+              <div class="d-flex justify-content-between w-100">
+                <div class="position-relative d-flex card-img">
+                  <img src="https://demothemesky-be87.kxcdn.com/merto/wp-content/uploads/2024/05/fashion-9-700x700.jpg"
+                   alt="" class="d-block">
+                </div>
+                
+                <div class="card-body justify-content-center d-flex flex-column">
+                  <a href="" class="tiny mb-1">100% UV Protected Sunglasses For Men</a>
+                  <div class="mb-1">
+                    <span class="fs-5">$123</span>
+                  </div>
+                  <span class="tiny">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </span>
+                </div>
+              </div>
+              
+              <ul class="d-none m-0 mt-2 p-0 pb-2">
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-delay="0" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Whishlist">
+                    <i class="fa-regular fa-heart tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Compare">
+                    <i class="fa-solid fa-arrow-right-arrow-left tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-offset="0,10" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Quick View">
+                    <i class="fa-solid fa-magnifying-glass tiny"></i>
+                  </button>
+                </li>
+                <li style="width:73%;">
+                  <button type="button" class="btn big-btn">
+                    + ADD TO CART
+                  </button>
+                </li>
+              </ul>
+    
+            </div>
+          </td>
+
+          <td class="w-third" style="max-height:234.5px">
+            <div class="card-3 d-flex flex-column rounded-1 p-3">
+              
+              <div class="d-flex justify-content-between w-100">
+                <div class="position-relative d-flex card-img">
+                  <img src="https://demothemesky-be87.kxcdn.com/merto/wp-content/uploads/2024/05/fashion-6-700x700.jpg"
+                   alt="" class="d-block">
+                </div>
+                
+                <div class="card-body justify-content-center d-flex flex-column">
+                  <a href="" class="tiny mb-1">LV Women Leather Accent Denim Mini Skirt</a>
+                  <div class="mb-1">
+                    <span class="fs-5">$1,390</span>
+                  </div>
+                  <span class="tiny">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </span>
+                </div>
+              </div>
+              
+              <ul class="d-none m-0 mt-2 p-0 pb-2">
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-delay="0" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Whishlist">
+                    <i class="fa-regular fa-heart tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Compare">
+                    <i class="fa-solid fa-arrow-right-arrow-left tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-offset="0,10" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Quick View">
+                    <i class="fa-solid fa-magnifying-glass tiny"></i>
+                  </button>
+                </li>
+                <li style="width:73%;">
+                  <button type="button" class="btn big-btn">
+                    + SELECT OPTIONS
+                  </button>
+                </li>
+              </ul>
+    
+            </div>
+          </td>
+
+        </tr>
+
+        <tr class="row g-0">
+
+          <td class="w-third" style="max-height:234.5px">
+            <div class="card-3 d-flex flex-column rounded-1 p-3">
+              
+              <div class="d-flex justify-content-between w-100">
+                <div class="position-relative d-flex card-img">
+                  <img src="https://demothemesky-be87.kxcdn.com/merto/wp-content/uploads/2024/05/fashion-16-700x700.jpg"
+                   alt="" class="d-block">
+                </div>
+                
+                <div class="card-body justify-content-center d-flex flex-column">
+                  <a href="" class="tiny mb-1">A Different Christmas Knit Holiday Sweater</a>
+                  <div class="mb-1">
+                    <span class="fs-5">$50 - $65</span>
+                  </div>
+                  <span class="tiny">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </span>
+                </div>
+              </div>
+              
+              <ul class="d-none m-0 mt-2 p-0 pb-2">
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-delay="0" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Whishlist">
+                    <i class="fa-regular fa-heart tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Compare">
+                    <i class="fa-solid fa-arrow-right-arrow-left tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-offset="0,10" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Quick View">
+                    <i class="fa-solid fa-magnifying-glass tiny"></i>
+                  </button>
+                </li>
+                <li style="width:73%;">
+                  <button type="button" class="btn big-btn">
+                    + SELCT OPTIONS
+                  </button>
+                </li>
+              </ul>
+    
+            </div>
+          </td>
+
+          <td class="w-third" style="max-height:234.5px">
+            <div class="card-3 d-flex flex-column rounded-1 p-3">
+              
+              <div class="d-flex justify-content-between w-100">
+                <div class="position-relative d-flex card-img">
+                  <img src="https://demothemesky-be87.kxcdn.com/merto/wp-content/uploads/2024/05/fashion-1-700x700.jpg"
+                   alt="" class="d-block">
+                </div>
+                
+                <div class="card-body justify-content-center d-flex flex-column">
+                  <a href="" class="tiny mb-1">Winter New Jacket Loose Retro American Campus</a>
+                  <div class="mb-1">
+                    <span class="fs-5">$160</span>
+                  </div>
+                  <span class="tiny">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </span>
+                </div>
+              </div>
+              
+              <ul class="d-none m-0 mt-2 p-0 pb-2">
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-delay="0" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Whishlist">
+                    <i class="fa-regular fa-heart tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Compare">
+                    <i class="fa-solid fa-arrow-right-arrow-left tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-offset="0,10" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Quick View">
+                    <i class="fa-solid fa-magnifying-glass tiny"></i>
+                  </button>
+                </li>
+                <li style="width:73%;">
+                  <button type="button" class="btn big-btn">
+                    + SELECT OPTIONS
+                  </button>
+                </li>
+              </ul>
+    
+            </div>
+          </td>
+  
+          <td class="w-third" style="max-height:234.5px">
+            <div class="card-3 d-flex flex-column rounded-1 p-3">
+              
+              <div class="d-flex justify-content-between w-100">
+                <div class="position-relative d-flex card-img">
+                  <img src="https://demothemesky-be87.kxcdn.com/merto/wp-content/uploads/2024/05/fashion-3-700x700.jpg"
+                   alt="" class="d-block">
+                </div>
+                
+                <div class="card-body justify-content-center d-flex flex-column">
+                  <a href="" class="tiny mb-1">Winter Hats with Top Ball Custom Design</a>
+                  <div class="mb-1">
+                    <span class="fs-5">$17</span>
+                  </div>
+                  <span class="tiny">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </span>
+                </div>
+              </div>
+              
+              <ul class="d-none m-0 mt-2 p-0 pb-2">
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-delay="0" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Whishlist">
+                    <i class="fa-regular fa-heart tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Compare">
+                    <i class="fa-solid fa-arrow-right-arrow-left tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-offset="0,10" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Quick View">
+                    <i class="fa-solid fa-magnifying-glass tiny"></i>
+                  </button>
+                </li>
+                <li style="width:73%;">
+                  <button type="button" class="btn big-btn">
+                    + ADD TO CART
+                  </button>
+                </li>
+              </ul>
+    
+            </div>
+          </td>
+
+        </tr>
+      </table>
+
+    </div>
+
+    <div class="container-fluid px-0 mb-big">
+    <div class="row g-0">
+
+      <div class="col-12" style="background-color: #EBEEF0;">
+        <div id="hoodieCarousel" class="carousel slide carousel-fade overflow-hidden">
+
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/09/slide-hoodie-1.png" class="d-block hoodie-img w-100 h-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/09/slide-hoodie-2.png" class="d-block hoodie-img w-100 h-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/09/slide-hoodie-3.png" class="d-block hoodie-img w-100 h-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/09/slide-hoodie-4.png" class="d-block hoodie-img w-100 h-100" alt="...">
+            </div>
+            <div class="HOODIE d-flex justify-content-center align-items-center">
+              Hoodie
+            </div>
+            <span class="position-absolute cursor-pointer h2 fw-medium d-flex justify-content-center align-items-center text-white p-2 bg-danger rounded-circle hoodie-discount">
+              -30%
+            </span>
+          </div>
+
+          <div class="hoodie-body position-absolute d-flex flex-column p-5 rounded-3">
+            <span class="h3 fw-semibold mb-3">Athelitcs Embroidered Relaxed Hoodie</span>
+            <div class="d-flex border-bottom flex-column pb-3 mb-3">
+              <span><i class="fa-solid fa-check text-success tiny"></i> 64% cotton, 36% polyster</span>
+              <span><i class="fa-solid fa-check text-success tiny"></i> Do not dry clean</span>
+              <span><i class="fa-solid fa-check text-success tiny"></i> Machine wash</span>
+            </div>
+            <div>
+              <span class="fs-4 fw-medium">$89</span>
+              <del class="text-black-50 fs-5">$120</del>
+            </div>
+
+            <div class="carousel-indicators position-static justify-content-start my-3">
+              <button type="button" data-bs-target="#hoodieCarousel" data-bs-slide-to="0" class="active rounded-2" aria-current="true" aria-label="Slide 1">
+                <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/09/slide-hoodie-1.png" class="w-100 h-100">
+              </button>
+              <button type="button" data-bs-target="#hoodieCarousel" data-bs-slide-to="1" class="rounded-2" aria-label="Slide 2">
+                <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/09/slide-hoodie-2.png" class="w-100 h-100">
+              </button>
+              <button type="button" data-bs-target="#hoodieCarousel" data-bs-slide-to="2" class="rounded-2" aria-label="Slide 3">
+                <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/09/slide-hoodie-3.png" class="w-100 h-100">
+              </button>
+              <button type="button" data-bs-target="#hoodieCarousel" data-bs-slide-to="3" class="rounded-2" aria-label="Slide 4">
+                <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/09/slide-hoodie-4.png" class="w-100 h-100">
+              </button>
+            </div>
+            <button class="Buy-btn w-100 p-3 py-2 rounded-2 fw-bold tiny">BUY NOW</button>
+          </div>
+
+          <button class="carousel-control-prev justify-content-start" type="button" data-bs-target="#hoodieCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon text-black" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next justify-content-end" type="button" data-bs-target="#hoodieCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+    </div>
+    </div>
+
+    <div class="container-fluid px-big mb-big">
+      
+      <div class="row mb-5">
+        <div class="col-12 justify-content-between d-flex row">
+          
+          <h2 class="col-auto">Flash Deals</h2>
+          <div class="col-auto d-flex align-items-center justify-content-between">
+            <a href="" class="underline-animation tiny">See All Products</a>
+          </div>
+
+        </div>
+      </div>
+
+      <table class="w-100">
+        <tr class="row g-0">
+          <td class="w-20">
+            <div class="card-2 rounded-1 p-3">
+    
+              <div class="position-relative">
+                <img src="https://demothemesky-be87.kxcdn.com/merto/wp-content/uploads/2024/05/fashion-5-700x700.jpg"
+                 alt="" class="d-block">
+                <span class="position-absolute top-0 start-0 badge rounded-2 bg-danger">
+                  hot
+                </span>
+                <ul class="position-absolute">
+                  <li>
+                    <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Whishlist">
+                      <i class="fa-regular fa-heart tiny"></i>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Compare">
+                      <i class="fa-solid fa-arrow-right-arrow-left tiny"></i>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Quick View">
+                      <i class="fa-solid fa-magnifying-glass tiny"></i>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Add to cart">
+                      <i class="fa-solid fa-cart-shopping tiny"></i>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+              
+              <div class="card-2-body d-flex flex-column">
+                <a href="" class="tiny">Nike Air Max Unisex SYSTM Men Sneaker Shoes</a>
+                <div>
+                  <span class="fs-5">$148</span>
+                </div>
+                <span class="tiny mt-1">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+              </div>
+    
+            </div>
+          </td>
+
+          <td class="w-20 border">
+            <div class="card-2 rounded-1 p-3">
+    
+              <div class="position-relative">
+                <img src="https://demothemesky-be87.kxcdn.com/merto/wp-content/uploads/2024/05/fashion-6-700x700.jpg"
+                 alt="" class="d-block">
+                <ul class="position-absolute">
+                  <li>
+                    <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Whishlist">
+                      <i class="fa-regular fa-heart tiny"></i>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Compare">
+                      <i class="fa-solid fa-arrow-right-arrow-left tiny"></i>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Quick View">
+                      <i class="fa-solid fa-magnifying-glass tiny"></i>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Add to cart">
+                      <i class="fa-solid fa-cart-shopping tiny"></i>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+              
+              <div class="card-2-body d-flex flex-column">
+                <a href="" class="tiny">LV Women Leather Accent Denim Mini Skirt</a>
+                <div>
+                  <span class="fs-5">$1,390</span>
+                </div>
+                <span class="tiny mt-1">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+              </div>
+    
+            </div>
+          </td>
+
+          <td class="w-20 border">
+            <div class="card-2 rounded-1 p-3">
+    
+              <div class="position-relative">
+                <img src="https://demothemesky-be87.kxcdn.com/merto/wp-content/uploads/2024/05/automotive-13-700x700.jpg"
+                 alt="" class="d-block">
+                <span class="position-absolute top-0 start-0 badge rounded-2 bg-danger">
+                  -17%
+                </span>
+                <ul class="position-absolute">
+                  <li>
+                    <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Whishlist">
+                      <i class="fa-regular fa-heart tiny"></i>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Compare">
+                      <i class="fa-solid fa-arrow-right-arrow-left tiny"></i>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Quick View">
+                      <i class="fa-solid fa-magnifying-glass tiny"></i>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Add to cart">
+                      <i class="fa-solid fa-cart-shopping tiny"></i>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+              
+              <div class="card-2-body d-flex flex-column">
+                <a href="" class="tiny">High-Perfrmance Carbon Fiber Wheels</a>
+                <div>
+                  <span class="fs-5">$499</span>
+                  <del class="text-black-50 tiny">$599</del>
+                </div>
+                <span class="tiny mt-1">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+              </div>
+    
+            </div>
+          </td>
+
+          <td class="w-20 border">
+            <div class="card-2 rounded-1 p-3">
+    
+              <div class="position-relative">
+                <img src="https://demothemesky-be87.kxcdn.com/merto/wp-content/uploads/2024/05/automotive-11-500x500.jpg"
+                 alt="" class="d-block">
+                <span class="position-absolute top-0 start-0 badge rounded-2 bg-danger">
+                  -8%
+                </span>
+                <ul class="position-absolute">
+                  <li>
+                    <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Whishlist">
+                      <i class="fa-regular fa-heart tiny"></i>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Compare">
+                      <i class="fa-solid fa-arrow-right-arrow-left tiny"></i>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Quick View">
+                      <i class="fa-solid fa-magnifying-glass tiny"></i>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Add to cart">
+                      <i class="fa-solid fa-cart-shopping tiny"></i>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+              
+              <div class="card-2-body d-flex flex-column">
+                <a href="" class="tiny">Tools 34 Low Profile Hydraulic Trolley</a>
+                <div>
+                  <span class="fs-5">$767</span>
+                  <del class="text-black-50 tiny">$837</del>
+                </div>
+                <span class="tiny mt-1">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+              </div>
+    
+            </div>
+          </td>
+
+          <td class="w-20 border">
+            <div class="card-2 rounded-1 p-3">
+    
+              <div class="position-relative">
+                <img src="https://demothemesky-be87.kxcdn.com/merto/wp-content/uploads/2024/05/electronic-30-5-700x700.jpg"
+                 alt="" class="d-block">
+                <ul class="position-absolute">
+                  <li>
+                    <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Whishlist">
+                      <i class="fa-regular fa-heart tiny"></i>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Compare">
+                      <i class="fa-solid fa-arrow-right-arrow-left tiny"></i>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Quick View">
+                      <i class="fa-solid fa-magnifying-glass tiny"></i>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Add to cart">
+                      <i class="fa-solid fa-cart-shopping tiny"></i>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+              
+              <div class="card-2-body d-flex flex-column">
+                <a href="" class="tiny">Apple MacBook Air With Apple M1 Chip, 13.3 inch, 8GB RAM,...</a>
+                <div>
+                  <span class="fs-5">$572</span>
+                </div>
+                <span class="tiny mt-1">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+              </div>
+    
+            </div>
+          </td>
+        </tr>
+
+      </table>
+
+    </div>
+
+    <div class="container-fluid px-big mb-big">
+      <div class="row g-0 justify-content-between">
+
+        <div class="card-4">
+          <div class="w-100 overflow-hidden mb-3 cursor-pointer rounded-2">
+            <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/03/blog-1.jpg" class="w-100 d-block" alt="">
+          </div>
+          <div class="card-body d-flex flex-column">
+            <span class="d-flex xtiny mb-2"><a href="">BEAUTY & FASHION</a><span class="mx-2 text-black-50">-</span><span class="text-black-50 me-1">By</span> <a href="">Myoui Mina</a></span>
+            <a href="" class="fw-semibold mb-2">Weekday Outfit Inspiration For All Occasions</a>
+            <p class="mb-2 tiny">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porta et nisi at sodales.</p>
+            <button class="Read-btn rounded-2 tiny fw-medium mb-2">READ MORE</button>
+          </div>
+        </div>
+
+        <div class="card-4">
+          <div class="w-100 overflow-hidden mb-3 cursor-pointer rounded-2">
+            <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/03/blog-2.jpg" class="w-100 d-block" alt="">
+          </div>
+          <div class="card-body d-flex flex-column">
+            <span class="d-flex xtiny mb-2"><a href="">COSMETICS</a><span class="mx-2 text-black-50">-</span><span class="text-black-50 me-1">By</span> <a href="">Myoui Mina</a></span>
+            <a href="" class="fw-semibold mb-2">100% Pure & Natural Sage Essential Oil</a>
+            <p class="mb-2 tiny">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porta et nisi at sodales.</p>
+            <button class="Read-btn rounded-2 tiny fw-medium mb-2">READ MORE</button>
+          </div>
+        </div>
+
+        <div class="card-4">
+          <div class="w-100 overflow-hidden mb-3 cursor-pointer rounded-2">
+            <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/03/blog-3.jpg" class="w-100 d-block" alt="">
+          </div>
+          <div class="card-body d-flex flex-column">
+            <span class="d-flex xtiny mb-2"><a href="">ELLECTRONICS</a><span class="mx-2 text-black-50">-</span><span class="text-black-50 me-1">By</span> <a href="">Myoui Mina</a></span>
+            <a href="" class="fw-semibold mb-2">Tips for Cleaning Desktop & Laptop</a>
+            <p class="mb-2 tiny">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porta et nisi at sodales.</p>
+            <button class="Read-btn rounded-2 tiny fw-medium mb-2">READ MORE</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <section id="aboveFooter" class="container-fluid d-flex flex-column align-items-center py-5">
+      <h3 class="mb-4 fw-semibold">Looking for something else?</h3>
+      <form action="" class="bg-white d-flex justify-content-between rounded-2 mb-3">
+        <input type="text" placeholder="Search for products..." name="productSearched" class="border-0 outline-0 p-2 col-4 bg-transparent">
+        <button class="border-0 outline-0 bg-dark p-2-3 rounded-3 text-white col-auto"><i class="fa-solid fa-magnifying-glass fs-5"></i></button>
+      </form>
+
+      <div class="text-center links">
+        <a href="" class="position-relative small-v-l">smartphone</a>
+        <a href="" class="position-relative small-v-l">tablet</a>
+        <a href="" class="position-relative small-v-l">controller</a>
+        <a href="" class="position-relative small-v-l">furniture</a>
+        <a href="" class="position-relative small-v-l">laptop</a>
+        <a href="" class="position-relative small-v-l">playstation</a>
+        <a href="" class="position-relative small-v-l">womens fashion</a>
+        <a href="" class="position-relative small-v-l">home & decor</a>
+        <a href="" class="position-relative">camera</a>
+      </div>
+    </section>
+
+    <footer>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <script src="../JavaScript/myJava.js"></script>
+  </body>
+</html>
