@@ -1,0 +1,8 @@
+
+//// string methods
+startsWith()
+endsWith()
+indexOf()
+slice()
+upperCase()
+lowerCase()
