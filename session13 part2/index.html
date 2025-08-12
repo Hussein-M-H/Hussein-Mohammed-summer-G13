@@ -8,7 +8,7 @@
 
 </head>
 <body>
-    <a href="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta, facilis.</a>
+    <!-- <a href="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta, facilis.</a>
 
     <h1 title="javascript" class="text-center " id="h1-element">Javascript</h1>
     <h1 title="javascript" class="text-center h1-class " >Bootstrap</h1>
@@ -28,11 +28,48 @@
         <span>About Us</span>
         <span>About Us</span>
         <span>About Us</span>
-    </div>
+    </div> -->
+
+    <!-- <div class="container">
+        <h2 id="h2-id"  class="w-75 border border-4 border-primary mx-auto  text-primary p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, earum!</h2>
+    </div> -->
+
+
+    <img src="images/1.jpg" id="card-img" alt="">
+
+    <button class="btn btn-primary" onclick="changeImg()">clcik here</button>
+
+
 
     <div class="container">
-        <h2 id="h2-id"  class="w-75 border border-4 border-primary mx-auto  text-primary p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, earum!</h2>
+        <div class=" border border-2 border-primary p-3 text-danger fs-3"
+        onmouseenter="handleMouseMoving(this , 'mouseenter')"
+        onmouseleave="handleMouseMoving(this , 'mouseleave')">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, minus!</div>
+
+
+        <h2 onmouseenter="handleMouseMoving(this , 'mouseenter')"
+        onmouseleave="handleMouseMoving(this , 'mouseleave')">javascript</h2>
+        <ul class="list-unstyled">
+            <li>home</li>
+            <li>about</li>
+            <li>contact</li>
+        </ul>
+
+        <form class="row" id="loginForm">
+            <div class="col-6">
+                <input type="text" id="userName" class="form-control" placeholder="enter your name">
+            </div>
+            <div class="col-6">
+                <input type="email" id="userEmail" class="form-control" placeholder="enter your Email">
+            </div>
+            <div class="col-12">
+                <button class="btn btn-primary">Add User</button>
+            </div>
+        </form>
+
+        <h3 id="h3-element"></h3>
     </div>
+
 
     <script src="js/script.js"></script>
 </body>
