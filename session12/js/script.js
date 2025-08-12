@@ -275,9 +275,6 @@ console.log(userInd)
 
 
 
-
-
-
 /////// function adduser() // id , name , balance 
 
 /////// function editUserBalanceById () // id , newBalance
