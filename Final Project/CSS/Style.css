@@ -86,26 +86,36 @@ a:hover {
   &::after {
     content:"";
     position:absolute;
-    height:1px;
+    height:0.5px;
     bottom:0;
     left:0;
     right:0;
     background-color: rgba(0, 0, 0, 0.7); 
-    transform-origin: right;
   }
   &:hover {
     color:inherit !important;
   }
   &:hover::after {
-    animation: lineDisappear 0.2s ease-in-out, lineReappearleft 0.2s ease-in-out 0.2s;
+    animation: lineDisappearright 0.25s ease-in-out, lineReappearleft 0.25s ease-in-out 0.26s;
   }
   &:not(:hover)::after {
-    animation:lineReappearright 0.2s ease-in-out;
+    animation:lineReappearright 0.25s ease-in-out;
   }
 }
 
-@keyframes lineDisappear {
-  0%   { transform: scaleX(1); } 
+@keyframes lineDisappearright {
+  0%, 100%   {
+     transform: scaleX(1);
+     transform-origin: right;
+   } 
+  100%  { transform: scaleX(0); }  
+}
+
+@keyframes lineDisappearleft {
+  0%, 100%   {
+     transform: scaleX(1);
+     transform-origin: left;
+   } 
   100%  { transform: scaleX(0); }  
 }
 
@@ -124,6 +134,7 @@ a:hover {
   }
   100% { transform: scaleX(1); }  
 }
+
 
 .overflow-hidden {
   overflow: hidden;
@@ -544,4 +555,31 @@ nav .badge {
       height:10px !important;
     }
   }
+}
+
+.underline-animation.simple {
+  &:hover {
+    color:inherit !important;
+  }
+  &::after {
+    transform:scaleX(0);
+    height:1px;
+  }
+  &:hover::after {
+    animation:lineReappearleft 0.2s ease-in-out forwards;
+  }
+  &:not(:hover)::after {
+    animation: lineDisappearleft 0.2s ease-in-out forwards;
+  }
+}
+
+.small-v-l.after-right-custom2::after {
+  right:22%;
+}
+
+footer {
+  & left-info {
+    color:#999999;
+  }
+
 }

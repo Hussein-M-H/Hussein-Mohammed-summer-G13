@@ -123,9 +123,9 @@ userInfo.unshift("engineer", false)
 
 // courses.pop()
 // courses.pop()
-// courses.shift()
+courses.shift()
 
-// console.log(courses)
+console.log(courses)
 // console.log(courses.includes('html'))
 
 
