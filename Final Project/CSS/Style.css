@@ -29,6 +29,10 @@ a:hover {
   color:red;
 }
 
+ul {
+  list-style: none;
+}
+
 /* Global Style */
 
 .tiny {
@@ -160,7 +164,42 @@ a:hover {
   font-size:13px;
 }
 
+.filters {
+  width:20%;
+  padding-right:30px;
+  & .filter-name {
+    margin-bottom:30px;
+  }
+  & .color-palette {
+    width:16px;
+    height:16px;
+    margin-right:10px;
+    display:inline-block;
+    border-radius:3px;
+  }
+  & .color-count {
+    font-size:13px;
+    color:#999999;
+  }
+  & #brandsFilter {
+    & #searchBrand {
+      width: calc(100% - 35px)
+    }
+  }
+}
+
+.red-on-hover {
+  transition:color 0.1s;
+  &:hover >* {
+    color:red !important;
+  }
+}
+
 /* Custom Style */
+
+.products {
+  width:80%;
+}
 
 .logo {
   width:var(--logo-img-w);
@@ -260,7 +299,6 @@ nav .badge {
 }
 
 .card-2 {
-  width:100%;
   & img {
     width:100%;
     aspect-ratio: 1 / 1;
@@ -299,6 +337,10 @@ nav .badge {
       & li:nth-child(4) { animation-delay: 0.12s; }
     }
   } 
+}
+
+.owl-carousel .card-2:hover {
+  border-radius: 5px;
 }
 
 .card-3 {
@@ -578,8 +620,83 @@ nav .badge {
 }
 
 footer {
-  & left-info {
+  background-color: #1B1F22;
+  padding: 80px 100px 0px !important;
+  & .underline-animation::after {
+    background-color: white;
+  }
+  & .left-info {
     color:#999999;
   }
+  & form{
+    border:1px solid rgba(207, 207, 207, 0.458);
+    & input {
+      padding:9px 5px 9px 20px;
+      width: calc(100% - 55px)
+    }
+    & i {
+      transition:0.1s;
+      &:hover {
+        color:red;
+      }
+    }
+  }
+  & .brands a {
+    padding-right:8px;
+    display:flex;
+    font-size:20px;
+    justify-content: center;
+    align-items: center;
+    width:36px !important;
+    height:36px !important;
+  }
+  & ul {
+    list-style: none;
+  }
+  & .nested li {
+    padding-bottom:12px;
+  }
+  & .main-title{
+    padding-bottom:18px;
+  }
+  & h3 {
+    font-size:20px;
+    margin-bottom:30px;
+  }
+  & h4 {
+    font-size:16px;
+    margin-bottom:10px;
+  }
+  & .suggestions{
+    width:90%;
+    margin-right:auto;
+    margin-left:auto;
+    border: 1px solid rgba(207, 207, 207, 0.162);
+    & a {
+      display:flex;
+      width: auto !important;
+      margin-right:auto;
+    }
+    & i {
+      font-size:30px;
+      margin-right:5px;
+    }
+  }
+  & .copyrights {
+    color:#999999;
+  }
+}
 
+.arrow {
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+}
+
+.left {
+  left:0;
+}
+
+.right {
+  right:0;
 }
