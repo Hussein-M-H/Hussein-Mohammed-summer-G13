@@ -12,7 +12,7 @@
 </head>
 
 <body>
-      <div class="container">
+    <div class="container">
         <div class="row my-3">
             <div class="col-2 ">
                 <img src="images/1.jpg" class="w-100 border rounded-3 mb-2" onclick="handleChangeImg(this)" alt="">
@@ -23,6 +23,10 @@
             </div>
         </div>
     </div>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3452.47009330295!2d31.36241317534638!3d30.080720374905347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583df81720ed69%3A0xb597301dcb56aacf!2sCity%20Centre%20Almaza!5e0!3m2!1sen!2seg!4v1755167892035!5m2!1sen!2seg"
+        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
 
     <div class="container">
         <form class="row gy-4 my-4" id="myForm" autocomplete="off">
@@ -30,17 +34,17 @@
                 <input type="text" placeholder="enter your name" id="userName" class="form-control">
                 <p class="text-danger mb-0"></p>
             </div>
-             <div class="col-12 col-md-4">
+            <div class="col-12 col-md-4">
                 <input type="text" placeholder="enter your email" id="userEmail" class="form-control">
-                     <p class="text-danger mb-0"></p>
+                <p class="text-danger mb-0"></p>
             </div>
-             <div class="col-12 col-md-4">
+            <div class="col-12 col-md-4">
                 <input type="password" placeholder="enter your passowrd" id="userPassword" class="form-control">
-                  <p class="text-danger mb-0"></p>
+                <p class="text-danger mb-0"></p>
             </div>
             <div class="col-12">
                 <button class="btn btn-primary">
-                    submit  
+                    submit
                 </button>
             </div>
         </form>
@@ -48,84 +52,80 @@
 
     <div class="container">
         <div class="d-flex">
-            <button class="btn btn-outline-secondary"
-             onclick="handleFilter('All')">All</button>
-            <button class="btn btn-outline-secondary"
-             onclick="handleFilter('mobile')">Mobile</button>
-            <button class="btn btn-outline-secondary"
-             onclick="handleFilter('health')">Health and Care</button>
-            <button class="btn btn-outline-secondary"
-             onclick="handleFilter('smart')">Smartwatches</button>
+            <button class="btn btn-outline-secondary" onclick="handleFilter('All')">All</button>
+            <button class="btn btn-outline-secondary" onclick="handleFilter('mobile')">Mobile</button>
+            <button class="btn btn-outline-secondary" onclick="handleFilter('health')">Health and Care</button>
+            <button class="btn btn-outline-secondary" onclick="handleFilter('smart')">Smartwatches</button>
         </div>
 
         <div class="row">
-            <div class="col-12 col-md-2 categories"
-             data-category="mobile">
+            <div class="col-12 col-md-2 categories" data-category="mobile">
                 <div class="card">
-                    <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/electronic-30-5-300x300.jpg" class="card-img-top" alt="">
+                    <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/electronic-30-5-300x300.jpg"
+                        class="card-img-top" alt="">
                     <div class="card-body">
                         <h4>Mobile</h4>
                     </div>
                 </div>
             </div>
-             <div class="col-12 col-md-2 categories"
-              data-category="health">
+            <div class="col-12 col-md-2 categories" data-category="health">
                 <div class="card">
-                    <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/electronic-30-5-300x300.jpg" class="card-img-top" alt="">
+                    <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/electronic-30-5-300x300.jpg"
+                        class="card-img-top" alt="">
                     <div class="card-body">
                         <h4>Health and care</h4>
                     </div>
                 </div>
             </div>
-             <div class="col-12 col-md-2 categories"
-              data-category="smart">
+            <div class="col-12 col-md-2 categories" data-category="smart">
                 <div class="card">
-                    <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/electronic-30-5-300x300.jpg" class="card-img-top" alt="">
+                    <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/electronic-30-5-300x300.jpg"
+                        class="card-img-top" alt="">
                     <div class="card-body">
                         <h4>Smart watches</h4>
                     </div>
                 </div>
             </div>
-             <div class="col-12 col-md-2 categories" 
-             data-category="mobile">
+            <div class="col-12 col-md-2 categories" data-category="mobile">
                 <div class="card">
-                    <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/electronic-30-5-300x300.jpg" class="card-img-top" alt="">
+                    <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/electronic-30-5-300x300.jpg"
+                        class="card-img-top" alt="">
                     <div class="card-body">
                         <h4>Mobile</h4>
                     </div>
                 </div>
             </div>
-             <div class="col-12 col-md-2 categories" 
-             data-category="health">
+            <div class="col-12 col-md-2 categories" data-category="health">
                 <div class="card">
-                    <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/electronic-30-5-300x300.jpg" class="card-img-top" alt="">
+                    <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/electronic-30-5-300x300.jpg"
+                        class="card-img-top" alt="">
                     <div class="card-body">
                         <h4>Health and care</h4>
                     </div>
                 </div>
             </div>
-             <div class="col-12 col-md-2 categories"
-              data-category="mobile">
+            <div class="col-12 col-md-2 categories" data-category="mobile">
                 <div class="card">
-                    <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/electronic-30-5-300x300.jpg" class="card-img-top" alt="">
+                    <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/electronic-30-5-300x300.jpg"
+                        class="card-img-top" alt="">
                     <div class="card-body">
                         <h4>Mobile</h4>
                     </div>
                 </div>
             </div>
-             <div class="col-12 col-md-2 categories" 
-             data-category="smart">
+            <div class="col-12 col-md-2 categories" data-category="smart">
                 <div class="card">
-                    <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/electronic-30-5-300x300.jpg" class="card-img-top" alt="">
+                    <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/electronic-30-5-300x300.jpg"
+                        class="card-img-top" alt="">
                     <div class="card-body">
                         <h4>Smart Watches</h4>
                     </div>
                 </div>
             </div>
-             <div class="col-12 col-md-2 categories" 
-             data-category="mobile">
+            <div class="col-12 col-md-2 categories" data-category="mobile">
                 <div class="card">
-                    <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/electronic-30-5-300x300.jpg" class="card-img-top" alt="">
+                    <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/electronic-30-5-300x300.jpg"
+                        class="card-img-top" alt="">
                     <div class="card-body">
                         <h4>Mobile</h4>
                     </div>
@@ -137,7 +137,7 @@
     </div>
 
 
-  
+
 
 
 
