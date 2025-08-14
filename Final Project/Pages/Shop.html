@@ -217,14 +217,25 @@
 
     <div class="container-fluid px-big mb-big">
       
-      <div class="row mb-5">
-        <h2 class="col-auto">Shop</h2>
+      <div class="row mb-3">
+        <h2 class="col-auto fs-4 fw-semibold">Shop</h2>
       </div>
 
-      <div class="row g-0 justify-content-between">
+      <div class="row mb-5 buttonsFilter col-auto mx-auto">
+        <button class="btn col-auto py-2 px-3 mx-1 bg-secondary-subtle" id="autopartCat">Autopart</button>
+        <button class="btn col-auto py-2 px-3 mx-1 bg-secondary-subtle" id="beautyCat">Beauty & Health</button>
+        <button class="btn col-auto py-2 px-3 mx-1 bg-secondary-subtle" id="electronicCat">Electronic</button>
+        <button class="btn col-auto py-2 px-3 mx-1 bg-secondary-subtle" id="gameCat">Game Accessories</button>
+        <button class="btn col-auto py-2 px-3 mx-1 bg-secondary-subtle" id="homeCat">Home & Decor</button>
+        <button class="btn col-auto py-2 px-3 mx-1 bg-secondary-subtle" id="lapCat">Laptop & Computer</button>
+        <button class="btn col-auto py-2 px-3 mx-1 bg-secondary-subtle" id="phoneCat">Phone & Tablet</button>
+        <button class="btn col-auto py-2 px-3 mx-1 bg-secondary-subtle" id="tvCat">Tv, Audio - Video</button>
+      </div>
+
+      <div class="row g-0 justify-content-between align-items-start">
         <aside class="filters">
           <div id="colorsFilter" class="mb-4">
-            <span class="filter-name fw-bold d-inline-block">Colors</span>
+            <span class="filter-name fw-semibold d-inline-block">Colors</span>
             <ul class="d-flex flex-column ps-0 m-0">
               
               <li class="d-flex mb-2 justify-content-between align-items-center tiny red-on-hover">
@@ -374,20 +385,342 @@
             </ul>
           </div>
 
-          <div id="brandsFilter" class="mb-3">
-            <span class="filter-name fw-bold d-inline-block">Brands</span>
-            <form action="" class="border border-black rounded-2">
-              <input type="text" placeholder="Search brands ..." name="productSearched" class="border-0 outline-0 p-1 ps-3 tiny bg-transparent" id="searchBrand">
-              <button class="border-0 outline-0 bg-transparent p-1 text-black"><i class="fa-solid fa-magnifying-glass tiny"></i></button>
+          <div id="brandsFilter" class="mb-4">
+            <span class="filter-name fw-semibold d-inline-block">Brands</span>
+            
+            <form action="" >
+              <div class="mb-3 border border-black rounded-2">
+                <input type="text" placeholder="Search brands ..." name="productSearched" class="border-0 outline-0 p-1 ps-3 tiny bg-transparent" id="searchBrand">
+                <button class="border-0 outline-0 bg-transparent p-1 text-black"><i class="fa-solid fa-magnifying-glass tiny"></i></button>
+              </div>
+              <ul class="overflow-auto custom-scroll brands-collection d-flex flex-column p-0">
+                <li class="mb-2">
+                  <input type="radio" id="amazonIn" class="d-none" name="brandToSearch" value="Amazon">
+                  <label for="amazonIn" class="red-on-hover tiny d-flex align-items-center">
+                    Amazon
+                    <span class="brands-count">(8)</span>
+                  </label>
+                </li>
+                <li class="mb-2">
+                  <input type="radio" id="AppleIn" class="d-none" name="brandToSearch" value="Apple">
+                  <label for="AppleIn" class="red-on-hover tiny d-flex align-items-center">
+                    Apple
+                    <span class="brands-count">(11)</span>
+                  </label>
+                </li>
+                <li class="mb-2">
+                  <input type="radio" id="AshleyIn" class="d-none" name="brandToSearch" value="Ashley">
+                  <label for="AshleyIn" class="red-on-hover tiny d-flex align-items-center">
+                    Ashley
+                    <span class="brands-count">(3)</span>
+                  </label>
+                </li>
+                <li class="mb-2">
+                  <input type="radio" id="AsusIn" class="d-none" name="brandToSearch" value="Asus">
+                  <label for="AsusIn" class="red-on-hover tiny d-flex align-items-center">
+                    Asus
+                    <span class="brands-count">(3)</span>
+                  </label>
+                </li>
+                <li class="mb-2">
+                  <input type="radio" id="BasettIn" class="d-none" name="brandToSearch" value="Basett">
+                  <label for="BasettIn" class="red-on-hover tiny d-flex align-items-center">
+                    Basett
+                    <span class="brands-count">(5)</span>
+                  </label>
+                </li>
+                <li class="mb-2">
+                  <input type="radio" id="CeraveIn" class="d-none" name="brandToSearch" value="Cerave">
+                  <label for="CeraveIn" class="red-on-hover tiny d-flex align-items-center">
+                    Cerave
+                    <span class="brands-count">(2)</span>
+                  </label>
+                </li>
+                <li class="mb-2">
+                  <input type="radio" id="CliniqueIn" class="d-none" name="brandToSearch" value="Clinique">
+                  <label for="CliniqueIn" class="red-on-hover tiny d-flex align-items-center">
+                    Clinique
+                    <span class="brands-count">(4)</span>
+                  </label>
+                </li>
+                <li class="mb-2">
+                  <input type="radio" id="DannonIn" class="d-none" name="brandToSearch" value="Dannon">
+                  <label for="DannonIn" class="red-on-hover tiny d-flex align-items-center">
+                    Dannon
+                    <span class="brands-count">(7)</span>
+                  </label>
+                </li>
+                <li class="mb-2">
+                  <input type="radio" id="DellIn" class="d-none" name="brandToSearch" value="Dell">
+                  <label for="DellIn" class="red-on-hover tiny d-flex align-items-center">
+                    Dell
+                    <span class="brands-count">(1)</span>
+                  </label>
+                </li>
+              </ul>
+
             </form>
           </div>
 
+          <div id="priceFilter" class="mb-4">
+            <span class="filter-name fw-semibold d-inline-block">Price</span>
+            <form action="">
+              <ul class="price-collection d-flex flex-column p-0">
+                <li class="mb-2">
+                  <input type="radio" id="priceCat0" class="d-none" name="priceToSearch" value="0-100">
+                  <label for="priceCat0" class="red-on-hover tiny d-flex align-items-center">
+                    0 - $100
+                  </label>
+                </li>
+                <li class="mb-2">
+                  <input type="radio" id="priceCat1" class="d-none" name="priceToSearch" value="100-200">
+                  <label for="priceCat1" class="red-on-hover tiny d-flex align-items-center">
+                    $100 - $200
+                  </label>
+                </li>
+                <li class="mb-2">
+                  <input type="radio" id="priceCat2" class="d-none" name="priceToSearch" value="200-500">
+                  <label for="priceCat2" class="red-on-hover tiny d-flex align-items-center">
+                    $200 - $500
+                  </label>
+                </li>
+                <li class="mb-2">
+                  <input type="radio" id="priceCat3" class="d-none" name="priceToSearch" value="500+">
+                  <label for="priceCat3" class="red-on-hover tiny d-flex align-items-center">
+                    $500 +
+                  </label>
+                </li>
+              </ul>
+              <div class="d-flex min-max align-items-center">
+                <input type="number" class="rounded-2 d-flex text-center tiny py-2 bg-transparent" value="0">
+                <span class="mx-1">-</span>
+                <input type="number" class="rounded-2 d-flex text-center tiny py-2 bg-transparent" placeholder="Max">
+                <button class="bg-dark p-2 text-white ms-2 border-0 rounded-2">FILTER</button>
+              </div>
+            </form>
+          </div>
+
+          <div id="sizeFilter" class="mb-4">
+            <span class="filter-name fw-semibold d-inline-block">Size</span>
+            <form action="">
+              <ul class="size-collection d-flex flex-column p-0">
+                <li class="mb-2">
+                  <input type="radio" id="sizeCat0" class="d-none" name="sizeToSearch" value="us 8">
+                  <label for="sizeCat0" class="red-on-hover tiny d-flex align-items-center">
+                    US 8
+                    <span class="size-count d-inline-block ms-auto">(1)</span>
+                  </label>
+                </li>
+                <li class="mb-2">
+                  <input type="radio" id="sizeCat1" class="d-none" name="sizeToSearch" value="us 9">
+                  <label for="sizeCat1" class="red-on-hover tiny d-flex align-items-center">
+                    US 9
+                    <span class="size-count d-inline-block ms-auto">(1)</span>
+                  </label>
+                </li>
+                <li class="mb-2">
+                  <input type="radio" id="sizeCat2" class="d-none" name="sizeToSearch" value="us 10">
+                  <label for="sizeCat2" class="red-on-hover tiny d-flex align-items-center">
+                    US 10
+                    <span class="size-count d-inline-block ms-auto">(1)</span>
+                  </label>
+                </li>
+                <li class="mb-2">
+                  <input type="radio" id="sizeCat3" class="d-none" name="sizeToSearch" value="us 11">
+                  <label for="sizeCat3" class="red-on-hover tiny d-flex align-items-center">
+                    US 11
+                    <span class="size-count d-inline-block ms-auto">(1)</span>
+                  </label>
+                </li>
+                <li class="mb-2">
+                  <input type="radio" id="sizeCat4" class="d-none" name="sizeToSearch" value="us 12">
+                  <label for="sizeCat4" class="red-on-hover tiny d-flex align-items-center">
+                    US 12
+                    <span class="size-count d-inline-block ms-auto">(1)</span>
+                  </label>
+                </li>
+                <li class="mb-2">
+                  <input type="radio" id="sizeCat5" class="d-none" name="sizeToSearch" value="xs">
+                  <label for="sizeCat5" class="red-on-hover tiny d-flex align-items-center">
+                    XS
+                    <span class="size-count d-inline-block ms-auto">(5)</span>
+                  </label>
+                </li>
+                <li class="mb-2">
+                  <input type="radio" id="sizeCat6" class="d-none" name="sizeToSearch" value="s">
+                  <label for="sizeCat6" class="red-on-hover tiny d-flex align-items-center">
+                    S
+                    <span class="size-count d-inline-block ms-auto">(7)</span>
+                  </label>
+                </li>
+                <li class="mb-2">
+                  <input type="radio" id="sizeCat7" class="d-none" name="sizeToSearch" value="M">
+                  <label for="sizeCat7" class="red-on-hover tiny d-flex align-items-center">
+                    M
+                    <span class="size-count d-inline-block ms-auto">(10)</span>
+                  </label>
+                </li>
+                <li class="mb-2">
+                  <input type="radio" id="sizeCat8" class="d-none" name="sizeToSearch" value="l">
+                  <label for="sizeCat8" class="red-on-hover tiny d-flex align-items-center">
+                    L
+                    <span class="size-count d-inline-block ms-auto">(10)</span>
+                  </label>
+                </li>
+                <li class="mb-2">
+                  <input type="radio" id="sizeCat9" class="d-none" name="sizeToSearch" value="xl">
+                  <label for="sizeCat9" class="red-on-hover tiny d-flex align-items-center">
+                    XL
+                    <span class="size-count d-inline-block ms-auto">(9)</span>
+                  </label>
+                </li>
+                <li class="mb-2">
+                  <input type="radio" id="sizeCat10" class="d-none" name="sizeToSearch" value="xxl">
+                  <label for="sizeCat10" class="red-on-hover tiny d-flex align-items-center">
+                    XXL
+                    <span class="size-count d-inline-block ms-auto">(7)</span>
+                  </label>
+                </li>
+                <li class="mb-2">
+                  <input type="radio" id="sizeCat11" class="d-none" name="sizeToSearch" value="3xl">
+                  <label for="sizeCat11" class="red-on-hover tiny d-flex align-items-center">
+                    3XL
+                    <span class="size-count d-inline-block ms-auto">(4)</span>
+                  </label>
+                </li>
+              </ul>
+            </form>
+          </div>
+
+          <div id="strCapacityFilter" class="mb-4">
+            <span class="filter-name fw-semibold d-inline-block">Storage Capacity</span>
+            <form action="">
+              <ul class="strCapacity-collection d-flex flex-column p-0">
+                <li class="mb-2">
+                  <input type="radio" id="strCap0" class="d-none" name="strCapToSearch" value="128">
+                  <label for="strCap0" class="red-on-hover tiny d-flex align-items-center">
+                    128 GB
+                    <span class="strCap-count d-inline-block ms-auto">(1)</span>
+                  </label>
+                </li>
+                <li class="mb-2">
+                  <input type="radio" id="strCap1" class="d-none" name="strCapToSearch" value="64">
+                  <label for="strCap1" class="red-on-hover tiny d-flex align-items-center">
+                    64 GB
+                    <span class="strCap-count d-inline-block ms-auto">(1)</span>
+                  </label>
+                </li>
+              </ul>
+            </form>
+          </div>
+
+          <div id="cusRateFilter" class="mb-4">
+            <span class="filter-name fw-semibold d-inline-block">Customer Rating</span>
+            <form action="">
+              <ul class="cusRate-collection d-flex flex-column p-0">
+                <li class="mb-2 xtiny">
+                  <input type="radio" id="cusRateCat0" class="d-none" name="cusRateToSearch" value="5">
+                  <label for="cusRateCat0" class="red-on-hover tiny d-flex align-items-center">
+                    <i class="fa-solid fa-star text-black"></i>
+                    <i class="fa-solid fa-star text-black"></i>
+                    <i class="fa-solid fa-star text-black"></i>
+                    <i class="fa-solid fa-star text-black"></i>
+                    <i class="fa-solid fa-star text-black"></i>
+                    <span class="cusRate-count text-black">(82)</span>
+                  </label>
+                </li>
+                <li class="mb-2 xtiny">
+                  <input type="radio" id="cusRateCat1" class="d-none" name="cusRateToSearch" value="4">
+                  <label for="cusRateCat1" class="red-on-hover tiny d-flex align-items-center">
+                    <i class="fa-solid fa-star text-black"></i>
+                    <i class="fa-solid fa-star text-black"></i>
+                    <i class="fa-solid fa-star text-black"></i>
+                    <i class="fa-solid fa-star text-black"></i>
+                    <i class="fa-regular fa-star text-black"></i>
+                    <span class="cusRate-count">(40)</span>
+                  </label>
+                </li>
+                <li class="mb-2 xtiny">
+                  <input type="radio" id="cusRateCat2" class="d-none" name="cusRateToSearch" value="3">
+                  <label for="cusRateCat2" class="red-on-hover tiny d-flex align-items-center">
+                    <i class="fa-solid fa-star text-black"></i>
+                    <i class="fa-solid fa-star text-black"></i>
+                    <i class="fa-solid fa-star text-black"></i>
+                    <i class="fa-regular fa-star text-black"></i>
+                    <i class="fa-regular fa-star text-black"></i>
+                    <span class="cusRate-count">(4)</span>
+                  </label>
+                </li>
+                <li class="mb-2 xtiny">
+                  <input type="radio" id="cusRateCat3" class="d-none" name="cusRateToSearch" value="2">
+                  <label for="cusRateCat3" class="red-on-hover tiny d-flex align-items-center">
+                    <i class="fa-solid fa-star text-black"></i>
+                    <i class="fa-solid fa-star text-black"></i>
+                    <i class="fa-regular fa-star text-black"></i>
+                    <i class="fa-regular fa-star text-black"></i>
+                    <i class="fa-regular fa-star text-black"></i>
+                    <span class="cusRate-count">(4)</span>
+                  </label>
+                </li>
+              </ul>
+            </form>
+          </div>
 
         </aside>
   
         <section class="products row g-0"> 
-        
-          <div class="col-3 card-2 border rounded-1 p-3">
+          
+          <div class="col-12 productsFilter mb-2 row justify-content-between align-items-center">
+            <span class="col-auto">Showing 1-28 of 210 reults</span>
+            <div class="col-auto row g-0">
+              
+              <form class="d-flex col-auto align-items-center">
+                <div class="small-v-l px-4 col-auto position-relative">
+                  <input type="checkbox" id="onSale" class="d-none" name="onSaleProducts" value="Show">
+                  <label for="onSale" class="tiny d-flex align-items-center">
+                    Show only products on sale
+                  </label>
+                </div>
+                <div class="small-v-l px-4 d-flex col-auto position-relative align-items-center">
+                  <span class="text-black-50 me-2">show:</span>
+                  <div>
+                    <input type="radio" id="28products" class="d-none" name="onSaleProductsCount" value="28">
+                    <label for="28products" class="tiny active sd-flex align-items-center products-count">
+                      <a href="" class="products-count-show disable fw-semibold me-2">28</a>
+                    </label>
+                  </div>
+                  <div>
+                    <input type="radio" id="56products" class="d-none" name="onSaleProductsCount" value="56">
+                    <label for="56products" class="tiny d-flex align-items-center products-count">
+                      <a href="" class="products-count-shown disable fw-semibold me-2">56</a>
+                    </label>
+                  </div>
+                  <div>
+                    <input type="radio" id="28products" class="d-none" name="onSaleProductsCount" value="84">
+                    <label for="28products" class="tiny d-flex align-items-center products-count">
+                      <a href="" class="products-count-show disable fw-semibold me-2">84</a>
+                    </label>
+                  </div>
+                </div>
+  
+              </form>
+  
+              <div class="dropdown col-auto small-v-l px-4">
+                <span class="text-black-50 me-2">show:</span>
+                <button class="bg-transparent tiny border-0 text-blach fw-medium dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Sort by latest
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-3 card-2 border rounded-1 p-3" data-cat="lapCat">
   
             <div class="position-relative w-100">
               <img src="https://demothemesky-be87.kxcdn.com/merto/wp-content/uploads/2024/05/electronic-30-6-700x700.jpg"
@@ -436,9 +769,540 @@
   
           </div>
         
-          <div class="col-3 card-2 border rounded-1 p-3">
+          <div class="col-3 card-2 border rounded-1 p-3" data-cat="electronicCat">
+
+            <div class="position-relative w-100">
+              <img src="https://demothemesky-be87.kxcdn.com/merto/wp-content/uploads/2024/05/electronic-14-2-700x700.jpg"
+                alt="" class="d-block">
+              <span class="position-absolute top-0 start-0 badge rounded-2 bg-danger">
+                -6%
+              </span>
+              <ul class="position-absolute">
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Whishlist">
+                    <i class="fa-regular fa-heart tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Compare">
+                    <i class="fa-solid fa-arrow-right-arrow-left tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Quick View">
+                    <i class="fa-solid fa-magnifying-glass tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Add to cart">
+                    <i class="fa-solid fa-cart-shopping tiny"></i>
+                  </button>
+                </li>
+              </ul>
+            </div>
+              
+            <div class="card-2-body d-flex flex-column">
+              <a href="" class="tiny">Apple Watch Series 9GPS 45mm, Aluminum Case with...</a>
+              <div>
+                <span class="fs-5">$890</span>
+                <del class="text-black-50 tiny">$950</del>
+              </div>
+              <span class="tiny mt-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </span>
+            </div>
+
   
+          </div>
+  
+          <div class="col-3 card-2 border rounder-1 p-3" data-cat="autopartCat">
+
+            <div class="position-relative w-100">
+              <img src="https://demothemesky-be87.kxcdn.com/merto/wp-content/uploads/2024/05/automotive-11-500x500.jpg"
+                alt="" class="d-block">
+              <span class="position-absolute top-0 start-0 badge rounded-2 bg-danger">
+                -8%
+              </span>
+              <ul class="position-absolute">
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Whishlist">
+                    <i class="fa-regular fa-heart tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Compare">
+                    <i class="fa-solid fa-arrow-right-arrow-left tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Quick View">
+                    <i class="fa-solid fa-magnifying-glass tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Add to cart">
+                    <i class="fa-solid fa-cart-shopping tiny"></i>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="card-2-body d-flex flex-column">
+              <a href="" class="tiny">Tools 34 Low Profile Hydraulic Trolley</a>
+              <div>
+                <span class="fs-5">$767</span>
+                <del class="text-black-50 tiny">$837</del>
+              </div>
+              <span class="tiny mt-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </span>
+            </div>
+
+          </div>
+  
+          <div class="col-3 card-2 border rounded-1 p-3" data-cat="fashionCat">
+
             <div class="position-relative">
+              <img src="https://demothemesky-be87.kxcdn.com/merto/wp-content/uploads/2024/05/furniture-6-700x700.jpg"
+                alt="" class="d-block">
+              <span class="position-absolute top-0 start-0 badge rounded-2 bg-danger">
+                -33%
+              </span>
+              <ul class="position-absolute">
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Whishlist">
+                    <i class="fa-regular fa-heart tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Compare">
+                    <i class="fa-solid fa-arrow-right-arrow-left tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Quick View">
+                    <i class="fa-solid fa-magnifying-glass tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Add to cart">
+                    <i class="fa-solid fa-cart-shopping tiny"></i>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="card-2-body d-flex flex-column">
+              <a href="" class="tiny">14-inch Fashion Simplicity Quality Wall Clock, Home Decor</a>
+              <div>
+                <span class="fs-5">$50</span>
+                <del class="text-black-50 tiny">$75</del>
+              </div>
+              <span class="tiny mt-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </span>
+            </div>
+
+          </div>
+  
+          <div class="col-3 card-2 border rounded-1 p-3" data-cat="beautyCat">
+  
+            <div class="position-relative w-100">
+                <img src="https://demothemesky-be87.kxcdn.com/merto/wp-content/uploads/2024/05/cosmetics-33-700x700.jpg"
+                  alt="" class="d-block">
+                <span class="position-absolute top-0 start-0 badge rounded-2 bg-danger">
+                  -37%
+                </span>
+                <ul class="position-absolute">
+                  <li>
+                    <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Whishlist">
+                      <i class="fa-regular fa-heart tiny"></i>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Compare">
+                      <i class="fa-solid fa-arrow-right-arrow-left tiny"></i>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Quick View">
+                      <i class="fa-solid fa-magnifying-glass tiny"></i>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Add to cart">
+                      <i class="fa-solid fa-cart-shopping tiny"></i>
+                    </button>
+                  </li>
+                </ul>
+            </div>
+            
+            <div class="card-2-body d-flex flex-column">
+              <a href="" class="tiny">Translucent Compact Face Powder - 03 Medium, 0.22 oz</a>
+              <div>
+                <span class="fs-5">$9</span>
+                <del class="text-black-50 tiny">$14</del>
+              </div>
+              <span class="tiny mt-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </span>
+            </div>
+  
+          </div>
+
+          <div class="col-3 card-2 border rounded-1 p-3" data-cat="beautyCat">
+  
+            <div class="position-relative w-100">
+              <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/cosmetics-40-1-300x300.jpg"
+                alt="" class="d-block">
+              <span class="position-absolute top-0 start-0 badge rounded-2 bg-danger">
+                -17%
+              </span>
+              <ul class="position-absolute">
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Whishlist">
+                    <i class="fa-regular fa-heart tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Compare">
+                    <i class="fa-solid fa-arrow-right-arrow-left tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Quick View">
+                    <i class="fa-solid fa-magnifying-glass tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Add to cart">
+                    <i class="fa-solid fa-cart-shopping tiny"></i>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="card-2-body d-flex flex-column">
+              <a href="" class="tiny">Allure Luminous Intense Lipstick 0.15oz</a>
+              <div>
+                <span class="fs-5">$20</span>
+                <del class="text-black-50 tiny">$24</del>
+              </div>
+              <span class="tiny mt-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </span>
+            </div>
+  
+          </div>
+
+          <div class="col-3 card-2 border rounded-1 p-3" data-cat="fashionCat">
+  
+            <div class="position-relative w-100">
+              <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/fashion-10-1-300x300.jpg"
+                alt="" class="d-block">
+              <ul class="position-absolute">
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Whishlist">
+                    <i class="fa-regular fa-heart tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Compare">
+                    <i class="fa-solid fa-arrow-right-arrow-left tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Quick View">
+                    <i class="fa-solid fa-magnifying-glass tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Add to cart">
+                    <i class="fa-solid fa-cart-shopping tiny"></i>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="card-2-body d-flex flex-column">
+              <a href="" class="tiny">Tonga on T-Shirt for Men, Women Short Sleeve Tee</a>
+              <div>
+                <span class="fs-5">$43</span>
+              </div>
+              <span class="tiny mt-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </span>
+            </div>
+  
+          </div>
+
+          <div class="col-3 card-2 border rounded-1 p-3" data-cat="beautyCat">
+  
+            <div class="position-relative w-100">
+              <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/cosmetic-2-300x300.jpg"
+                alt="" class="d-block">
+              <span class="position-absolute top-0 start-0 badge rounded-2 bg-danger">
+                -37%
+              </span>
+              <ul class="position-absolute">
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Whishlist">
+                    <i class="fa-regular fa-heart tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Compare">
+                    <i class="fa-solid fa-arrow-right-arrow-left tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Quick View">
+                    <i class="fa-solid fa-magnifying-glass tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Add to cart">
+                    <i class="fa-solid fa-cart-shopping tiny"></i>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="card-2-body d-flex flex-column">
+              <a href="" class="tiny">Makeup Brushes Artisan Easel Elite Cosmetics</a>
+              <div>
+                <span class="fs-5">$19</span>
+                <del class="text-black-50 tiny">$30</del>
+              </div>
+              <span class="tiny mt-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </span>
+            </div>
+  
+          </div>
+
+          <div class="col-3 card-2 border rounded-1 p-3" data-cat="">
+  
+            <div class="position-relative w-100">
+              <img src="https://demothemesky-be87.kxcdn.com/merto/wp-content/uploads/2024/05/fashion-5-700x700.jpg"
+                alt="" class="d-block">
+              <span class="position-absolute top-0 start-0 badge rounded-2 bg-danger">
+                hot
+              </span>
+              <ul class="position-absolute">
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Whishlist">
+                    <i class="fa-regular fa-heart tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Compare">
+                    <i class="fa-solid fa-arrow-right-arrow-left tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Quick View">
+                    <i class="fa-solid fa-magnifying-glass tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Add to cart">
+                    <i class="fa-solid fa-cart-shopping tiny"></i>
+                  </button>
+                </li>
+              </ul>
+            </div>
+              
+            <div class="card-2-body d-flex flex-column">
+              <a href="" class="tiny">Nike Air Max Unisex SYSTM Men Sneaker Shoes</a>
+              <div>
+                <span class="fs-5">$148</span>
+              </div>
+              <span class="tiny mt-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </span>
+            </div>
+  
+          </div>
+
+          <div class="col-3 card-2 border rounded-1 p-3" data-cat="">
+  
+            <div class="position-relative w-100">
+              <img src="https://demothemesky-be87.kxcdn.com/merto/wp-content/uploads/2024/05/fashion-6-700x700.jpg"
+                alt="" class="d-block">
+              <ul class="position-absolute">
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Whishlist">
+                    <i class="fa-regular fa-heart tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Compare">
+                    <i class="fa-solid fa-arrow-right-arrow-left tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Quick View">
+                    <i class="fa-solid fa-magnifying-glass tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Add to cart">
+                    <i class="fa-solid fa-cart-shopping tiny"></i>
+                  </button>
+                </li>
+              </ul>
+            </div>
+              
+            <div class="card-2-body d-flex flex-column">
+              <a href="" class="tiny">LV Women Leather Accent Denim Mini Skirt</a>
+              <div>
+                <span class="fs-5">$1,390</span>
+              </div>
+              <span class="tiny mt-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </span>
+            </div>
+  
+          </div>
+
+          <div class="col-3 card-2 border rounded-1 p-3" data-cat="">
+  
+            <div class="position-relative w-100">
+              <img src="https://demothemesky-be87.kxcdn.com/merto/wp-content/uploads/2024/05/automotive-13-700x700.jpg"
+                alt="" class="d-block">
+              <span class="position-absolute top-0 start-0 badge rounded-2 bg-danger">
+                -17%
+              </span>
+              <ul class="position-absolute">
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Whishlist">
+                    <i class="fa-regular fa-heart tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Compare">
+                    <i class="fa-solid fa-arrow-right-arrow-left tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Quick View">
+                    <i class="fa-solid fa-magnifying-glass tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Add to cart">
+                    <i class="fa-solid fa-cart-shopping tiny"></i>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="card-2-body d-flex flex-column">
+              <a href="" class="tiny">High-Perfrmance Carbon Fiber Wheels</a>
+              <div>
+                <span class="fs-5">$499</span>
+                <del class="text-black-50 tiny">$599</del>
+              </div>
+              <span class="tiny mt-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </span>
+            </div>
+  
+          </div>
+
+          <div class="col-3 card-2 border rounded-1 p-3" data-cat="">
+  
+            <div class="position-relative w-100">
+              <img src="https://demothemesky-be87.kxcdn.com/merto/wp-content/uploads/2024/05/automotive-11-500x500.jpg"
+                alt="" class="d-block">
+              <span class="position-absolute top-0 start-0 badge rounded-2 bg-danger">
+                -8%
+              </span>
+              <ul class="position-absolute">
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Whishlist">
+                    <i class="fa-regular fa-heart tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Compare">
+                    <i class="fa-solid fa-arrow-right-arrow-left tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Quick View">
+                    <i class="fa-solid fa-magnifying-glass tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Add to cart">
+                    <i class="fa-solid fa-cart-shopping tiny"></i>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="card-2-body d-flex flex-column">
+              <a href="" class="tiny">Tools 34 Low Profile Hydraulic Trolley</a>
+              <div>
+                <span class="fs-5">$767</span>
+                <del class="text-black-50 tiny">$837</del>
+              </div>
+              <span class="tiny mt-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </span>
+            </div>
+  
+          </div>
+
+          <div class="col-3 card-2 border rounded-1 p-3" data-cat="">
+  
+            <div class="position-relative w-100">
               <img src="https://demothemesky-be87.kxcdn.com/merto/wp-content/uploads/2024/05/electronic-30-6-700x700.jpg"
                 alt="" class="d-block">
               <span class="position-absolute top-0 start-0 badge rounded-2 bg-danger">
@@ -484,10 +1348,541 @@
             </div>
   
           </div>
+        
+          <div class="col-3 card-2 border rounded-1 p-3" data-cat="">
+
+            <div class="position-relative w-100">
+              <img src="https://demothemesky-be87.kxcdn.com/merto/wp-content/uploads/2024/05/electronic-14-2-700x700.jpg"
+                alt="" class="d-block">
+              <span class="position-absolute top-0 start-0 badge rounded-2 bg-danger">
+                -6%
+              </span>
+              <ul class="position-absolute">
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Whishlist">
+                    <i class="fa-regular fa-heart tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Compare">
+                    <i class="fa-solid fa-arrow-right-arrow-left tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Quick View">
+                    <i class="fa-solid fa-magnifying-glass tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Add to cart">
+                    <i class="fa-solid fa-cart-shopping tiny"></i>
+                  </button>
+                </li>
+              </ul>
+            </div>
+              
+            <div class="card-2-body d-flex flex-column">
+              <a href="" class="tiny">Apple Watch Series 9GPS 45mm, Aluminum Case with...</a>
+              <div>
+                <span class="fs-5">$890</span>
+                <del class="text-black-50 tiny">$950</del>
+              </div>
+              <span class="tiny mt-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </span>
+            </div>
+
   
-          <div class="col-3 card-2 border rounded-1 p-3">
+          </div>
   
+          <div class="col-3 card-2 border rounder-1 p-3" data-cat="">
+
+            <div class="position-relative w-100">
+              <img src="https://demothemesky-be87.kxcdn.com/merto/wp-content/uploads/2024/05/automotive-11-500x500.jpg"
+                alt="" class="d-block">
+              <span class="position-absolute top-0 start-0 badge rounded-2 bg-danger">
+                -8%
+              </span>
+              <ul class="position-absolute">
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Whishlist">
+                    <i class="fa-regular fa-heart tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Compare">
+                    <i class="fa-solid fa-arrow-right-arrow-left tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Quick View">
+                    <i class="fa-solid fa-magnifying-glass tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Add to cart">
+                    <i class="fa-solid fa-cart-shopping tiny"></i>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="card-2-body d-flex flex-column">
+              <a href="" class="tiny">Tools 34 Low Profile Hydraulic Trolley</a>
+              <div>
+                <span class="fs-5">$767</span>
+                <del class="text-black-50 tiny">$837</del>
+              </div>
+              <span class="tiny mt-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </span>
+            </div>
+
+          </div>
+  
+          <div class="col-3 card-2 border rounded-1 p-3" data-cat="">
+
             <div class="position-relative">
+              <img src="https://demothemesky-be87.kxcdn.com/merto/wp-content/uploads/2024/05/furniture-6-700x700.jpg"
+                alt="" class="d-block">
+              <span class="position-absolute top-0 start-0 badge rounded-2 bg-danger">
+                -33%
+              </span>
+              <ul class="position-absolute">
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Whishlist">
+                    <i class="fa-regular fa-heart tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Compare">
+                    <i class="fa-solid fa-arrow-right-arrow-left tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Quick View">
+                    <i class="fa-solid fa-magnifying-glass tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Add to cart">
+                    <i class="fa-solid fa-cart-shopping tiny"></i>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="card-2-body d-flex flex-column">
+              <a href="" class="tiny">14-inch Fashion Simplicity Quality Wall Clock, Home Decor</a>
+              <div>
+                <span class="fs-5">$50</span>
+                <del class="text-black-50 tiny">$75</del>
+              </div>
+              <span class="tiny mt-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </span>
+            </div>
+
+          </div>
+  
+          <div class="col-3 card-2 border rounded-1 p-3" data-cat="">
+  
+            <div class="position-relative w-100">
+                <img src="https://demothemesky-be87.kxcdn.com/merto/wp-content/uploads/2024/05/cosmetics-33-700x700.jpg"
+                  alt="" class="d-block">
+                <span class="position-absolute top-0 start-0 badge rounded-2 bg-danger">
+                  -37%
+                </span>
+                <ul class="position-absolute">
+                  <li>
+                    <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Whishlist">
+                      <i class="fa-regular fa-heart tiny"></i>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Compare">
+                      <i class="fa-solid fa-arrow-right-arrow-left tiny"></i>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Quick View">
+                      <i class="fa-solid fa-magnifying-glass tiny"></i>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Add to cart">
+                      <i class="fa-solid fa-cart-shopping tiny"></i>
+                    </button>
+                  </li>
+                </ul>
+            </div>
+            
+            <div class="card-2-body d-flex flex-column">
+              <a href="" class="tiny">Translucent Compact Face Powder - 03 Medium, 0.22 oz</a>
+              <div>
+                <span class="fs-5">$9</span>
+                <del class="text-black-50 tiny">$14</del>
+              </div>
+              <span class="tiny mt-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </span>
+            </div>
+  
+          </div>
+
+          <div class="col-3 card-2 border rounded-1 p-3" data-cat="">
+  
+            <div class="position-relative w-100">
+              <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/cosmetics-40-1-300x300.jpg"
+                alt="" class="d-block">
+              <span class="position-absolute top-0 start-0 badge rounded-2 bg-danger">
+                -17%
+              </span>
+              <ul class="position-absolute">
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Whishlist">
+                    <i class="fa-regular fa-heart tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Compare">
+                    <i class="fa-solid fa-arrow-right-arrow-left tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Quick View">
+                    <i class="fa-solid fa-magnifying-glass tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Add to cart">
+                    <i class="fa-solid fa-cart-shopping tiny"></i>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="card-2-body d-flex flex-column">
+              <a href="" class="tiny">Allure Luminous Intense Lipstick 0.15oz</a>
+              <div>
+                <span class="fs-5">$20</span>
+                <del class="text-black-50 tiny">$24</del>
+              </div>
+              <span class="tiny mt-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </span>
+            </div>
+  
+          </div>
+
+          <div class="col-3 card-2 border rounded-1 p-3" data-cat="">
+  
+            <div class="position-relative w-100">
+              <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/fashion-10-1-300x300.jpg"
+                alt="" class="d-block">
+              <ul class="position-absolute">
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Whishlist">
+                    <i class="fa-regular fa-heart tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Compare">
+                    <i class="fa-solid fa-arrow-right-arrow-left tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Quick View">
+                    <i class="fa-solid fa-magnifying-glass tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Add to cart">
+                    <i class="fa-solid fa-cart-shopping tiny"></i>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="card-2-body d-flex flex-column">
+              <a href="" class="tiny">Tonga on T-Shirt for Men, Women Short Sleeve Tee</a>
+              <div>
+                <span class="fs-5">$43</span>
+              </div>
+              <span class="tiny mt-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </span>
+            </div>
+  
+          </div>
+
+          <div class="col-3 card-2 border rounded-1 p-3" data-cat="">
+  
+            <div class="position-relative w-100">
+              <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/cosmetic-2-300x300.jpg"
+                alt="" class="d-block">
+              <span class="position-absolute top-0 start-0 badge rounded-2 bg-danger">
+                -37%
+              </span>
+              <ul class="position-absolute">
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Whishlist">
+                    <i class="fa-regular fa-heart tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Compare">
+                    <i class="fa-solid fa-arrow-right-arrow-left tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Quick View">
+                    <i class="fa-solid fa-magnifying-glass tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Add to cart">
+                    <i class="fa-solid fa-cart-shopping tiny"></i>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="card-2-body d-flex flex-column">
+              <a href="" class="tiny">Makeup Brushes Artisan Easel Elite Cosmetics</a>
+              <div>
+                <span class="fs-5">$19</span>
+                <del class="text-black-50 tiny">$30</del>
+              </div>
+              <span class="tiny mt-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </span>
+            </div>
+  
+          </div>
+
+          <div class="col-3 card-2 border rounded-1 p-3" data-cat="">
+  
+            <div class="position-relative w-100">
+              <img src="https://demothemesky-be87.kxcdn.com/merto/wp-content/uploads/2024/05/fashion-5-700x700.jpg"
+                alt="" class="d-block">
+              <span class="position-absolute top-0 start-0 badge rounded-2 bg-danger">
+                hot
+              </span>
+              <ul class="position-absolute">
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Whishlist">
+                    <i class="fa-regular fa-heart tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Compare">
+                    <i class="fa-solid fa-arrow-right-arrow-left tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Quick View">
+                    <i class="fa-solid fa-magnifying-glass tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Add to cart">
+                    <i class="fa-solid fa-cart-shopping tiny"></i>
+                  </button>
+                </li>
+              </ul>
+            </div>
+              
+            <div class="card-2-body d-flex flex-column">
+              <a href="" class="tiny">Nike Air Max Unisex SYSTM Men Sneaker Shoes</a>
+              <div>
+                <span class="fs-5">$148</span>
+              </div>
+              <span class="tiny mt-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </span>
+            </div>
+  
+          </div>
+
+          <div class="col-3 card-2 border rounded-1 p-3" data-cat="">
+  
+            <div class="position-relative w-100">
+              <img src="https://demothemesky-be87.kxcdn.com/merto/wp-content/uploads/2024/05/fashion-6-700x700.jpg"
+                alt="" class="d-block">
+              <ul class="position-absolute">
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Whishlist">
+                    <i class="fa-regular fa-heart tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Compare">
+                    <i class="fa-solid fa-arrow-right-arrow-left tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Quick View">
+                    <i class="fa-solid fa-magnifying-glass tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Add to cart">
+                    <i class="fa-solid fa-cart-shopping tiny"></i>
+                  </button>
+                </li>
+              </ul>
+            </div>
+              
+            <div class="card-2-body d-flex flex-column">
+              <a href="" class="tiny">LV Women Leather Accent Denim Mini Skirt</a>
+              <div>
+                <span class="fs-5">$1,390</span>
+              </div>
+              <span class="tiny mt-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </span>
+            </div>
+  
+          </div>
+
+          <div class="col-3 card-2 border rounded-1 p-3" data-cat="">
+  
+            <div class="position-relative w-100">
+              <img src="https://demothemesky-be87.kxcdn.com/merto/wp-content/uploads/2024/05/automotive-13-700x700.jpg"
+                alt="" class="d-block">
+              <span class="position-absolute top-0 start-0 badge rounded-2 bg-danger">
+                -17%
+              </span>
+              <ul class="position-absolute">
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Whishlist">
+                    <i class="fa-regular fa-heart tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Compare">
+                    <i class="fa-solid fa-arrow-right-arrow-left tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Quick View">
+                    <i class="fa-solid fa-magnifying-glass tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Add to cart">
+                    <i class="fa-solid fa-cart-shopping tiny"></i>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="card-2-body d-flex flex-column">
+              <a href="" class="tiny">High-Perfrmance Carbon Fiber Wheels</a>
+              <div>
+                <span class="fs-5">$499</span>
+                <del class="text-black-50 tiny">$599</del>
+              </div>
+              <span class="tiny mt-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </span>
+            </div>
+  
+          </div>
+
+          <div class="col-3 card-2 border rounded-1 p-3" data-cat="">
+  
+            <div class="position-relative w-100">
+              <img src="https://demothemesky-be87.kxcdn.com/merto/wp-content/uploads/2024/05/automotive-11-500x500.jpg"
+                alt="" class="d-block">
+              <span class="position-absolute top-0 start-0 badge rounded-2 bg-danger">
+                -8%
+              </span>
+              <ul class="position-absolute">
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Whishlist">
+                    <i class="fa-regular fa-heart tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Compare">
+                    <i class="fa-solid fa-arrow-right-arrow-left tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Quick View">
+                    <i class="fa-solid fa-magnifying-glass tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Add to cart">
+                    <i class="fa-solid fa-cart-shopping tiny"></i>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="card-2-body d-flex flex-column">
+              <a href="" class="tiny">Tools 34 Low Profile Hydraulic Trolley</a>
+              <div>
+                <span class="fs-5">$767</span>
+                <del class="text-black-50 tiny">$837</del>
+              </div>
+              <span class="tiny mt-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </span>
+            </div>
+  
+          </div>
+
+          <div class="col-3 card-2 border rounded-1 p-3" data-cat="">
+  
+            <div class="position-relative w-100">
               <img src="https://demothemesky-be87.kxcdn.com/merto/wp-content/uploads/2024/05/electronic-30-6-700x700.jpg"
                 alt="" class="d-block">
               <span class="position-absolute top-0 start-0 badge rounded-2 bg-danger">
@@ -533,10 +1928,541 @@
             </div>
   
           </div>
+        
+          <div class="col-3 card-2 border rounded-1 p-3" data-cat="">
+
+            <div class="position-relative w-100">
+              <img src="https://demothemesky-be87.kxcdn.com/merto/wp-content/uploads/2024/05/electronic-14-2-700x700.jpg"
+                alt="" class="d-block">
+              <span class="position-absolute top-0 start-0 badge rounded-2 bg-danger">
+                -6%
+              </span>
+              <ul class="position-absolute">
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Whishlist">
+                    <i class="fa-regular fa-heart tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Compare">
+                    <i class="fa-solid fa-arrow-right-arrow-left tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Quick View">
+                    <i class="fa-solid fa-magnifying-glass tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Add to cart">
+                    <i class="fa-solid fa-cart-shopping tiny"></i>
+                  </button>
+                </li>
+              </ul>
+            </div>
+              
+            <div class="card-2-body d-flex flex-column">
+              <a href="" class="tiny">Apple Watch Series 9GPS 45mm, Aluminum Case with...</a>
+              <div>
+                <span class="fs-5">$890</span>
+                <del class="text-black-50 tiny">$950</del>
+              </div>
+              <span class="tiny mt-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </span>
+            </div>
+
   
-          <div class="col-3 card-2 border rounded-1 p-3">
+          </div>
   
+          <div class="col-3 card-2 border rounder-1 p-3" data-cat="">
+
+            <div class="position-relative w-100">
+              <img src="https://demothemesky-be87.kxcdn.com/merto/wp-content/uploads/2024/05/automotive-11-500x500.jpg"
+                alt="" class="d-block">
+              <span class="position-absolute top-0 start-0 badge rounded-2 bg-danger">
+                -8%
+              </span>
+              <ul class="position-absolute">
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Whishlist">
+                    <i class="fa-regular fa-heart tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Compare">
+                    <i class="fa-solid fa-arrow-right-arrow-left tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Quick View">
+                    <i class="fa-solid fa-magnifying-glass tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Add to cart">
+                    <i class="fa-solid fa-cart-shopping tiny"></i>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="card-2-body d-flex flex-column">
+              <a href="" class="tiny">Tools 34 Low Profile Hydraulic Trolley</a>
+              <div>
+                <span class="fs-5">$767</span>
+                <del class="text-black-50 tiny">$837</del>
+              </div>
+              <span class="tiny mt-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </span>
+            </div>
+
+          </div>
+  
+          <div class="col-3 card-2 border rounded-1 p-3" data-cat="">
+
             <div class="position-relative">
+              <img src="https://demothemesky-be87.kxcdn.com/merto/wp-content/uploads/2024/05/furniture-6-700x700.jpg"
+                alt="" class="d-block">
+              <span class="position-absolute top-0 start-0 badge rounded-2 bg-danger">
+                -33%
+              </span>
+              <ul class="position-absolute">
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Whishlist">
+                    <i class="fa-regular fa-heart tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Compare">
+                    <i class="fa-solid fa-arrow-right-arrow-left tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Quick View">
+                    <i class="fa-solid fa-magnifying-glass tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Add to cart">
+                    <i class="fa-solid fa-cart-shopping tiny"></i>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="card-2-body d-flex flex-column">
+              <a href="" class="tiny">14-inch Fashion Simplicity Quality Wall Clock, Home Decor</a>
+              <div>
+                <span class="fs-5">$50</span>
+                <del class="text-black-50 tiny">$75</del>
+              </div>
+              <span class="tiny mt-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </span>
+            </div>
+
+          </div>
+  
+          <div class="col-3 card-2 border rounded-1 p-3" data-cat="">
+  
+            <div class="position-relative w-100">
+                <img src="https://demothemesky-be87.kxcdn.com/merto/wp-content/uploads/2024/05/cosmetics-33-700x700.jpg"
+                  alt="" class="d-block">
+                <span class="position-absolute top-0 start-0 badge rounded-2 bg-danger">
+                  -37%
+                </span>
+                <ul class="position-absolute">
+                  <li>
+                    <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Whishlist">
+                      <i class="fa-regular fa-heart tiny"></i>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Compare">
+                      <i class="fa-solid fa-arrow-right-arrow-left tiny"></i>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Quick View">
+                      <i class="fa-solid fa-magnifying-glass tiny"></i>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Add to cart">
+                      <i class="fa-solid fa-cart-shopping tiny"></i>
+                    </button>
+                  </li>
+                </ul>
+            </div>
+            
+            <div class="card-2-body d-flex flex-column">
+              <a href="" class="tiny">Translucent Compact Face Powder - 03 Medium, 0.22 oz</a>
+              <div>
+                <span class="fs-5">$9</span>
+                <del class="text-black-50 tiny">$14</del>
+              </div>
+              <span class="tiny mt-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </span>
+            </div>
+  
+          </div>
+
+          <div class="col-3 card-2 border rounded-1 p-3" data-cat="">
+  
+            <div class="position-relative w-100">
+              <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/cosmetics-40-1-300x300.jpg"
+                alt="" class="d-block">
+              <span class="position-absolute top-0 start-0 badge rounded-2 bg-danger">
+                -17%
+              </span>
+              <ul class="position-absolute">
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Whishlist">
+                    <i class="fa-regular fa-heart tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Compare">
+                    <i class="fa-solid fa-arrow-right-arrow-left tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Quick View">
+                    <i class="fa-solid fa-magnifying-glass tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Add to cart">
+                    <i class="fa-solid fa-cart-shopping tiny"></i>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="card-2-body d-flex flex-column">
+              <a href="" class="tiny">Allure Luminous Intense Lipstick 0.15oz</a>
+              <div>
+                <span class="fs-5">$20</span>
+                <del class="text-black-50 tiny">$24</del>
+              </div>
+              <span class="tiny mt-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </span>
+            </div>
+  
+          </div>
+
+          <div class="col-3 card-2 border rounded-1 p-3" data-cat="">
+  
+            <div class="position-relative w-100">
+              <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/fashion-10-1-300x300.jpg"
+                alt="" class="d-block">
+              <ul class="position-absolute">
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Whishlist">
+                    <i class="fa-regular fa-heart tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Compare">
+                    <i class="fa-solid fa-arrow-right-arrow-left tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Quick View">
+                    <i class="fa-solid fa-magnifying-glass tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Add to cart">
+                    <i class="fa-solid fa-cart-shopping tiny"></i>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="card-2-body d-flex flex-column">
+              <a href="" class="tiny">Tonga on T-Shirt for Men, Women Short Sleeve Tee</a>
+              <div>
+                <span class="fs-5">$43</span>
+              </div>
+              <span class="tiny mt-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </span>
+            </div>
+  
+          </div>
+
+          <div class="col-3 card-2 border rounded-1 p-3" data-cat="">
+  
+            <div class="position-relative w-100">
+              <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/cosmetic-2-300x300.jpg"
+                alt="" class="d-block">
+              <span class="position-absolute top-0 start-0 badge rounded-2 bg-danger">
+                -37%
+              </span>
+              <ul class="position-absolute">
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Whishlist">
+                    <i class="fa-regular fa-heart tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Compare">
+                    <i class="fa-solid fa-arrow-right-arrow-left tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Quick View">
+                    <i class="fa-solid fa-magnifying-glass tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Add to cart">
+                    <i class="fa-solid fa-cart-shopping tiny"></i>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="card-2-body d-flex flex-column">
+              <a href="" class="tiny">Makeup Brushes Artisan Easel Elite Cosmetics</a>
+              <div>
+                <span class="fs-5">$19</span>
+                <del class="text-black-50 tiny">$30</del>
+              </div>
+              <span class="tiny mt-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </span>
+            </div>
+  
+          </div>
+
+          <div class="col-3 card-2 border rounded-1 p-3" data-cat="">
+  
+            <div class="position-relative w-100">
+              <img src="https://demothemesky-be87.kxcdn.com/merto/wp-content/uploads/2024/05/fashion-5-700x700.jpg"
+                alt="" class="d-block">
+              <span class="position-absolute top-0 start-0 badge rounded-2 bg-danger">
+                hot
+              </span>
+              <ul class="position-absolute">
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Whishlist">
+                    <i class="fa-regular fa-heart tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Compare">
+                    <i class="fa-solid fa-arrow-right-arrow-left tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Quick View">
+                    <i class="fa-solid fa-magnifying-glass tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Add to cart">
+                    <i class="fa-solid fa-cart-shopping tiny"></i>
+                  </button>
+                </li>
+              </ul>
+            </div>
+              
+            <div class="card-2-body d-flex flex-column">
+              <a href="" class="tiny">Nike Air Max Unisex SYSTM Men Sneaker Shoes</a>
+              <div>
+                <span class="fs-5">$148</span>
+              </div>
+              <span class="tiny mt-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </span>
+            </div>
+  
+          </div>
+
+          <div class="col-3 card-2 border rounded-1 p-3" data-cat="">
+  
+            <div class="position-relative w-100">
+              <img src="https://demothemesky-be87.kxcdn.com/merto/wp-content/uploads/2024/05/fashion-6-700x700.jpg"
+                alt="" class="d-block">
+              <ul class="position-absolute">
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Whishlist">
+                    <i class="fa-regular fa-heart tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Compare">
+                    <i class="fa-solid fa-arrow-right-arrow-left tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Quick View">
+                    <i class="fa-solid fa-magnifying-glass tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Add to cart">
+                    <i class="fa-solid fa-cart-shopping tiny"></i>
+                  </button>
+                </li>
+              </ul>
+            </div>
+              
+            <div class="card-2-body d-flex flex-column">
+              <a href="" class="tiny">LV Women Leather Accent Denim Mini Skirt</a>
+              <div>
+                <span class="fs-5">$1,390</span>
+              </div>
+              <span class="tiny mt-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </span>
+            </div>
+  
+          </div>
+
+          <div class="col-3 card-2 border rounded-1 p-3" data-cat="">
+  
+            <div class="position-relative w-100">
+              <img src="https://demothemesky-be87.kxcdn.com/merto/wp-content/uploads/2024/05/automotive-13-700x700.jpg"
+                alt="" class="d-block">
+              <span class="position-absolute top-0 start-0 badge rounded-2 bg-danger">
+                -17%
+              </span>
+              <ul class="position-absolute">
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Whishlist">
+                    <i class="fa-regular fa-heart tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Compare">
+                    <i class="fa-solid fa-arrow-right-arrow-left tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Quick View">
+                    <i class="fa-solid fa-magnifying-glass tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Add to cart">
+                    <i class="fa-solid fa-cart-shopping tiny"></i>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="card-2-body d-flex flex-column">
+              <a href="" class="tiny">High-Perfrmance Carbon Fiber Wheels</a>
+              <div>
+                <span class="fs-5">$499</span>
+                <del class="text-black-50 tiny">$599</del>
+              </div>
+              <span class="tiny mt-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </span>
+            </div>
+  
+          </div>
+
+          <div class="col-3 card-2 border rounded-1 p-3" data-cat="">
+  
+            <div class="position-relative w-100">
+              <img src="https://demothemesky-be87.kxcdn.com/merto/wp-content/uploads/2024/05/automotive-11-500x500.jpg"
+                alt="" class="d-block">
+              <span class="position-absolute top-0 start-0 badge rounded-2 bg-danger">
+                -8%
+              </span>
+              <ul class="position-absolute">
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Whishlist">
+                    <i class="fa-regular fa-heart tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Compare">
+                    <i class="fa-solid fa-arrow-right-arrow-left tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Quick View">
+                    <i class="fa-solid fa-magnifying-glass tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Add to cart">
+                    <i class="fa-solid fa-cart-shopping tiny"></i>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="card-2-body d-flex flex-column">
+              <a href="" class="tiny">Tools 34 Low Profile Hydraulic Trolley</a>
+              <div>
+                <span class="fs-5">$767</span>
+                <del class="text-black-50 tiny">$837</del>
+              </div>
+              <span class="tiny mt-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </span>
+            </div>
+  
+          </div>
+
+          <div class="col-3 card-2 border rounded-1 p-3" data-cat="">
+  
+            <div class="position-relative w-100">
               <img src="https://demothemesky-be87.kxcdn.com/merto/wp-content/uploads/2024/05/electronic-30-6-700x700.jpg"
                 alt="" class="d-block">
               <span class="position-absolute top-0 start-0 badge rounded-2 bg-danger">
@@ -582,14 +2508,64 @@
             </div>
   
           </div>
-  
-          <div class="col-3 card-2 border rounded-1 p-3">
-  
-            <div class="position-relative">
-              <img src="https://demothemesky-be87.kxcdn.com/merto/wp-content/uploads/2024/05/electronic-30-6-700x700.jpg"
+        
+          <div class="col-3 card-2 border rounded-1 p-3" data-cat="">
+
+            <div class="position-relative w-100">
+              <img src="https://demothemesky-be87.kxcdn.com/merto/wp-content/uploads/2024/05/electronic-14-2-700x700.jpg"
                 alt="" class="d-block">
               <span class="position-absolute top-0 start-0 badge rounded-2 bg-danger">
-                -35%
+                -6%
+              </span>
+              <ul class="position-absolute">
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Whishlist">
+                    <i class="fa-regular fa-heart tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Compare">
+                    <i class="fa-solid fa-arrow-right-arrow-left tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Quick View">
+                    <i class="fa-solid fa-magnifying-glass tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Add to cart">
+                    <i class="fa-solid fa-cart-shopping tiny"></i>
+                  </button>
+                </li>
+              </ul>
+            </div>
+              
+            <div class="card-2-body d-flex flex-column">
+              <a href="" class="tiny">Apple Watch Series 9GPS 45mm, Aluminum Case with...</a>
+              <div>
+                <span class="fs-5">$890</span>
+                <del class="text-black-50 tiny">$950</del>
+              </div>
+              <span class="tiny mt-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </span>
+            </div>
+
+  
+          </div>
+  
+          <div class="col-3 card-2 border rounder-1 p-3" data-cat="">
+
+            <div class="position-relative w-100">
+              <img src="https://demothemesky-be87.kxcdn.com/merto/wp-content/uploads/2024/05/automotive-11-500x500.jpg"
+                alt="" class="d-block">
+              <span class="position-absolute top-0 start-0 badge rounded-2 bg-danger">
+                -8%
               </span>
               <ul class="position-absolute">
                 <li>
@@ -616,10 +2592,442 @@
             </div>
             
             <div class="card-2-body d-flex flex-column">
-              <a href="" class="tiny">Laptop Asus Vivobook 15 1355U, 8GB RAM, 512GB SSD</a>
+              <a href="" class="tiny">Tools 34 Low Profile Hydraulic Trolley</a>
               <div>
-                <span class="fs-5">$999</span>
-                <del class="text-black-50 tiny">$1536</del>
+                <span class="fs-5">$767</span>
+                <del class="text-black-50 tiny">$837</del>
+              </div>
+              <span class="tiny mt-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </span>
+            </div>
+
+          </div>
+  
+          <div class="col-3 card-2 border rounded-1 p-3" data-cat="">
+
+            <div class="position-relative">
+              <img src="https://demothemesky-be87.kxcdn.com/merto/wp-content/uploads/2024/05/furniture-6-700x700.jpg"
+                alt="" class="d-block">
+              <span class="position-absolute top-0 start-0 badge rounded-2 bg-danger">
+                -33%
+              </span>
+              <ul class="position-absolute">
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Whishlist">
+                    <i class="fa-regular fa-heart tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Compare">
+                    <i class="fa-solid fa-arrow-right-arrow-left tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Quick View">
+                    <i class="fa-solid fa-magnifying-glass tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Add to cart">
+                    <i class="fa-solid fa-cart-shopping tiny"></i>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="card-2-body d-flex flex-column">
+              <a href="" class="tiny">14-inch Fashion Simplicity Quality Wall Clock, Home Decor</a>
+              <div>
+                <span class="fs-5">$50</span>
+                <del class="text-black-50 tiny">$75</del>
+              </div>
+              <span class="tiny mt-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </span>
+            </div>
+
+          </div>
+  
+          <div class="col-3 card-2 border rounded-1 p-3" data-cat="">
+  
+            <div class="position-relative w-100">
+                <img src="https://demothemesky-be87.kxcdn.com/merto/wp-content/uploads/2024/05/cosmetics-33-700x700.jpg"
+                  alt="" class="d-block">
+                <span class="position-absolute top-0 start-0 badge rounded-2 bg-danger">
+                  -37%
+                </span>
+                <ul class="position-absolute">
+                  <li>
+                    <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Whishlist">
+                      <i class="fa-regular fa-heart tiny"></i>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Compare">
+                      <i class="fa-solid fa-arrow-right-arrow-left tiny"></i>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Quick View">
+                      <i class="fa-solid fa-magnifying-glass tiny"></i>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Add to cart">
+                      <i class="fa-solid fa-cart-shopping tiny"></i>
+                    </button>
+                  </li>
+                </ul>
+            </div>
+            
+            <div class="card-2-body d-flex flex-column">
+              <a href="" class="tiny">Translucent Compact Face Powder - 03 Medium, 0.22 oz</a>
+              <div>
+                <span class="fs-5">$9</span>
+                <del class="text-black-50 tiny">$14</del>
+              </div>
+              <span class="tiny mt-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </span>
+            </div>
+  
+          </div>
+
+          <div class="col-3 card-2 border rounded-1 p-3" data-cat="">
+  
+            <div class="position-relative w-100">
+              <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/cosmetics-40-1-300x300.jpg"
+                alt="" class="d-block">
+              <span class="position-absolute top-0 start-0 badge rounded-2 bg-danger">
+                -17%
+              </span>
+              <ul class="position-absolute">
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Whishlist">
+                    <i class="fa-regular fa-heart tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Compare">
+                    <i class="fa-solid fa-arrow-right-arrow-left tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Quick View">
+                    <i class="fa-solid fa-magnifying-glass tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Add to cart">
+                    <i class="fa-solid fa-cart-shopping tiny"></i>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="card-2-body d-flex flex-column">
+              <a href="" class="tiny">Allure Luminous Intense Lipstick 0.15oz</a>
+              <div>
+                <span class="fs-5">$20</span>
+                <del class="text-black-50 tiny">$24</del>
+              </div>
+              <span class="tiny mt-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </span>
+            </div>
+  
+          </div>
+
+          <div class="col-3 card-2 border rounded-1 p-3" data-cat="">
+  
+            <div class="position-relative w-100">
+              <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/fashion-10-1-300x300.jpg"
+                alt="" class="d-block">
+              <ul class="position-absolute">
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Whishlist">
+                    <i class="fa-regular fa-heart tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Compare">
+                    <i class="fa-solid fa-arrow-right-arrow-left tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Quick View">
+                    <i class="fa-solid fa-magnifying-glass tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Add to cart">
+                    <i class="fa-solid fa-cart-shopping tiny"></i>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="card-2-body d-flex flex-column">
+              <a href="" class="tiny">Tonga on T-Shirt for Men, Women Short Sleeve Tee</a>
+              <div>
+                <span class="fs-5">$43</span>
+              </div>
+              <span class="tiny mt-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </span>
+            </div>
+  
+          </div>
+
+          <div class="col-3 card-2 border rounded-1 p-3" data-cat="">
+  
+            <div class="position-relative w-100">
+              <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/cosmetic-2-300x300.jpg"
+                alt="" class="d-block">
+              <span class="position-absolute top-0 start-0 badge rounded-2 bg-danger">
+                -37%
+              </span>
+              <ul class="position-absolute">
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Whishlist">
+                    <i class="fa-regular fa-heart tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Compare">
+                    <i class="fa-solid fa-arrow-right-arrow-left tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Quick View">
+                    <i class="fa-solid fa-magnifying-glass tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Add to cart">
+                    <i class="fa-solid fa-cart-shopping tiny"></i>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="card-2-body d-flex flex-column">
+              <a href="" class="tiny">Makeup Brushes Artisan Easel Elite Cosmetics</a>
+              <div>
+                <span class="fs-5">$19</span>
+                <del class="text-black-50 tiny">$30</del>
+              </div>
+              <span class="tiny mt-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </span>
+            </div>
+  
+          </div>
+
+          <div class="col-3 card-2 border rounded-1 p-3" data-cat="">
+  
+            <div class="position-relative w-100">
+              <img src="https://demothemesky-be87.kxcdn.com/merto/wp-content/uploads/2024/05/fashion-5-700x700.jpg"
+                alt="" class="d-block">
+              <span class="position-absolute top-0 start-0 badge rounded-2 bg-danger">
+                hot
+              </span>
+              <ul class="position-absolute">
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Whishlist">
+                    <i class="fa-regular fa-heart tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Compare">
+                    <i class="fa-solid fa-arrow-right-arrow-left tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Quick View">
+                    <i class="fa-solid fa-magnifying-glass tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Add to cart">
+                    <i class="fa-solid fa-cart-shopping tiny"></i>
+                  </button>
+                </li>
+              </ul>
+            </div>
+              
+            <div class="card-2-body d-flex flex-column">
+              <a href="" class="tiny">Nike Air Max Unisex SYSTM Men Sneaker Shoes</a>
+              <div>
+                <span class="fs-5">$148</span>
+              </div>
+              <span class="tiny mt-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </span>
+            </div>
+  
+          </div>
+
+          <div class="col-3 card-2 border rounded-1 p-3" data-cat="">
+  
+            <div class="position-relative w-100">
+              <img src="https://demothemesky-be87.kxcdn.com/merto/wp-content/uploads/2024/05/fashion-6-700x700.jpg"
+                alt="" class="d-block">
+              <ul class="position-absolute">
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Whishlist">
+                    <i class="fa-regular fa-heart tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Compare">
+                    <i class="fa-solid fa-arrow-right-arrow-left tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Quick View">
+                    <i class="fa-solid fa-magnifying-glass tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Add to cart">
+                    <i class="fa-solid fa-cart-shopping tiny"></i>
+                  </button>
+                </li>
+              </ul>
+            </div>
+              
+            <div class="card-2-body d-flex flex-column">
+              <a href="" class="tiny">LV Women Leather Accent Denim Mini Skirt</a>
+              <div>
+                <span class="fs-5">$1,390</span>
+              </div>
+              <span class="tiny mt-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </span>
+            </div>
+  
+          </div>
+
+          <div class="col-3 card-2 border rounded-1 p-3" data-cat="">
+  
+            <div class="position-relative w-100">
+              <img src="https://demothemesky-be87.kxcdn.com/merto/wp-content/uploads/2024/05/automotive-13-700x700.jpg"
+                alt="" class="d-block">
+              <span class="position-absolute top-0 start-0 badge rounded-2 bg-danger">
+                -17%
+              </span>
+              <ul class="position-absolute">
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Whishlist">
+                    <i class="fa-regular fa-heart tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Compare">
+                    <i class="fa-solid fa-arrow-right-arrow-left tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Quick View">
+                    <i class="fa-solid fa-magnifying-glass tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Add to cart">
+                    <i class="fa-solid fa-cart-shopping tiny"></i>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="card-2-body d-flex flex-column">
+              <a href="" class="tiny">High-Perfrmance Carbon Fiber Wheels</a>
+              <div>
+                <span class="fs-5">$499</span>
+                <del class="text-black-50 tiny">$599</del>
+              </div>
+              <span class="tiny mt-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </span>
+            </div>
+  
+          </div>
+
+          <div class="col-3 card-2 border rounded-1 p-3" data-cat="">
+  
+            <div class="position-relative w-100">
+              <img src="https://demothemesky-be87.kxcdn.com/merto/wp-content/uploads/2024/05/automotive-11-500x500.jpg"
+                alt="" class="d-block">
+              <span class="position-absolute top-0 start-0 badge rounded-2 bg-danger">
+                -8%
+              </span>
+              <ul class="position-absolute">
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Whishlist">
+                    <i class="fa-regular fa-heart tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Compare">
+                    <i class="fa-solid fa-arrow-right-arrow-left tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Quick View">
+                    <i class="fa-solid fa-magnifying-glass tiny"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Add to cart">
+                    <i class="fa-solid fa-cart-shopping tiny"></i>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="card-2-body d-flex flex-column">
+              <a href="" class="tiny">Tools 34 Low Profile Hydraulic Trolley</a>
+              <div>
+                <span class="fs-5">$767</span>
+                <del class="text-black-50 tiny">$837</del>
               </div>
               <span class="tiny mt-1">
                 <i class="fa-solid fa-star"></i>
@@ -785,6 +3193,6 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-    <script src="../JavaScript/myJava.js"></script>
+    <script src="../JavaScript/shop.js"></script>
   </body>
 </html>

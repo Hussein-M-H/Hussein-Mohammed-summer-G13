@@ -2,14 +2,51 @@ const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]
 const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
 
 $(document).ready(function(){
-  $(".owl-carousel").owlCarousel(
-    {
-      items: 5,
-      loop: true,
-      nav: true,
-      navText: ['<i class="fa-solid text-primary fa-chevron-right arrow right"></i>', '<i class="fa-solid fa-chevron-left text-primary arrow left"></i>']
-    }
-  );
+  $(".owl-carousel").owlCarousel();
+});
+
+var owl1 = $(".firstOwl").owlCarousel({
+    items: 5,
+    loop: true,
+    dots: false,
+});
+
+$("#nextBtn").click(function() {
+    owl1.trigger("next.owl.carousel");
+});
+
+$("#prevBtn").click(function() {
+    owl1.trigger("prev.owl.carousel");
+});
+
+var owl2 = $(".secondOwl").owlCarousel({
+    items: 5,
+    loop: true,
+    dots: false,
+});
+
+$("#nextBtn2").click(function() {
+    owl2.trigger("next.owl.carousel");
+});
+
+$("#prevBtn2").click(function() {
+    owl2.trigger("prev.owl.carousel");
+});
+
+
+var owl3 = $(".thirdOwl").owlCarousel({
+    items: 3,
+    loop: true,
+    dots: false,
+    margin: 50
+});
+
+$("#nextBtn3").click(function() {
+    owl3.trigger("next.owl.carousel");
+});
+
+$("#prevBtn3").click(function() {
+    owl3.trigger("prev.owl.carousel");
 });
 
 // const exampleEl = document.getElementById('example')
@@ -52,3 +89,5 @@ $(document).ready(function(){
 // console.log(ele)
 // }
 // )
+
+      

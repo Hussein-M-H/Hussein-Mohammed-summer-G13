@@ -21,20 +21,35 @@
   </head>
 <body>
 
-  <form action="">
-    
-  </form>
+  <div class="container">
+         <form class="row gy-3 mt-3">
+        <div class="col-6">
+            <input type="text" placeholder="enter your name" class="form-control" name="" id="">
+        </div>
+         <div class="col-6">
+            <input type="text" placeholder="enter your email" class="form-control" name="" id="">
+        </div>
+        <div class="col-12">
+            <button class="btn btn-primary" id="addUserBtn">Add User</button>
+        </div>
+        </form>
+    </div>
 
-  <table style="width:400px">
-    <thead>
-      <tr>
-        <td>Name</td>
-        <td>Email</td>
-      </tr>
-    </thead>
-    <tbody id="usersTable">
-    </tbody>
-  </table>
+  <div class="container" style="height: 3000px;">
+         <table class="table my-4">
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+            </tr>
+            <tbody>
+                <tr>
+                    <td>Nouran</td>
+                    <td>nouran@email.com</td>
+                </tr>
+            </tbody>
+        </table>
+  </div>
+
   <script src="myJS.js"></script>
 </body>
 </html>

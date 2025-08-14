@@ -107,3 +107,4 @@ loginForm.addEventListener('submit', (e) => {
     console.log(e.target.elements.userName.value)
     addUser(e.target.elements.userName.value , e.target.elements.userEmail.value)
 })
+

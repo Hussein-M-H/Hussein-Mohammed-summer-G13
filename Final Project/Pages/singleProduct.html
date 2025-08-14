@@ -1,0 +1,989 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>singleProduct</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" 
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" 
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Damion&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/owl.carousel.min.css">
+    <link rel="stylesheet" href="../CSS/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../CSS/Style.css">
+    <link rel="stylesheet" href="../CSS/responsive.css">
+  </head>
+  <body>
+
+    <nav class="container-fluid px-big py-4 tiny border-bottom">
+      <div class="w-100 row gx-0 justify-content-between align-items-center">
+        <a href="" title="Metro" class="col-auto">
+          <img src="../images/logo.png" alt="" class="logo">
+        </a>
+
+        <div class="row gx-0 justify-content-between col-5 align-items-center">
+
+          <a href="" class="d-lg-flex d-sm-none col-auto justify-content-between align-items-center">
+            <i class="fa-solid fa-phone fs-3 pe-3"></i>
+            <div class="d-flex flex-column">
+              <span>Contact us 24/7</span>
+              <span class="fw-bold">(+92) 3942 7879</span>
+            </div>
+          </a>
+
+          <div class="col-7 row gx-0 position-relative small-v-l justify-content-between align-items-center bg-secondary bg-opacity-25 py-1 px-1 rounded-2">
+            <select name="" id="" class="border-0 cursor-pointer outline-0 bg-transparent col-auto p-3 pe-0">
+              <option value="" selected>All categories</option>
+              <option value="">one</option>
+              <option value="">two</option>
+              <option value="">three</option>
+            </select>
+            <input type="text" placeholder="Search for products" name="productSearched" class="border-0 outline-0 p-3 col-4 bg-transparent">
+            <button class="border-0 outline-0 bg-dark p-2-3 rounded-3 text-white col-auto"><i class="fa-solid fa-magnifying-glass fs-5"></i></button>
+          </div>
+
+        </div>
+
+        <div class="d-flex col-3 align-items-center justify-content-between">
+          <div class="row g-0 col-5 justify-content-between">
+            
+            <div class="position-relative col-auto">
+
+              <a href="" class="row g-0 justify-content-between align-items-center dropdown-on-hover dropdown-link">
+                <img src="https://merto-be87.kxcdn.com/merto/wp-content/plugins/themesky-demo/images/flags/english.png" class="flag-img" alt="">
+                <span class="col-auto">English</span>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="" class="align-items-center">
+                    <img src="https://merto-be87.kxcdn.com/merto/wp-content/plugins/themesky-demo/images/flags/espanol.png" class="flag-img" alt="">
+                    <span class="col-auto">Español</span> 
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="align-items-center">
+                    <img src="https://merto-be87.kxcdn.com/merto/wp-content/plugins/themesky-demo/images/flags/francais.png" class="flag-img" alt="">
+                    <span class="col-auto">Fransaic</span> 
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="align-items-center">
+                    <img src="https://merto-be87.kxcdn.com/merto/wp-content/plugins/themesky-demo/images/flags/portugues.png" class="flag-img" alt="">
+                    <span class="col-auto">Portuguese</span> 
+                  </a>
+                </li>
+              </ul>
+
+            </div>
+
+            <div class="position-relative col-auto">
+
+              <a href="" class="d-flex justify-content-between dropdown-on-hover dropdown-link">
+                USD
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="" class="d-flex ms-2 dropdown-on-hover">
+                    EUR
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="d-flex ms-2 dropdown-on-hover">
+                    BRL
+                  </a>
+                </li>
+              </ul>
+
+            </div>
+
+          </div>
+
+          <a class="col-3 d-flex align-items-center cursor-pointer justify-content-between">
+            <i class="fa-regular fa-user fs-5"></i>
+            <span class="fw-bold">Account</span>
+          </a>
+
+          <a href="" class="position-relative">
+            <i class="fa-regular fa-heart fs-5">
+              <span class="position-absolute p-1 top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                0
+              </span>
+            </i>
+          </a>
+
+          <a href="" class=" position-relative">
+            <i class="fa-solid fa-cart-shopping fs-5">
+              <span class="position-absolute p-1 top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                0
+              </span>
+            </i>
+          </a>
+          
+        </div>
+
+      </div>
+    </nav>
+
+    <header class="container-fluid px-big tiny border-bottom">
+      
+      <div class="row g-0 justify-content-between align-items-center">
+        
+        <a class="p-3 ps-0 col-auto border-end">
+          <i class="fa-solid fa-bars"></i>
+          <span class="fw-bold cursor-pointer">SHOP BY CATEGORIES</span>
+        </a>
+
+        <div class="row col-10 g-0 py-3 justify-content-between">
+          
+          <div class="position-relative col-1">
+  
+            <a href="" class="d-flex justify-content-between dropdown-on-hover text-danger dropdown-link py-1">
+              Homepages
+            </a>
+            <ul class="dropdown-menu">
+            </ul>
+  
+          </div>
+  
+          <div class="position-relative col-1">
+  
+            <a href="" class="py-1 d-flex justify-content-between dropdown-on-hover dropdown-link">
+              Categories
+            </a>
+            <ul class="dropdown-menu">
+            </ul>
+  
+          </div>
+  
+          <div class="position-relative col-auto">
+  
+            <a href="" class="d-flex py-1 justify-content-between dropdown-on-hover dropdown-link">
+              Products
+            </a>
+            <ul class="dropdown-menu">
+            </ul>
+  
+          </div>
+  
+          <div class="position-relative col-auto">
+  
+            <a href="" class="py-1 d-flex justify-content-between dropdown-on-hover dropdown-link">
+              Pages
+            </a>
+            <ul class="dropdown-menu">
+            </ul>
+  
+          </div>
+  
+          <a class="col-auto py-1">
+            <span class="cursor-pointer">About Us</span>
+          </a>
+  
+          <a class="col-auto py-1">
+            <span class="cursor-pointer">Blog</span>
+          </a>
+          
+          <a class="col-auto py-1">
+            <i class="fa-solid fa-percent pe-1"></i>
+            <span class="cursor-pointer">Best Discount</span>
+          </a>
+  
+          <div class="position-relative col-3 py-1 justify-content-end">
+  
+            <a href="" class="d-flex justify-content-end dropdown-on-hover dropdown-link">
+              Recently viewed
+            </a>
+            <ul class="dropdown-menu">
+            </ul>
+  
+          </div>
+
+        </div>
+        
+      </div>
+
+    </header>
+    
+    <nav class="container-fluid px-big tiny mt-3" style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+      <ol class="breadcrumb mb-2">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item"><a href="#">Shop</a></li>
+        <li class="breadcrumb-item"><a href="#">Fashion</a></li>
+        <li class="breadcrumb-item"><a href="#">Men</a></li>
+        <li class="breadcrumb-item"><a href="#">Accessories</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Nike Air Max Unisex SYSTM Men Sneaker Shoes</li>
+      </ol>
+    </nav>
+    
+    <div class="container-fluid px-big mb-big">
+      <div class="row g-0">
+        <secton class="product-show col-7 justify-content-between align-items-start row g-0">
+          <div class="col-auto product-poses d-flex flex-column">
+            <button class="active btn border d-flex rounded-2 mb-2 align-items-center justify-content-between product-pose" id="B1">
+              <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/fashion-5-300x300.jpg" alt="" class="w-100">
+            </button>
+            <button class="btn border d-flex rounded-2 mb-2 align-items-center justify-content-between product-pose" id="B2">
+              <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/fashion-20-5-300x300.jpg" alt="" class="w-100">
+            </button>
+            <button class="btn border d-flex rounded-2 mb-2 align-items-center justify-content-between product-pose" id="B3">
+              <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/fashion-20-4-300x300.jpg" alt="" class="w-100">
+            </button>
+            <button class="btn border d-flex rounded-2 mb-2 align-items-center justify-content-between product-pose" id="B4">
+              <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/fashion-20-3-300x300.jpg" alt="" class="w-100">
+            </button>
+          </div>
+
+          <div class="product-img border position-relative col-10">
+            <span class="position-absolute custom-badge badge p-2 tiny rounded-2 bg-danger">
+                Hot
+              </span>
+            <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/fashion-5.jpg" alt="" class="w-100" id="productImg">
+          </div>
+
+        </secton>
+
+        <article id="product-info" class="col-5 d-flex px-5 flex-column">
+          <span class="text-black-50 tiny mb-2">Nike</span>
+          <h3 class="fw-semibold">
+            Nike Air Max Unisex SYSTM Men Sneaker Shoes
+          </h3>
+          <div class="tiny d-flex tiny mb-2 align-items-center">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span class="text-black-50 col-auto">
+              4.50
+              (4 Reviews)
+              <a href="" class="underline-animation red-on-hover">Write a review</a>             
+            </span>
+          </div>
+
+          <div class="d-flex flex-column pb-3 mb-2">
+            <span><i class="fa-solid fa-check text-success tiny"></i> Machine wash</span>
+            <span><i class="fa-solid fa-check text-success tiny"></i> Lace-Up</span>
+            <span><i class="fa-solid fa-check text-success tiny"></i> 14.11 Ounces</span>
+          </div>
+          
+          <span class="fs-4 fw-medium">$148</span>
+          <span class="bg-success-subtle d-inline-block me-auto rounded-2 p-1 mb-4 text-success">In stock</span>
+
+          <form action="" class="row g-0 justify-content-between">
+            <div class="col-2 rounded-3 bg-body-secondary d-flex justify-content-evenly">
+              <button class="outline-0 border-0 bg-transparent" id="minus" type="button">-</button>
+              <input type="number" value="0" name="productsCount" min="0" step="1" class="outline-0 border-0 bg-transparent w-50 text-center" id="numberInpWithBtn">
+              <button class="outline-0 border-0 bg-transparent" id="plus" type="button">+</button>
+            </div>
+            <button class="addToCartBtn col-5 p-3 py-2 rounded-2 fw-bold tiny">ADD TO CART</button>
+            <button class="Buy-btn p-3 py-2 col-4 rounded-2 fw-bold tiny">BUY NOW</button>            
+          </form>
+
+          <div class="d-flex py-4 border-bottom tiny">
+            <a href="" class="text-black-50 me-4 red-on-hover cursor-pointer">
+              <i class="fa-regular fa-heart me-1"></i>
+              Add  to wishlist
+            </a>
+
+            <a href="" class="text-black-50 red-on-hover cursor-pointer">
+              <i class="fa-solid fa-arrow-right-arrow-left me-1"></i>
+              Add  to compare
+            </a>
+          </div>
+
+          <dl class="tiny my-3">
+            <div class="d-flex">
+              <dt class="text-black-50 me-2 fw-normal">SKU:</dt>
+              <dd class="text-black">GWV6GFJCTH</dd>
+            </div>
+            <div class="d-flex">
+              <dt class="text-black-50 me-2 fw-normal">Categories:</dt>
+              <dd class="text-black"><a href="">Accessories</a>, <a href="">Shoes</a></dd>
+            </div>
+          </dl>
+
+          <div class="brands-icons d-flex tiny">
+            <a href="">
+              <i class="fa-brands fa-facebook-f me-3"></i>
+            </a>
+            <a href="">
+              <i class="fa-solid fa-p me-3"></i>
+            </a>
+            <a href="">
+              <i class="fa-brands fa-x-twitter me-3"></i>
+            </a>
+            <a href="">
+              <i class="fa-brands fa-instagram me-3"></i>
+            </a>
+          </div>
+            
+        </article>
+      </div>
+    </div>
+    
+    <div class="container-fluid px-big mb-big"> 
+      <div class="row bg-success-subtle py-3 pb-0 px-5 overflow-hidden align-items-center rounded-2">
+        <div class="col-5 me-3">
+          <h3 class="fw-semibold">
+            Earn Cash Back For The Things You Buy Every Where
+          </h3>
+          <div class="d-flex tiny">
+            <span>Application via Merto.</span>
+            <a href="" class="underline-animation">Terms & Conditions</a>
+          </div>         
+        </div>
+        <button class="col-auto myBtn green rounded-2 py-3 px-3">
+          VIEW MORE
+        </button>
+        <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/04/payments-2-1.png" alt="" class="col-5">
+      </div>
+    </div>
+
+    <div class="container-fluid px-big mb-big">
+      <div class="mb-5">
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+          <div class="small-v-l position-relative">
+            <button class="nav-link fs-3 fw-semibold underline-animation simple active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Descrition</button>
+          </div>
+          <div class="small-v-l position-relative">
+            <button class="nav-link fs-3 fw-semibold underline-animation simple" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Specification</button>
+          </div>
+          <div class="">
+            <button class="nav-link fs-3 fw-semibold underline-animation simple" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Reviews (4)</button>
+          </div>        
+        </div>
+      </div>
+      <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+          <div class="row justify-content-between row g-0">
+            <p class="col-5 pe-5 tiny">
+              Compellingly grow performance based mindshare through parallel potentialities. Rapidiously underwhelm top-line catalysts for change before best-of-breed materials. Competently brand timely catalysts for change through sustainable systems. Completely expedite ubiquitous bandwidth after integrated action items. Progressively transform leading-edge supply chains whereas flexible niche markets.
+            </p>
+  
+            <table class="col-7 border rounded-4 description-table">
+              <tr>
+                <th class="w-25">Shipping</th>
+                <td>We currently offer free shipping worldwide on all orders over $100.</td>
+              </tr>
+              <tr>
+                <th class="w-25">Sizing</th>
+                <td>Fits true to size. Do you need size advice?</td>
+              </tr>
+              <tr>
+                <th class="w-25">Return & exchange</th>
+                <td>If you are not satisfied with your purchase you can return it to us within 14 days for an exchange or refund.</td>
+              </tr>
+              <tr>
+                <th class="w-25">Assistance</th>
+                <td>Contact us on <a href="tel:+445558865">(+44) 555 88 65</a>, or email us at <a href="mailto:support@themesky.com">support@themesky.com</a></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="tab-pane" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="1">
+          <table class="border w-100 rounded-4 description-table">
+              <tr>
+                <th class="w-25">Fabric Type</th>
+                <td>50% Cotton, 48% Polyester, 2% Spandex</td>
+              </tr>
+              <tr>
+                <th class="w-25">Care Instructions</th>
+                <td>Hand Wash Only</td>
+              </tr>
+              <tr>
+                <th class="w-25">Returns</th>
+                <td>FREE Returns</td>
+              </tr>
+              <tr>
+                <th class="w-25">Season</th>
+                <td>Spring,summer and fall</td>
+              </tr>
+              <tr>
+                <th>Dimensions</th>
+                <td>0.5 x 0.5 x 0.5 inches</td>
+              </tr>
+              <tr>
+                <th>Item Weight</th>
+                <td>5.6 ounces</td>
+              </tr>
+              <tr>
+                <th>Material</th>
+                <td>Varsity jacket made of polyester fabric, super durable and soft enough, breathable, cozy, comfortable</td>
+              </tr>
+              <tr>
+                <th>Multi-occasion</th>
+                <td>Fashion unisex letterman jackets, perfect for men, women, teens or couples</td>
+              </tr>
+            </table>
+        </div>
+        <div class="tab-pane" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="2">
+          ...
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid px-big mb-big">
+
+      <div class="row mb-5">          
+          <h2 class="col-auto">Related products</h2>
+      </div>
+
+      <div class="position-relative owl-carousel-container overflow-hidden">
+        <div class="owl-carousel Owl border rounded-2">
+
+          <div>
+            <div class="card-2 border-end p-3">
+    
+              <div class="position-relative w-100">
+                <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/electronic-19-300x300.jpg"
+                 alt="" class="d-block">
+                <ul class="position-absolute">
+                  <li>
+                    <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Whishlist">
+                      <i class="fa-regular fa-heart tiny"></i>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Compare">
+                      <i class="fa-solid fa-arrow-right-arrow-left tiny"></i>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Quick View">
+                      <i class="fa-solid fa-magnifying-glass tiny"></i>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Add to cart">
+                      <i class="fa-solid fa-cart-shopping tiny"></i>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+              
+              <div class="card-2-body d-flex flex-column">
+                <a href="" class="tiny">New York Yankees MLB League Essential T-shirt</a>
+                <div>
+                  <span class="fs-5">$148</span>
+                </div>
+                <span class="tiny mt-1">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+              </div>
+    
+            </div>
+          </div>
+
+          <div> 
+            <div class="card-2 border-end p-3">
+    
+              <div class="position-relative w-100">
+                <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/fashion-17-300x300.jpg"
+                 alt="" class="d-block">
+                <ul class="position-absolute">
+                  <li>
+                    <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Whishlist">
+                      <i class="fa-regular fa-heart tiny"></i>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Compare">
+                      <i class="fa-solid fa-arrow-right-arrow-left tiny"></i>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Quick View">
+                      <i class="fa-solid fa-magnifying-glass tiny"></i>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Add to cart">
+                      <i class="fa-solid fa-cart-shopping tiny"></i>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+              
+              <div class="card-2-body d-flex flex-column">
+                <a href="" class="tiny">Oversize Unisex Cotton Chunky Sweater Brick</a>
+                <div>
+                  <span class="fs-5">$81</span>
+                </div>
+                <span class="tiny mt-1">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+              </div>
+    
+            </div>
+          </div>
+
+          <div>
+            <div class="card-2 border-end p-3">
+    
+              <div class="position-relative w-100">
+                <img src="https://demothemesky-be87.kxcdn.com/merto/wp-content/uploads/2024/05/automotive-13-700x700.jpg"
+                 alt="" class="d-block">
+                <span class="position-absolute top-0 start-0 badge rounded-2 bg-danger">
+                  -17%
+                </span>
+                <ul class="position-absolute">
+                  <li>
+                    <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Whishlist">
+                      <i class="fa-regular fa-heart tiny"></i>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Compare">
+                      <i class="fa-solid fa-arrow-right-arrow-left tiny"></i>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Quick View">
+                      <i class="fa-solid fa-magnifying-glass tiny"></i>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Add to cart">
+                      <i class="fa-solid fa-cart-shopping tiny"></i>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+              
+              <div class="card-2-body d-flex flex-column">
+                <a href="" class="tiny">High-Perfrmance Carbon Fiber Wheels</a>
+                <div>
+                  <span class="fs-5">$499</span>
+                  <del class="text-black-50 tiny">$599</del>
+                </div>
+                <span class="tiny mt-1">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+              </div>
+    
+            </div>
+          </div>
+          
+          <div>
+            <div class="card-2 border-end p-3">
+    
+              <div class="position-relative w-100">
+                <img src="https://demothemesky-be87.kxcdn.com/merto/wp-content/uploads/2024/05/automotive-11-500x500.jpg"
+                 alt="" class="d-block">
+                <span class="position-absolute top-0 start-0 badge rounded-2 bg-danger">
+                  -8%
+                </span>
+                <ul class="position-absolute">
+                  <li>
+                    <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Whishlist">
+                      <i class="fa-regular fa-heart tiny"></i>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Compare">
+                      <i class="fa-solid fa-arrow-right-arrow-left tiny"></i>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Quick View">
+                      <i class="fa-solid fa-magnifying-glass tiny"></i>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Add to cart">
+                      <i class="fa-solid fa-cart-shopping tiny"></i>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+              
+              <div class="card-2-body d-flex flex-column">
+                <a href="" class="tiny">Tools 34 Low Profile Hydraulic Trolley</a>
+                <div>
+                  <span class="fs-5">$767</span>
+                  <del class="text-black-50 tiny">$837</del>
+                </div>
+                <span class="tiny mt-1">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+              </div>
+    
+            </div>
+          </div>
+
+          <div>
+            <div class="card-2 border-end p-3">
+    
+              <div class="position-relative w-100">
+                <img src="https://demothemesky-be87.kxcdn.com/merto/wp-content/uploads/2024/05/electronic-30-5-700x700.jpg"
+                 alt="" class="d-block">
+                <ul class="position-absolute">
+                  <li>
+                    <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Whishlist">
+                      <i class="fa-regular fa-heart tiny"></i>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Compare">
+                      <i class="fa-solid fa-arrow-right-arrow-left tiny"></i>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Quick View">
+                      <i class="fa-solid fa-magnifying-glass tiny"></i>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Add to cart">
+                      <i class="fa-solid fa-cart-shopping tiny"></i>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+              
+              <div class="card-2-body d-flex flex-column">
+                <a href="" class="tiny">Apple MacBook Air With Apple M1 Chip, 13.3 inch, 8GB RAM,...</a>
+                <div>
+                  <span class="fs-5">$572</span>
+                </div>
+                <span class="tiny mt-1">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+              </div>
+    
+            </div>
+          </div>
+
+          <div>
+            <div class="card-2 border-end p-3">
+
+              <div class="position-relative">
+                <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/cosmetics-40-1-300x300.jpg"
+                  alt="" class="d-block">
+                <span class="position-absolute top-0 start-0 badge rounded-2 bg-danger">
+                  -17%
+                </span>
+                <ul class="position-absolute">
+                  <li>
+                    <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Whishlist">
+                      <i class="fa-regular fa-heart tiny"></i>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Compare">
+                      <i class="fa-solid fa-arrow-right-arrow-left tiny"></i>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Quick View">
+                      <i class="fa-solid fa-magnifying-glass tiny"></i>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Add to cart">
+                      <i class="fa-solid fa-cart-shopping tiny"></i>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+              
+              <div class="card-2-body d-flex flex-column">
+                <a href="" class="tiny">Allure Luminous Intense Lipstick 0.15oz</a>
+                <div>
+                  <span class="fs-5">$20</span>
+                  <del class="text-black-50 tiny">$24</del>
+                </div>
+                <span class="tiny mt-1">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+              </div>
+
+            </div> 
+          </div>
+
+          <div>
+            <div class="card-2 border-end p-3">
+
+              <div class="position-relative">
+                <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/fashion-10-1-300x300.jpg"
+                  alt="" class="d-block">
+                <ul class="position-absolute">
+                  <li>
+                    <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Whishlist">
+                      <i class="fa-regular fa-heart tiny"></i>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Compare">
+                      <i class="fa-solid fa-arrow-right-arrow-left tiny"></i>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Quick View">
+                      <i class="fa-solid fa-magnifying-glass tiny"></i>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Add to cart">
+                      <i class="fa-solid fa-cart-shopping tiny"></i>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+              
+              <div class="card-2-body d-flex flex-column">
+                <a href="" class="tiny">Tonga on T-Shirt for Men, Women Short Sleeve Tee</a>
+                <div>
+                  <span class="fs-5">$43</span>
+                </div>
+                <span class="tiny mt-1">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+              </div>
+
+            </div> 
+          </div>
+
+          <div>
+            <div class="card-2 border-end p-3">
+
+              <div class="position-relative">
+                <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/cosmetic-2-300x300.jpg"
+                  alt="" class="d-block">
+                <span class="position-absolute top-0 start-0 badge rounded-2 bg-danger">
+                  -37%
+                </span>
+                <ul class="position-absolute">
+                  <li>
+                    <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Whishlist">
+                      <i class="fa-regular fa-heart tiny"></i>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Compare">
+                      <i class="fa-solid fa-arrow-right-arrow-left tiny"></i>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Quick View">
+                      <i class="fa-solid fa-magnifying-glass tiny"></i>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="btn btn-secondary" data-bs-trigger="hover"  data-bs-custom-class="custom-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Add to cart">
+                      <i class="fa-solid fa-cart-shopping tiny"></i>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+              
+              <div class="card-2-body d-flex flex-column">
+                <a href="" class="tiny">Makeup Brushes Artisan Easel Elite Cosmetics</a>
+                <div>
+                  <span class="fs-5">$19</span>
+                  <del class="text-black-50 tiny">$30</del>
+                </div>
+                <span class="tiny mt-1">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+              </div>
+
+            </div> 
+          </div>
+        </div> 
+        <button class="arrow right z-3" id="nextBtn"><i class="fa-solid fa-chevron-right"></i></button>
+        <button class="arrow left z-3" id="prevBtn"><i class="fa-solid fa-chevron-left"></i></button>
+      </div>
+    </div>
+
+    <footer class="container-fluid text-white">
+      <div class="row g-0 justify-content-between mb-5">
+        
+        <div class="col-2 d-flex flex-column">
+          <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/04/logo.png" alt="" class="logo mb-4">
+          <div class="d-flex flex-column tiny mb-3">
+            
+            <div class="d-flex left-info mb-1 align-items-top">
+              <i class="fa-solid fa-location-dot mt-1"></i>
+              <span class="ms-2">29 SE 2nd Ave, Miami Florida 33131, United States</span>
+            </div>
+
+            <div class="d-flex left-info align-items-top">
+              <i class="fa-regular fa-envelope mt-1"></i>
+              <span class="ms-2">info@example.com</span>
+            </div>
+
+          </div>
+          <a href="" class="fs-4 fw-semibold">(+92) 3942 7879</a>
+        </div>
+
+        <ul class="col-5 d-flex justify-content-between tiny mb-0">
+
+          <li class="d-flex justify-content-between flex-column">
+            <span class="main-title fw-semibold">SHOPPING</span>
+            <ul class="d-flex flex-column nested ps-0">
+              <li>
+                <a href="">Wighlist</a>
+              </li>
+              <li>
+                <a href="">Shop by Brand</a>
+              </li>
+              <li>
+                <a href="">Offers</a>
+              </li>
+              <li>
+                <a href="">Track Order</a>
+              </li>
+              <li>
+                <a href="">Size Guide</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="d-flex justify-content-between flex-column">
+            <span class="main-title fw-semibold">INFORMATION</span>
+            <ul class="d-flex flex-column nested ps-0">
+              <li>
+                <a href="">Track Order</a>
+              </li>
+              <li>
+                <a href="">Shipping & Returns</a>
+              </li>
+              <li>
+                <a href="">About us</a>
+              </li>
+              <li>
+                <a href="">Help</a>
+              </li>
+              <li>
+                <a href="">Gift Cards</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="d-flex justify-content-between flex-column">
+            <span class="main-title fw-semibold">ACCOUNT</span>
+            <ul class="d-flex flex-column nested ps-0">
+              <li>
+                <a href="">Cart</a>
+              </li>
+              <li>
+                <a href="">My account</a>
+              </li>
+              <li>
+                <a href="">My orders</a>
+              </li>
+              <li>
+                <a href="">Wighlist</a>
+              </li>
+              <li>
+                <a href="">Affiliate Program</a>
+              </li>
+            </ul>
+          </li>
+
+        </ul>
+
+        <div class="d-flex flex-column justify-content-between col-3">
+
+          <div>
+            <h3 class="fw-semibold">Let's keep in touch</h3>
+            <form action="" class="rounded-1">
+              <input type="email" placeholder="enter your email address" name="productSearched" class="border-0 outline-0 bg-transparent">
+              <button class="border-0 outline-0 bg-transparent p-2-3 text-white "><i class="fa-solid fa-arrow-right-long"></i></button>
+            </form>
+          </div>
+
+          <div class="d-flex brands pb-4">
+            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            <a href=""><i class="fa-brands fa-tiktok"></i></a>
+            <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="row g-0 justify-content-evenly suggestions rounded-2 p-4">
+        
+        <div class="col-auto d-flex align-items-top text-white">
+          <i class="fa-solid fa-phone"></i>
+          <div class="d-flex flex-column">
+            <h4>Didn't find what you were looking for?</h4>
+            <a href="" class="underline-animation tiny">Contact Us</a>
+          </div>
+        </div>
+
+        <div class="col-auto d-flex align-items-top text-white">
+          <i class="fa-regular fa-face-smile"></i>
+          <div class="d-flex flex-column">
+            <h4>How can we help you today?</h4>
+            <a href="" class="underline-animation tiny">Help Center</a>
+          </div>
+        </div>
+
+        <div class="col-auto d-flex align-items-top text-white">
+          <i class="fa-regular fa-circle-dot"></i>
+          <div class="d-flex flex-column">
+            <h4>We’d love to hear what you think!</h4>
+            <a href="" class="underline-animation tiny">Give Feedback</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row g-0 justify-content-between align-items-center d-flex p-4">
+        <div class="justify-content-between align-items-center d-flex p-4">
+          <span class="xtiny copyrights">Copyright © Merto. All Rights Reserved</span>
+          <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/04/payment-icons-1.png" width="312" height="32" alt="">
+        </div>
+      </div>
+
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="../JavaScript/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <script src="../JavaScript/singleProduct.js"></script>
+  </body>
+</html>
