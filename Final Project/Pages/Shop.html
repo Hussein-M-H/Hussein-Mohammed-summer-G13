@@ -19,15 +19,28 @@
   </head>
   <body>
 
-    <nav class="container-fluid px-big py-4 tiny border-bottom">
+    <div id="home"></div>
+
+    <nav id="main-nav" class="container-fluid px-big px-4 py-4 tiny border-bottom top-0 z-3 bg-white">
       <div class="w-100 row gx-0 justify-content-between align-items-center">
-        <a href="" title="Metro" class="col-auto">
+        <i class="fa-solid fa-bars fs-4 col-auto d-block d-md-none" ></i>
+        
+        <a href="" title="Metro" class="col-2 col-xxl-auto">
           <img src="../images/logo.png" alt="" class="logo">
-        </a>
+        </a> 
 
-        <div class="row gx-0 justify-content-between col-5 align-items-center">
+        <div class="d-flex col-auto d-md-none fs-4">
+          <a href="">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </a>
+          <a href="">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </a>
+        </div>
 
-          <a href="" class="d-lg-flex d-sm-none col-auto justify-content-between align-items-center">
+        <div class="row d-none gx-0 justify-content-between d-md-flex col-6 col-xxl-5 align-items-center">
+
+          <a href="" class="d-xl-flex d-none col-xl-2 col-xxl-auto justify-content-between align-items-center">
             <i class="fa-solid fa-phone fs-3 pe-3"></i>
             <div class="d-flex flex-column">
               <span>Contact us 24/7</span>
@@ -35,7 +48,7 @@
             </div>
           </a>
 
-          <div class="col-7 row gx-0 position-relative small-v-l justify-content-between align-items-center bg-secondary bg-opacity-25 py-1 px-1 rounded-2">
+          <div class="col-10 col-xxl-7 row gx-0 position-relative small-v-l justify-content-between align-items-center bg-secondary bg-opacity-25 py-1 px-1 rounded-2">
             <select name="" id="" class="border-0 cursor-pointer outline-0 bg-transparent col-auto p-3 pe-0">
               <option value="" selected>All categories</option>
               <option value="">one</option>
@@ -48,12 +61,12 @@
 
         </div>
 
-        <div class="d-flex col-3 align-items-center justify-content-between">
+        <div class="d-none d-md-flex col-3 align-items-center justify-content-between">
           <div class="row g-0 col-5 justify-content-between">
             
             <div class="position-relative col-auto">
 
-              <a href="" class="row g-0 justify-content-between align-items-center dropdown-on-hover dropdown-link">
+              <a href="" class="row d-none d-xl-flex g-0 justify-content-between align-items-center dropdown-on-hover dropdown-link">
                 <img src="https://merto-be87.kxcdn.com/merto/wp-content/plugins/themesky-demo/images/flags/english.png" class="flag-img" alt="">
                 <span class="col-auto">English</span>
               </a>
@@ -82,7 +95,7 @@
 
             <div class="position-relative col-auto">
 
-              <a href="" class="d-flex justify-content-between dropdown-on-hover dropdown-link">
+              <a href="" class="d-none d-xl-flex justify-content-between dropdown-on-hover dropdown-link">
                 USD
               </a>
               <ul class="dropdown-menu">
@@ -104,7 +117,7 @@
 
           <a class="col-3 d-flex align-items-center cursor-pointer justify-content-between">
             <i class="fa-regular fa-user fs-5"></i>
-            <span class="fw-bold">Account</span>
+            <span class="fw-bold d-none d-xl-flex">Account</span>
           </a>
 
           <a href="" class="position-relative">
@@ -128,53 +141,159 @@
       </div>
     </nav>
 
-    <header class="container-fluid px-big tiny border-bottom">
+    <header class="container-fluid d-none d-md-block px-big px-4 tiny border-bottom">
       
       <div class="row g-0 justify-content-between align-items-center">
-        
-        <a class="p-3 ps-0 col-auto border-end">
+
+        <a class="p-1 ps-0 col-auto col-lg-3 col-xl-2 border-0 border-end-xl" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
           <i class="fa-solid fa-bars"></i>
-          <span class="fw-bold cursor-pointer">SHOP BY CATEGORIES</span>
+          <span class="fw-bold cursor-pointer d-none d-lg-inline-block">SHOP BY CATEGORIES</span>
         </a>
 
-        <div class="row col-10 g-0 py-3 justify-content-between">
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+          <div class="offcanvas-header bg-black d-flex text-white mb-0">
+            <i class="fa-solid fa-bars me-2"></i>
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">SHOP BY CATEGORIES</h5>
+          </div>
+          <div class="offcanvas-body overflow-visible mt-0 p-0">
+            <ul class="m-0 p-0">
+              <li class="w-100">
+                <div class="dropend">
+                  <button class="w-100 border-0 py-2 px-2 border-bottom bg-white text-start dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                    Dropdown button
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="w-100">
+                <div class="dropend">
+                  <button class="w-100 border-0 py-2 px-2 border-bottom bg-white text-start dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                    Dropdown button
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="w-100">
+                <div class="dropend">
+                  <button class="w-100 border-0 py-2 px-2 border-bottom bg-white text-start dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                    Dropdown button
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="w-100">
+                <div class="dropend">
+                  <button class="w-100 border-0 py-2 px-2 border-bottom bg-white text-start dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                    Dropdown button
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="w-100">
+                <div class="dropend">
+                  <button class="w-100 border-0 py-2 px-2 border-bottom bg-white text-start dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                    Dropdown button
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+
+        <div class="row col-11 col-lg-9 col-xl-10 g-0 py-3 justify-content-between">
           
-          <div class="position-relative col-1">
+          <div class="position-relative col-1 px-2">
   
-            <a href="" class="d-flex justify-content-between dropdown-on-hover text-danger dropdown-link py-1">
+            <a href="" class="position-relative d-flex justify-content-between dropdown-on-hover text-danger dropdown-link py-1">
               Homepages
+              <div class="fill position-absolute w-100 py-5"></div>
             </a>
-            <ul class="dropdown-menu">
+            <ul class="dropdown-menu mt-3">
+              <li>
+                <a href="singleProduct.html">Single Product Nike</a>
+              </li>
+              <li>
+                <a href="Shop.html">Shop</a>
+              </li>
+              <li>
+                <a href="contact.html">Contact Us</a>
+              </li>
             </ul>
   
           </div>
   
           <div class="position-relative col-1">
   
-            <a href="" class="py-1 d-flex justify-content-between dropdown-on-hover dropdown-link">
+            <a href="Shop.html" class="position-relative py-1 px-2 d-flex justify-content-between dropdown-on-hover dropdown-link">
               Categories
+              <div class="fill position-absolute w-100 py-5"></div>
             </a>
-            <ul class="dropdown-menu">
+            <ul class="dropdown-menu mt-3">
+              <li>
+                <a href="singleProduct.html">Single Product Nike</a>
+              </li>
+              <li>
+                <a href="Shop.html">Shop</a>
+              </li>
+              <li>
+                <a href="contact.html">Contact Us</a>
+              </li>
             </ul>
   
           </div>
   
           <div class="position-relative col-auto">
   
-            <a href="" class="d-flex py-1 justify-content-between dropdown-on-hover dropdown-link">
+            <a href="" class="d-flex py-1 position-relative justify-content-between dropdown-on-hover dropdown-link">
               Products
+              <div class="fill position-absolute w-100 py-5"></div>
             </a>
-            <ul class="dropdown-menu">
+            <ul class="dropdown-menu mt-3">
+              <li>
+                <a href="singleProduct.html">Single Product Nike</a>
+              </li>
             </ul>
   
           </div>
   
           <div class="position-relative col-auto">
   
-            <a href="" class="py-1 d-flex justify-content-between dropdown-on-hover dropdown-link">
+            <a href="" class="position-relative py-1 d-flex justify-content-between dropdown-on-hover dropdown-link">
               Pages
+              <div class="fill position-absolute w-100 py-5"></div>
             </a>
-            <ul class="dropdown-menu">
+            <ul class="dropdown-menu mt-3">
+              <li>
+                <a href="singleProduct.html">Single Product Nike</a>
+              </li>
+              <li>
+                <a href="Shop.html">Shop</a>
+              </li>
+              <li>
+                <a href="contact.html">Contact Us</a>
+              </li>
             </ul>
   
           </div>
@@ -192,12 +311,22 @@
             <span class="cursor-pointer">Best Discount</span>
           </a>
   
-          <div class="position-relative col-3 py-1 justify-content-end">
+          <div class="position-relative d-none d-xl-flex col-xl-3 py-1 justify-content-end">
   
-            <a href="" class="d-flex justify-content-end dropdown-on-hover dropdown-link">
+            <a href="" class="position-relative d-flex justify-content-end dropdown-on-hover dropdown-link">
               Recently viewed
+              <div class="fill position-absolute w-100 py-5"></div>
             </a>
-            <ul class="dropdown-menu">
+            <ul class="dropdown-menu end-0 mt-3">
+              <li>
+                <a href="singleProduct.html">Single Product Nike</a>
+              </li>
+              <li>
+                <a href="Shop.html">Shop</a>
+              </li>
+              <li>
+                <a href="contact.html">Contact Us</a>
+              </li>
             </ul>
   
           </div>
@@ -3048,7 +3177,7 @@
     <footer class="container-fluid text-white">
       <div class="row g-0 justify-content-between mb-5">
         
-        <div class="col-2 d-flex flex-column">
+        <div class="col-12 col-md-3 col-xl-2 d-flex flex-column order-first order-md-2">
           <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/04/logo.png" alt="" class="logo mb-4">
           <div class="d-flex flex-column tiny mb-3">
             
@@ -3066,7 +3195,7 @@
           <a href="" class="fs-4 fw-semibold">(+92) 3942 7879</a>
         </div>
 
-        <ul class="col-5 d-flex justify-content-between tiny mb-0">
+        <ul class="col-6 col-xl-5 d-flex justify-content-between tiny mb-0 order-xl-3">
 
           <li class="d-flex justify-content-between flex-column">
             <span class="main-title fw-semibold">SHOPPING</span>
@@ -3133,7 +3262,7 @@
 
         </ul>
 
-        <div class="d-flex flex-column justify-content-between col-3">
+        <div class="d-flex flex-column justify-content-between col-12 order-md-1 order-xl-4 col-xl-3">
 
           <div>
             <h3 class="fw-semibold">Let's keep in touch</h3>
@@ -3155,7 +3284,7 @@
 
       </div>
 
-      <div class="row g-0 justify-content-evenly suggestions rounded-2 p-4">
+      <div class="row g-0 justify-content-evenly suggestions rounded-2 p-4 flex-column-md">
         
         <div class="col-auto d-flex align-items-top text-white">
           <i class="fa-solid fa-phone"></i>
@@ -3184,7 +3313,7 @@
       </div>
 
       <div class="row g-0 justify-content-between align-items-center d-flex p-4">
-        <div class="justify-content-between align-items-center d-flex p-4">
+        <div class="justify-content-between align-items-center d-flex flex-lg-row flex-column p-4">
           <span class="xtiny copyrights">Copyright © Merto. All Rights Reserved</span>
           <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/04/payment-icons-1.png" width="312" height="32" alt="">
         </div>
@@ -3192,7 +3321,12 @@
 
     </footer>
 
+    <a href="#home" id="backtonav" class="bg-black text-white position-fixed p-2 rounded-2 tiny">
+      <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
     <script src="../JavaScript/shop.js"></script>
+    <script src="../JavaScript/general.js"></script>
   </body>
 </html>

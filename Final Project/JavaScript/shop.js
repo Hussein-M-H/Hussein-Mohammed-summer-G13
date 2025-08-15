@@ -111,13 +111,3 @@ buttonsFilter.forEach(button => {
   });
 });
 
-let plusButton  = document.getElementById("plus");
-let minusButton = document.getElementById("minus");
-let numberInp   = document.getElementById("numberInpWithBtn");
-
-console.log(numberInp)
-
-// Use built-in number input methods; they respect min/max/step
-plusButton.addEventListener('click',  () => numberInp.stepUp());
-minusButton.addEventListener('click', () => numberInp.stepDown());
-

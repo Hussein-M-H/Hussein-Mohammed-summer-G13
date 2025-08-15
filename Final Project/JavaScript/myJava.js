@@ -5,10 +5,59 @@ $(document).ready(function(){
   $(".owl-carousel").owlCarousel();
 });
 
+var owl = $(".Owl").owlCarousel({
+    items: 8,
+    loop: true,
+    dots: false,
+    margin:15,
+    autoplay: true,
+    autoplayTimeout: 5000,
+    autoplayHoverPause:true,
+    responsive: {
+      0:{
+        items:4
+      }
+      ,
+      576: {
+       items:5 
+      }
+      ,
+      768: {
+        items:6
+      }
+      ,
+      992:{
+        items:7
+      }
+
+    }
+});
+
 var owl1 = $(".firstOwl").owlCarousel({
     items: 5,
     loop: true,
     dots: false,
+    autoplay: true,
+    autoplayTimeout: 5000,
+    autoplayHoverPause:true,
+    responsive: {
+      0:{
+        items:2
+      }
+      ,
+      576: {
+       items:3 
+      }
+      ,
+      768: {
+        items:4
+      }
+      ,
+      992:{
+        items:5
+      }
+
+    }
 });
 
 $("#nextBtn").click(function() {
@@ -23,6 +72,27 @@ var owl2 = $(".secondOwl").owlCarousel({
     items: 5,
     loop: true,
     dots: false,
+    autoplay: true,
+    autoplayTimeout: 5000,
+    autoplayHoverPause:true,
+    responsive: {
+      0:{
+        items:2
+      }
+      ,
+      576: {
+       items:3 
+      }
+      ,
+      768: {
+        items:4
+      }
+      ,
+      992:{
+        items:5
+      }
+
+    }
 });
 
 $("#nextBtn2").click(function() {
@@ -38,7 +108,24 @@ var owl3 = $(".thirdOwl").owlCarousel({
     items: 3,
     loop: true,
     dots: false,
-    margin: 50
+    margin: 50,
+    autoplay: true,
+    autoplayTimeout: 5000,
+    autoplayHoverPause:true,
+    responsive: {
+      0:{
+        items:1
+      }
+      ,
+      576: {
+       items:2 
+      }
+      ,
+      768: {
+        items:3
+      }
+
+    }
 });
 
 $("#nextBtn3").click(function() {
@@ -49,45 +136,33 @@ $("#prevBtn3").click(function() {
     owl3.trigger("prev.owl.carousel");
 });
 
-// const exampleEl = document.getElementById('example')
-// const popover = new bootstrap.Popover(exampleEl, options)
-
-// function numbers (start, end, breaknum, skip) {
-//   if(start==undefined || end==undefined || breaknum==undefined || skip==undefined)
-//     alert("please enter all numbers")
-//   else  
-//     for(var i = start ; i <= end; i++)
-//     {
-//       if(i==breaknum)
-//         break
-//       else if (i==skip)
-//         continue
-//       console.log(i)
-//     }
-// }
-
-// var start = prompt("enter start:")
-// var end = prompt("enter end:")
-// var breaknum = prompt("enter break:")
-// var skip = prompt("enter skip:")
-
-// numbers(start,end,breaknum)
+window.addEventListener("scroll" , () => {
+  if(window.scrollY > 700)
+  {
+    let hours = document.getElementById("hours")
+    let mins = document.getElementById("mins")
+    let secs = document.getElementById("secs")
 
 
-// var courses = ["html", "css", "java", "javascript"]
-// courses.forEach((ele)=>{
-// console.log(ele)
-// }
-// )
-// var courseToDelete =prompt("enter the course You want to delete")
-// var courseToDeleteIndex = courses.findIndex(ele => ele==courseToDelete)
-// if(courseToDeleteIndex!=-1)
-//   courses.splice(courseToDeleteIndex , 1)
-// else
-//   courses.push(courseToDelete)
-// courses.forEach((ele)=>{
-// console.log(ele)
-// }
-// )
+    const endTime = new Date("2025-08-18T15:00:00").getTime(); // in ms
 
-      
+    const timer = setInterval(() => {
+      const now = new Date().getTime();
+      const remaining = endTime - now;
+
+      if (remaining <= 0) {
+        clearInterval(timer);
+        console.log("Time's up!");
+        return;
+      }
+
+      hours.innerText = Math.floor(remaining / (1000 * 60 * 60));
+      mins.innerText = Math.floor((remaining % (1000 * 60 * 60)) / (1000 * 60));
+      secs.innerText = Math.floor((remaining % (1000 * 60)) / 1000);
+
+    }, 1000);
+  }
+}) 
+
+
+

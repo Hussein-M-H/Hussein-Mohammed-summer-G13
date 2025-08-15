@@ -76,14 +76,9 @@ input[type="number"]::-webkit-inner-spin-button {
   margin-right:5px;
 }
 
-.slider-img {
-  width:100%;
-  height:557.2px;
-}
-
 .aside-img {
   width:100%;
-  height:50%;
+  height:100%;
   display:block;
 }
 
@@ -214,6 +209,10 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .dropdown-on-hover:hover + ul {
   display:block;
+}
+
+.custom-max-height {
+  max-height:234.5px;
 }
 
 .px-big {
@@ -483,7 +482,7 @@ nav .badge {
   right:80px;
   bottom:50px;
   width:460px;
-  z-index:10;
+  z-index:2;
   box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.2);
 }
 
@@ -498,7 +497,7 @@ nav .badge {
 .hoodie-discount {
   top:15%;
   left:38%;
-  z-index: 6;
+  z-index: 2;
   height:100px;
   width:100px;
   animation:rotatebadge 0.4s 2 ease-out , expand-shrink 1.5s infinite ease-in-out 1s;
@@ -530,7 +529,7 @@ nav .badge {
   bottom:0;
   padding:0 10px;
   font-size:150px;
-  z-index:3;
+  z-index:2;
   font-weight: 600;
 }
 
@@ -910,6 +909,23 @@ a.underline-animation.redlink:hover::after{
       background-color: white;
     }
   }
+  &.transparent {
+    background-color: transparent;
+    color:black;
+    &:hover {
+      color:white;
+      background-color: black;
+    }
+  }
+  &.transparent-out {
+    background-color: white;
+    border-color:white;
+    color:black;
+    &:hover {
+      color:white;
+      background-color: transparent;
+    }
+  }
 }
 
 .nav-tabs {
@@ -954,4 +970,85 @@ a.underline-animation.redlink:hover::after{
   border-radius: 50%;
   background-color: #61b578;
   margin-right: 5px;
+}
+
+#submitError {
+  background-color: #FEF6EF;
+  color: #F7AA60;
+}
+
+#contactForm {
+  & input , & textarea {
+    background-color: #EBEEF0;
+  }
+}
+
+.w-custom{
+  width:49%;
+}
+
+#contactSubmit {
+  background-color: black;
+  color:white;
+  transition: background-color 0.2s;
+  &:hover {
+    background-color: red;
+  }
+}
+
+#aroundWorld {
+  & .w-custom {
+    width:31%;
+  }
+  & .card {
+    & img{
+      transition:filter 0.2s;
+      &:hover {
+        filter:brightness(110%);
+      }
+    }
+  }
+}
+
+.slider-img {
+  right:0;
+  width:600px;
+  height:581.2px;
+}
+
+.clear {
+  clear:both;
+}
+
+.carousel-caption {
+  left:0 !important;
+  top:20% !important;
+  bottom:20% !important;
+}
+
+#backtonav
+{
+  opacity:0;
+  transition:0.2s;
+  bottom:6px;
+  right:8px;
+  &:hover {
+    transform:scale(1.2);
+  }
+  &.opacity-1 {
+    opacity:1;
+  }
+}
+
+.opacity-0 {
+  opacity:0;
+}
+
+.fill {
+  bottom:-30px;
+  z-index: 2;
+}
+
+.dropdown-menu:hover {
+  display:block !important;
 }
